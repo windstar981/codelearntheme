@@ -1,0 +1,217 @@
+.all
+{
+    width: 100%;
+    margin: auto;
+    clear: both;
+}
+.header
+{
+    width: 100%;
+    height: 73px;
+    background-color: blue;
+}
+.content
+{
+    width: 100%;
+    height: 2340px;
+    background-color: rgb(255, 255, 255);
+}
+.footer
+{
+    width: 100%;
+    height: 310px;
+    background-color: rgb(166, 253, 5);
+}
+.wrap-info
+{
+    height: 337px;
+    background-color: rgb(30, 42, 85);
+    margin-bottom: 30px;
+}
+.welcome
+{
+    color: cornsilk;
+}
+.wrap-khoa-hoc
+{
+    height: 505px;
+    background-color: rgb(195, 242, 248);
+    margin-bottom: 40px;
+}
+.wrap-cuoc-thi
+{
+    height: 415px;
+    background-color: snow;
+    margin-bottom: 40px;
+}
+.wrap-luyen-tap-chia-se
+{
+    height: 560px;
+    background-color: springgreen;
+    margin-bottom: 40px;
+}
+.wrap-ki-nang-hoat-dong
+{
+    height: 352px;
+    background-color: white;
+    margin-bottom: 0;
+}
+.container
+{
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.heading-block
+{
+    font-size: 26px;
+    color: var(--accent-color);
+    line-height: 1.25;
+    margin: 0 0 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.wrap-3
+{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+}
+.menu-3
+{
+    margin: 0 0 10px;
+    padding: 0;
+    /* width: 100%;     */
+    display: inline-block;
+}
+.KDD
+{
+        list-style: none;
+        float: left;
+}
+.a {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    color: #0b0bf7;
+    line-height: 1.27;
+}
+.xtc
+{
+    list-style: none;
+   float: right;
+}
+
+.hover-item {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: 0.3s;
+    margin-top: 50px;
+    border-radius: 3px;
+    
+}
+.hover-item:hover {
+box-shadow: 0 4px 6px rgba(0,0,0,0.12), 0 4px 5px rgba(0,0,0,0.24);
+transform: translate(0, -10px); 
+
+}
+.div-kh-img
+{
+width:100%;
+height: 180px;
+background-color: red;
+}
+.div-kh-content
+{
+    /* width: 100%; */
+    height: 174px;
+    background-color: pink;
+    padding: 15px;
+}
+.flex-container
+{
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+}
+.item-flex
+{
+    background-color: mediumspringgreen;
+    margin: 5px;
+    color:black;
+    height: 68px;
+}
+.h-title
+{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.3
+}
+.p-content
+{
+    
+    overflow: hidden;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+.div-ct-img
+{
+width: 100%;
+height: 116.6px;
+background-color: red;
+}
+.div-ct-content
+{
+width: 100%;
+height: 213px;
+background-color: pink;
+}
+.div-so-bai-lam-duoc
+{
+width: 100%;
+height: 122px;
+background-color: red;
+}
+.div-cac-bai-da-lam
+{
+width: 100%;
+}
+.div-chia-se-bai1
+{
+    width: 100%;
+    height: 158px;
+    background-color: red;
+}
+.div-chia-se-bai2
+{
+    width: 100%;
+    height: 158px;
+    background-color: green;
+}
+.div-chia-se-bai3
+{
+    width: 100%;
+    height: 158px;
+    background-color: blue;
+}
+.info2-1
+{
+    width: 100%;
+    height: 101.5px;
+    background-color: cyan;
+}
+.info2-2
+{
+    width: 100%;
+    height: 112.4px;
+}

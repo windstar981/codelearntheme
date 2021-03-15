@@ -1,0 +1,54 @@
+/*  GRID OF TWO   ============================================================================= */
+
+
+.span_2_of_2 {
+	width: 100%;
+}
+
+.span_1_of_2 {
+	width: 49.2%;
+	height: 331.7px;
+	background-color: blanchedalmond;
+}
+.span_1_of_2-1{
+	margin-top: 0px;
+	width: 49.2%;
+	height: 560.4px;
+	background-color: blanchedalmond;
+}
+.span_1_of_2-2{
+	margin-top: 0px;
+	width: 68%;
+	height: 351px;
+	background-color: blanchedalmond;
+}
+.span_1_of_2-2-2{
+	margin-top: 0px;
+	float:right;
+	width: 30.2%;
+	height: 351px;
+	background-color: rgb(0, 0, 0);
+}
+.span_1_of_2_info1 {
+	width: 30%;
+	height: 223.8px;
+	background-color: rgb(133, 255, 164);
+}
+.span_1_of_2_info2 {
+	width: 68.4%;
+	height: 223.8px;
+	background-color:rgb(133, 255, 164);
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2 {
+		width: 100%; 
+	}
+	.span_1_of_2 {
+		width: 100%; 
+	}
+	.span_1_of_2-1{
+		width: 100%; 
+	}
+}

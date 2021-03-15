@@ -1,0 +1,110 @@
+.all
+{
+    margin: auto;
+    width: 100%;
+}
+.menu_codelearn
+{
+    height: 50px;
+    background-color: rgb(253, 253, 253);
+}
+.info
+{
+    height: 200px;
+    background-color: #2c31cf;
+}
+.Khoa_Hoc
+{
+    height: 25%;
+    background-color: rgb(253, 253, 253);
+}
+.contest
+{
+    height: 200px;
+    background-color: rgb(253, 253, 253);
+}
+.training_share
+{
+    height: 200px;
+    background-color: rgb(255, 255, 255); 
+}
+.skill_activate
+{
+    height: 200px;
+    background-color: rgb(253, 253, 253)    ;    
+}
+.contact
+{
+    height: 200px;
+    background-color: rgb(255, 255, 255);  
+}
+.test1
+{
+    float: left;
+    margin-left: 5%;
+    background-color: darkturquoise;
+    width: 30%;
+    height: 70%;
+}
+.test2
+{
+    float: left;
+    margin-left: 10%;
+    width: 30%;
+    height: 70%;
+    background-color:deepskyblue;
+}
+.menu-header
+{
+    list-style:none; 
+    margin-left:10px; 
+    float: left;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.menu-header-right
+{
+    list-style:none; 
+    float:right; 
+    margin-right:10px; 
+    margin-top: 15px;
+}
+.style-khoa-hoc
+{
+    list-style: none;
+    color: blue; 
+    margin-left: 5%;
+}
+.menuKH-goi-y
+{
+    float: left; list-style-type:none;margin-left: 5%;
+}
+.menuKH-dang-ht
+{
+    float: left;margin-left: 10px; list-style-type:none;margin-left: 3%;
+}
+.menuKH-xem-all
+{
+    float: right; margin-right: 10%; list-style-type:none;margin-right: 7%;
+}
+.KH-1
+{
+    width: 25%;
+    height: 100px;
+    background-color: palegoldenrod;
+}
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    margin-left: 8% ;
+    margin-right: 7%;
+    line-height: 75px;
+    font-size: 30px;
+  }

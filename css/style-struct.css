@@ -1,0 +1,49 @@
+﻿body{margin:0;padding:0;background:#dbdbdb;font-family:Arial,Tahoma,Helvetica,sans-serif;font-size:12px;}
+img{border:0;}
+a{border:0;text-decoration:none;color:#A3362D}
+a:hover{color:#DC1301;text-decoration:underline;}
+.clear-both{clear:both;}
+.space-top{margin-top:10px;}
+.space-bottom{margin-bottom:10px;}
+.space-right{margin-right:10px;}
+.space-left{margin-left:10px;}
+.d-left{float:left;}
+.d-right{float:right;}
+.m-wrapper{margin:auto;width:1000px;border:1px solid red;}
+
+.travel-header{float:left;width:100%;background:red;height:30px;}
+.travel-content{float:left;width:100%;background:blue;margin-bottom:10px;}
+.travel-footer{float:left;width:100%;background:green;height:50px;}
+.travel-main{float:left;width:66%;}
+.travel-right{float:right;width:33%;}
+.travel-top-news{float:left;width:100%;background:grey;height:150px;}
+.travel-content-col{width:49%;background:pink;height:700px;}
+.div-img1
+        {
+            float:left;
+            width:30%;
+            height: 10%;
+            margin-right: 1%;
+        }
+        .div-img2
+        {
+            height: 10%;
+            float: right;
+            width: 69%;
+        }
+        .div-img3
+        {
+            height: 10%;
+            float: left;
+            width: 69%;
+        }
+        a
+        {
+            color: brown;
+            font-size: 15px;
+            text-decoration: none;
+        }
+.div-a
+{
+    float: left;
+}

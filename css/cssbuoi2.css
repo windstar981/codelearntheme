@@ -1,0 +1,95 @@
+.m-wrapper
+{
+    margin: auto;
+    width: 100%;
+    clear: both;
+}
+.travel-header
+{
+    margin: auto;
+    width: 100%;
+    height: 100;
+}
+.abc
+{
+    float: left;
+    margin-right: 10px;
+    background-color: blue;
+    width: 100px;
+}
+.def
+{
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    background-color: chocolate;
+}
+.ghi
+{
+    float: left;
+    margin-right: 10px;
+    background-color: chartreuse;
+    width: 100px;
+}
+.travel-content
+{
+    margin: auto;
+    width: 1000px;
+    clear: both;
+    height: 100;
+}
+.klm
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+    background-color: rgb(17, 243, 111);
+    width: 100px;
+}
+.npq
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+    background-color: rgb(71, 14, 59);
+    width: 100px;
+}
+.rsx
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+    background-color: rgb(196, 17, 32);
+    width: 100px;
+}
+.travel-footer
+{
+    margin: auto;
+    width: 1000px;
+    clear: both;
+    height: 100;
+}
+.xxx
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+    background-color: rgb(226, 209, 51);
+    width: 100px;
+}
+.yyy
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+    background-color: rgb(44, 209, 209);
+    width: 100px;
+}
+.zzz
+{
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+    background-color: rgb(150, 22, 111);
+    width: 100px;
+}
