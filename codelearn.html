@@ -10,13 +10,50 @@
     <link type="text/css" href="css/codelearn.css" rel="stylesheet" media="screen"/>
     <link type="text/css" href="css/footer.css" rel="stylesheet" media="screen"/>
     <link type="text/css" href="css/col.css" rel="stylesheet" media="screen"/>
+    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <!-- link boostrap https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
     <title>Codelearn</title>
 </head>
 <body>
 <div class="all">
     <!-- phần menu head -->
     <div class="header">
-        
+        <header class="navs-heading">
+            <nav class="navbar sticky-top navbar-expand-sm" style="position: fixed; background-color: white;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <img src="images/codelearn-logo.png" height="40px" s alt="#" class="logo_codelearn"> 
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Học tập</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Luyện tập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Thi đấu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Thử thách</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Đánh giá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Thảo luận</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trò chơi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chia sẻ</a>
+                    </li>
+                    
+                  </ul>
+            </nav>
+        </header>
     </div>
     <!-- Kết thúc header -->
 
@@ -28,32 +65,68 @@
         <section class="wrap-info">
 
             <div class="container">
-                <h2 class="welcome">Xin chào <span>Windstar981</span>. Chào mừng bạn đến với CodeLearn. Hãy nhé!</h2>
+                <h2 class="welcome">Xin chào <span>Windstar981</span>. Chào mừng bạn đến với CodeLearn. Hãy <button class="button_kham_pha" type="button">Khám phá</button> nhé!</h2>
                 <!-- Chia làm 2 cột một cột  -->
-                <div class="section group">
-					<div class="col span_1_of_2_info1">
-                        
+                <div class="section group ">
+                    <!-- Cột thông tin chi tiết chia ngang 2 phần -->
+					<div class="col span_1_of_2_info1 bd">
+                        <div class="flex-containers">
+                            <div class="height_one">1</div>
+                            <div class="height_one">2</div>
                         </div>
-                        <div class="col span_1_of_2_info2">
-                        
-                        <!-- div này lại chia thành 2 div theo chiều ngang 101.5 & 112.4 -->
-                            <div class="info2-1 section group">
+                    </div>
+                    <div class="col span_1_of_2_info2">
+                        <div class="container-content">
+                            <!-- div này lại chia thành 2 div theo chiều ngang 101.5 & 112.4 -->
+                            <div class="info2-1 section group  info-content-color">
                                 <!-- div này lại chia thành 3 cột -->
+                                <!-- khóa học -->
                                 <div class="col span_1_of_3-info">
-                                1 of 3
+                                    
+                                    <h4 class="detail-progress-content-h4">Khóa học</h4>
+                                    <div class="detail-progress-flex">
+                                        <span class="detail-progress-font1">12/19</span>
+                                        <span class="detail-progress-font2">2 chứng nhận</span>
+                                    </div>
+                                    <div class="item-progress-bar">
+                                        <span class="current-progress" style="width: 63.1578947368421%;">
+
+                                        </span>
+                                    </div>
                                 </div>
+                                 <!-- Luyện tập -->
                                 <div class="col span_1_of_3-info">
-                                1 of 3
+                                   
+                                    <h4 class="detail-progress-content-h4">Luyện tập</h4>
+                                    <div class="detail-progress-flex">
+                                        <span class="detail-progress-font1">300/1000</span>
+                                    </div>
+                                    <div class="item-progress-bar">
+                                        <span class="current-progress" style="width: 63.1578947368421%;">
+
+                                        </span>
+                                    </div>
                                 </div>
+                                <!-- Thứ hạng tốt nhất -->
                                 <div class="col span_1_of_3-info">
-                                1 of 3
+                                    <h4 class="detail-progress-content-h4">Thứ hạng tốt nhất</h4>
+                                    <div class="detail-progress-flex">
+                                        <span class="detail-progress-font1">5/10</span>
+                                        <span class="detail-progress-font2">Cuộc thi</span>
+                                    </div>
+                                    <div class="item-progress-bar">
+                                        <span class="current-progress" style="width: 63.1578947368421%;">
+
+                                        </span>
+                                    </div>
                                 </div>    
                             </div>
-
-                            <div class="info2-2">
-
+    
+                            <div class="info2-2 detail-progress-thanh-tich">
+                                <h4 class="detail-progress-content-h4"><a href="#">Thành tích của bạn ></a></h4>
                             </div>
-                        </div>
+                        </div>   
+                    </div>
 				</div>
 
             </div>
@@ -65,19 +138,20 @@
         <!-- Phần khóa học được bọc bởi thẻ section-->
         <section class="wrap-khoa-hoc">
             <div class="container">
-                <h3 class="heading-block">
+                <h3 class="heading-kh">
                     Khóa học
                 </h3>
                 <!-- Khóa học gợi ý - Đang học - Đã hoàn thành -->
                 <div class="wrap-3">
                     <ul class="menu-3">
-                        <li class="KDD"><a class="a" href="#">Khóa học gợi ý</a></li>
-                        <li class="KDD"><a href="#" class="a">Đang học</a></li>
-                        <li class="KDD"><a href="#" class="a">Đã hoàn thành</a></li>
-                        <li class   ="xtc"><a href="#">Xem tất cả</a></li>
+                        <li><a href="#">Khóa học gợi ý</a></li>
+                        <li><a href="#">Đang học</a></li>
+                        <li><a href="#">Đã hoàn thành</a></li>
+                        <li class="fix-xtt"><a href="#">Xem tất cả</a></li>
                     </ul>
                 </div>
                 <!-- tạo 4 cột cho các khóa học -->
+                <!-- trong mục xóa -->
                 <div class="section group">
                     <!-- Khóa học 1 -->
 					<div class="col span_1_of_4 hover-item">
@@ -85,16 +159,27 @@
                         <!-- Chia làm 2 phần img và content-->
                         <!-- div img -->
                         <div class="div-kh-img">
-                            <img src="images/Cforbeginer.png" width="278.45px" height="180px" alt="C">
+                            <img src="images/Cforbeginer.png" width="265.6px" height="180px" alt="C">
                         </div>
                         <!-- div content -->
-                        <div class="div-kh-content">
-                            <div class="flex-container">
-                                <div class="item-flex"><h3>C cho người mới bắt đầu</h3></div>
-                                <div class="item-flex"><p class="p-content">Khóa học lập trình C cho người mới bắt đầu. Khóa học này sẽ cung cấp những kiến thức cơ bản và là nền tảng để bạn đi xa hơn trên con đường lập trình.</p></div>
-                                <div class="item-flex">1</div>
-                            </div>
+                        <div class="div-kh-content-flex">
                             
+                           <div class="item-flex-kh ">
+                                <h3 class="detail-kh-h3">C cho người mới bắt đầu</h3>
+                           </div>
+
+                           <div class="item-flex-kh">
+                                <p class="detail-kh-p">Khóa học lập trình C cho người mới bắt đầu. Khóa học này sẽ cung cấp những kiến thức cơ bản và là nền tảng để bạn đi xa hơn trên con đường lập trình.</p>
+                            </div>
+                           
+                            <div class="item-flex-kh">
+                                <div class="detail-content-flex">
+                                    <span class="detial-span-desktop"><i class="fas fa-desktop" style="margin-right: 5px;"></i>  84</span>
+                                    <span class="detial-span-time" ><i class="far fa-clock" style="margin-right: 5px;"></i>20:00:00</span>
+                                    <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                    <button class="detail-button-hoc-ngay">Học ngay</button>
+                                </div>
+                            </div>
                         </div>
 					</div>
                     <!-- khóa học 2 -->
@@ -102,11 +187,28 @@
                         <!-- Chia làm 2 phần img và content-->
                         <!-- div img -->
                         <div class="div-kh-img">
-                            <img src="images/SQLwws.png"  width="278.45px" height="180px" alt="">
+                            <img src="images/SQLwws.png"  width="265.6px" height="180px" alt="">
                         </div>
                         <!-- div content -->
-                        <div class="div-kh-content">
-
+                        <div class="div-kh-content-flex">
+                            
+                            <div class="item-flex-kh ">
+                                <h3 class="detail-kh-h3">Thực hành với SQL</h3>
+                            </div>
+ 
+                            <div class="item-flex-kh">
+                                <p class="detail-kh-p">Khóa học này sẽ giúp bạn biết về một số chức năng chính cần thiết để sắp xếp, lọc và phân loại thông tin trong cơ sở dữ liệu quan hệ, mở rộng bộ công cụ SQL của bạn và giúp bạn có khả năng giải quyết các vấn đề phức tạp hơn thông qua bộ công cụ này.
+                                    Yêu cầu: Bạn cần hoàn thành khóa Làm quen với SQL để có kiến thức cơ bản trước khi tham gia khóa học này.</p>
+                            </div>
+                            
+                            <div class="item-flex-kh">
+                                <div class="detail-content-flex">
+                                    <span class="detial-span-desktop"><i class="fas fa-desktop" style="margin-right: 5px;"></i>  98 </span>
+                                    <span class="detial-span-time" ><i class="far fa-clock" style="margin-right: 5px;"></i>22:00:00</span>
+                                    <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                    <button class="detail-button-hoc-ngay">Học ngay</button>
+                                </div>
+                             </div>
                         </div>
 					</div>
                         <!-- Khóa học 3 -->
@@ -114,27 +216,61 @@
 					    <!-- Chia làm 2 phần img và content-->
                         <!-- div img -->
                         <div class="div-kh-img">
-                            <img src="images/pythonp.jpg"  width="278.45px" height="180px" alt="">
+                            <img src="images/pythonp.jpg"  width="265.6px" height="180px" alt="">
                         </div>
                         <!-- div content -->
-                        <div class="div-kh-content">
-
-                        </div>
+                        <div class="div-kh-content-flex">
+                            
+                            <div class="item-flex-kh ">
+                                 <h3 class="detail-kh-h3">Python cơ bản</h3>
+                            </div>
+ 
+                            <div class="item-flex-kh">
+                                <p class="detail-kh-p">Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học xong bạn có thể tự tin để tới với các chủ đề nâng cao hơn của Python.</p>
+                            </div>
+                            
+                             <div class="item-flex-kh">
+                                 <div class="detail-content-flex">
+                                     <span class="detial-span-desktop"><i class="fas fa-desktop" style="margin-right: 5px;"></i>  90</span>
+                                     <span class="detial-span-time" ><i class="far fa-clock" style="margin-right: 5px;"></i>24:00:00</span>
+                                     <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                     <button class="detail-button-hoc-ngay">Học ngay</button>
+                                 </div>
+                             </div>
+                         </div>
 					</div>
                         <!-- Khóa học 4 -->
 					<div class="col span_1_of_4 hover-item">
 					    <!-- Chia làm 2 phần img và content-->
                         <!-- div img -->
                         <div class="div-kh-img">
-                            <img src="images/Csharp.jpg"  width="278.45px" height="180px" alt="">
+                            <img src="images/Csharp.jpg"  width="265.6px" height="180px" alt="">
                         </div>
                         <!-- div content -->
-                        <div class="div-kh-content">
-
-                        </div>
+                        <div class="div-kh-content-flex">
+                            
+                            <div class="item-flex-kh ">
+                                 <h3 class="detail-kh-h3">C# cơ bản</h3>
+                            </div>
+ 
+                            <div class="item-flex-kh">
+                                <p class="detail-kh-p">Khóa học lập trình C# kèm thực hành, khóa học sẽ giúp bạn làm quen với lập trình cũng như tạo nền tảng tư duy và kỹ năng cơ bản khi giải các bài tập.</p>
+                            </div>
+                            
+                             <div class="item-flex-kh">
+                                 <div class="detail-content-flex">
+                                     <span class="detial-span-desktop"><i class="fas fa-desktop" style="margin-right: 5px;"></i>  96</span>
+                                     <span class="detial-span-time" ><i class="far fa-clock" style="margin-right: 5px;"></i>26:00:00</span>
+                                     <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                     <button class="detail-button-hoc-ngay">Học ngay</button>
+                                 </div>
+                             </div>
+                         </div>
 					</div>
 				</div>
-                <!-- kết thúc 4 cột -->
+                <!-- kết thúc 4 cột -->                
+                 
+                 
             </div>
         </section>
         <!-- Kết thúc phần khóa học -->
