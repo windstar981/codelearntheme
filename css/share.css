@@ -1,0 +1,76 @@
+.header-share
+{
+    width: 100%;
+}
+.header-share-h3
+{
+    font-size: 26px;
+    color: rgb(44, 49, 207);
+    font-weight: 700;
+    float:left;
+}
+.header-share-a
+{
+    font-size: 15px;
+    color: #3b3c5b;
+    font-weight: 600;
+    text-decoration: none;
+    float: right;
+}
+.header-share-a:hover
+{
+    color: rgb(44, 49, 207);
+}
+.container-share-flex
+{
+    display: flex;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    text-decoration: none;
+}
+.item-share-img
+{
+    width: 121.65px;
+    height: 108px;
+}
+
+.item-share-content
+{
+    margin-left: 20px;
+}
+.item-share-content h3
+{
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.25;
+    font-weight: 700;
+    color: rgb(59, 60, 84);
+}
+.item-share-content h3:hover
+{
+    color: rgb(44, 49, 207);
+}
+.item-share-content p
+{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(59, 60, 84);
+    line-height: 1.46;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.div-chia-se-bai2
+{
+    border-top: 0.75px solid silver;
+}
+.div-chia-se-bai3
+{
+    border-top: 0.75px solid silver;
+}

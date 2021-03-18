@@ -8,7 +8,10 @@
     <link type="text/css" href="css/3cols.css" rel="stylesheet" media="screen"/>
     <link type="text/css" href="css/2cols.css" rel="stylesheet" media="screen"/>
     <link type="text/css" href="css/codelearn.css" rel="stylesheet" media="screen"/>
+    <link type="text/css" href="css/contest.css" rel="stylesheet" media="screen"/>
+    <link type="text/css" href="css/share.css" rel="stylesheet" media="screen"/>
     <link type="text/css" href="css/footer.css" rel="stylesheet" media="screen"/>
+    <link type="text/css" href="css/trainning.css" rel="stylesheet" media="screen"/>
     <link type="text/css" href="css/col.css" rel="stylesheet" media="screen"/>
     <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet"> <!--load all styles -->
     <!-- link boostrap https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
@@ -279,32 +282,71 @@
         <section class="wrap-cuoc-thi">
             <div class="container">
                 <!-- Chứa cuộc thi lập trình và xem tất cả -->
-                <h3 class="heading-flex">
-                    Cuộc thi lập trình
+                <div class="container-contest">
+                    <h3>Cuộc thi lập trình</h3>
                     <a href="#">Xem tất cả</a>
-                </h3>
+                </div>
                 <!-- div chứa nội dung 2 cuộc thi chia bằng grid -->
                 <div class="section group">
 					<div class="col span_1_of_2 hover-item">
                         <!-- Chia làm 2 phần img và content -->
                         <!-- div img -->
                         <div class="div-ct-img">
-
+                            <img src="images/test1.png" alt="">
                         </div>
                         <!-- div content -->
-                        <div class="div-ct-content">
-
+                        <div class="div-ct-content div-ct-content-flex">
+                            <div class="item-contest-flex">
+                                <h3>SASUKE CODEWAR #65</h3>
+                            </div>
+                            <div class="item-contest-flex content-header-contest">                              
+                                The weekly coding contest for people who love programming on CodeLearn 
+                            </div>
+                            
+                            <div class="item-contest-flex detail-contest-flex">
+                                <div class="detail-contest-flex-content">
+                                    <p>
+                                        Xếp hạng của bạn: <span>10/1000</span> thí sinh
+                                    </p>
+                                    <p class="text-join">
+                                        Bạn đang tham gia nhưng thứ hạng chưa tốt. Hãy cố gắng nhé!
+                                    </p>
+                                </div>
+                                <div class="detail-contest-flex-button">
+                                    <button>Code ngay</button>
+                                </div>
+                            </div>
                         </div>
 					</div>
 					<div class="col span_1_of_2 hover-item">
                         <!-- Chia làm 2 phần img và content -->
                         <!-- div img -->
                         <div class="div-ct-img">
-
+                            <img src="images/test2.png" alt="">
                         </div>
                         <!-- div content -->
-                        <div class="div-ct-content">
-
+                        <div class="div-ct-content div-ct-content-flex">
+                            <div class="item-contest-flex">
+                                <h3>
+                                    CODE CHALLENGE_BATCH 1
+                                </h3>
+                            </div>
+                            <div class="item-contest-flex content-header-contest">                                                                    
+                                Thử thách thi vui thưởng thật dành cho các bạn trẻ đam mê công nghệ, thích khám phá và làm chủ ngôn ngữ số.                               
+                            </div>
+                            <div class="item-contest-flex detail-contest-flex">
+                                <div class="detail-contest-flex-content">
+                                    <p>
+                                        Đã đăng kí <span>120</span> thí sinh
+                                    </p>
+                                    <p class="text-end-test">
+                                        Cuộc thi đã kết thúc ngày 8-3-2021
+                                    </p>
+                                </div>
+                                <div class="detail-contest-flex-button">
+                                    <button>Kết quả</button>
+                                </div>
+                            </div>
                         </div>
 					</div>
 				</div>
@@ -317,14 +359,24 @@
             <div class="container">
                 <!-- Chia thành 2 phần Luyện tập và chia sẻ -->
                 <div class="section group ">
-					<div class="col span_1_of_2-1 hover-item">
-                        <h3>
-                            Luyện tập
-                            <a href="">Xem tất cả</a>
-                            <!-- Chia làm 2 phần số bài làm được và các bài đã làm -->
-                            <!-- div số bài làm được -->
-                            <div class="div-so-bai-lam-duoc">
-
+                    <!-- Luyện tập -->
+					<div class="col span_1_of_2-share-1 ">
+                        <div class="heading-train">
+                            <h3>Luyện tập hàng ngày</h3>
+                            <a href="#">Xem tất cả</a>
+                        </div>  
+                        <!-- Chia làm 2 phần số bài làm được và các bài đã làm -->
+                        <!-- div số bài làm được -->
+                        <div class="hover-item cl">
+                            <div class="div-so-bai-lam-duoc-flex">
+                                <div class="item-train item-simple">
+                                    <span>300/500</span> <br>
+                                    Đơn giản
+                                </div>
+                                <div class="item-train item-medium">
+                                    <span>45/1200</span> <br>
+                                    Trung bình
+                                </div>
                             </div>
                             <!-- div các bài đã làm chia làm 3 cột-->
                             <div class="section group">
@@ -338,26 +390,70 @@
                                 1 of 3
                                 </div>
                             </div>
-                        </h3>
+                        </div>
 					</div>
-					<div class="col span_1_of_2-1 hover-item">
-                        <h3>Chia sẻ
-                            <a href="#">Xem tất cả</a>
-                        </h3>
+                    <!-- Kết thúc luyện tập -->
+                    <!-- Chia sẻ -->
+                    <!-- Các css chia sẻ bậc 3 được lưu ở file share.css -->
+					<div class="col span_1_of_2-share-2">
+                        <div class="header-share">
+                            <h3 class="header-share-h3">Chia sẻ</h3>
+                            <a href="#" class="header-share-a">Xem tất cả</a>
+                        </div>
                         <!-- Chia ngang 3 block -->
-                        <!-- Bài 1 -->
-                        <div class="div-chia-se-bai1">
-
-                        </div>
-                        <!-- Bài 2 -->
-                        <div class="div-chia-se-bai2">
-
-                        </div>
-                        <!-- Bài 3 -->
-                        <div class="div-chia-se-bai3">
-
+                        <div class="hover-item">
+                            <!-- Bài 1 -->
+                            <div class="div-chia-se-bai1">
+                                <a href="#" class="container-share-flex">
+                                    <div class="item-share-img">
+                                        <img src="images/bai1.jpg" width="121.65px" height="108px" alt="">
+                                    </div>
+                                    <div class="item-share-content">
+                                        <h3>Flash Sort - Thuật Toán Sắp Xếp Thần Thánh</h3>
+                                        <!-- đánh giá -->
+                                        <p>
+                                            Bài viết sẽ làm rõ về Flash Sort - một thuật toán cho tốc độ rất nhanh trong thực tế, tuy nhiên cách thức cài đặt lại tương đối phức tạp.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Bài 2 -->
+                            <div class="div-chia-se-bai2">
+                                <a href="#" class="container-share-flex">
+                                    <div class="item-share-img">
+                                        <img src="images/bai2.jpg" width="121.65px" height="108px" alt="">
+                                    </div>
+                                    <div class="item-share-content">
+                                        <h3>
+                                            1001 Nguồn Học Cấu Trúc Dữ Liệu Và Giải Thuật Cực Hiệu Quả
+                                        </h3>
+                                        <!-- đánh giá -->
+                                        <p>
+                                            Mình bắt đầu gia nhập Amazon dưới vai trò Thực tập sinh Kỹ thuật Phát triển Phần mềm trong 6 tháng kể từ tháng 2 năm 2021. Hôm nay, mình sẽ chia sẻ tất cả các tài nguyên quan trọng mà mình đã theo học về Cấu trúc dữ liệu và Giải thuật trong thời gian qua.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Bài 3 -->
+                            <div class="div-chia-se-bai3">
+                                <a href="#" class="container-share-flex">
+                                    <div class="item-share-img">
+                                        <img src="images/bai3.jpg" width="121.65px" height="108px" alt="">
+                                    </div>
+                                    <div class="item-share-content">
+                                        <h3>
+                                            21 Cuốn Sách Khoa Học Dữ Liệu Nên Đọc Năm 2021 (Phần 1)
+                                        </h3>
+                                        <!-- đánh giá -->
+                                        <p>
+                                            Dữ liệu và Trí tuệ nhân tạo tiếp tục thống trị trong báo cáo Báo cáo về việc làm nổi bật năm 2020 của LinkedIn - LinkedIn’s 2020 Emerging Jobs Report, cho thấy rằng Chuyên gia về trí tuệ nhân tạo và Nhà khoa học dữ liệu lần lượt là những công việc mới nổi bật hàng đầu
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
 					</div>
+                    <!-- Kết thúc chia sẻ -->
 				</div>
             </div>
         </section>
@@ -387,18 +483,43 @@
         <!-- Phần contact -->
         <div class="footer-contact container">
             <!-- chia contact thành 4 phần -->
-            <div class="section group">
-                <div class="col span_1_of_4_contact1">
-                1 of 4
-                </div>
-                <div class="col span_1_of_4_contact">
-                1 of 4
-                </div>
-                <div class="col span_1_of_4_contact">
-                1 of 4
-                </div>
-                <div class="col span_1_of_4_contact">
-                1 of 4
+            <div style="padding-top:20px;">
+                <div class="section group">
+                    <div class="col span_1_of_4_contact1">
+                        <img src="images/codelearn-logo.png" width="185px" height="60.9px" alt="">
+                        <p class="footer-content">CodeLearn là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách nhanh chóng và chính xác. </p>
+                        <div class="flex-contact">
+                            <div class="item-flex-contact "><a href="#"><i class="fab fa-facebook-square facebook"></i></a></div>
+                            <div class="item-flex-contact "><a href="#"><i class="fab fa-youtube youtube"></i></a></div>
+                            <div class="item-flex-contact "><a href="#"><i class="fab fa-twitter-square twitter"></i></a></div>
+                            <div class="item-flex-contact "><a href="#"><i class="fab fa-instagram instagram"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_4_contact">
+                        <h4 style="padding-bottom: 15px; font-size: 16px; color: blue; font-weight: 600;">LIÊN KẾT</h4>
+                        <ul class="list-lien-ket">
+                            <li><a href="#">Học tập</a></li>
+                            <li><a href="#">Luyện tập</a></li>
+                            <li><a href="#">Cuộc thi</a></li>
+                            <li><a href="#">Trò chơi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col span_1_of_4_contact">
+                        <h4 style="padding-bottom: 15px; font-size: 16px; color: blue; font-weight: 600;">THÔNG TIN</h4>
+                        <ul class="list-lien-ket">
+                            <li><a href="#">Chia sẻ</a></li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Điều khoản sử dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col span_1_of_4_contact">
+                        <h4 style="padding-bottom: 15px; font-size: 16px; color: blue; font-weight: 600;">TRỢ GIÚP</h4>
+                        <ul class="list-lien-ket">
+                            <li><a href="#">Hỗ trợ</a></li>
+                            <li><a href="#">Thảo luận</a></li>
+                            <li><a href="#">Liên hệ với chúng tôi</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -406,7 +527,7 @@
 
         <!-- Phần bản quyền -->
         <div class="footer-ban-quyen">
-
+            <p>Copy NMH</p>
         </div>
         <!-- Kết thúc phần bản quyền -->
 

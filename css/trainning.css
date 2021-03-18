@@ -1,0 +1,61 @@
+.cl 
+{
+    background-color: white;
+}
+.heading-train
+{
+    width: 100%;
+}
+.heading-train h3
+{
+    float:left;
+    font-size: 26px;
+    color: rgb(44, 49, 207);
+    font-weight: 700;
+}
+.heading-train a
+{
+    float: right;
+    font-size: 15px;
+    color: #3b3c5b;
+    font-weight: 600;
+    text-decoration: none;
+}
+.heading-train a:hover
+{
+    color: rgb(44, 49, 207);
+}
+.div-so-bai-lam-duoc-flex
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.item-train
+{
+    width: 285.25px;
+    height: 95px;
+    border: 1px dashed silver;
+    font-size: 20px;
+}
+.item-simple
+{
+    padding:15px;
+}
+.item-simple span
+{
+    font-size: 24px;
+    color: rgb(123, 192, 67);
+}
+.item-medium
+{
+    padding:15px;
+}
+.item-medium span
+{
+    font-size: 24px;
+    color: rgb(250, 160, 94);
+}

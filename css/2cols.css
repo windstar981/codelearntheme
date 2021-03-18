@@ -16,6 +16,18 @@
 	height: 560.4px;
 
 }
+.span_1_of_2-share-1{
+	margin-top: 0px;
+	width: 57.2%;
+	height: 560.4px;
+}
+.span_1_of_2-share-2{
+	margin-top: 0px;
+	float:right;
+	width: 41.2%;
+	height: 560.4px;
+
+}
 .span_1_of_2-2{
 	margin-top: 0px;
 	width: 68%;
