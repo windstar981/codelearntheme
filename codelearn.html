@@ -1,539 +1,1570 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/shtml; charset=utf-8" />
     <link rel="icon" href="images/codelearn-logo.png" type="image/png" />
-	<link type="text/css" href="css/4cols.css" rel="stylesheet" media="screen"/>
-    <link type="text/css" href="css/3cols.css" rel="stylesheet" media="screen"/>
-    <link type="text/css" href="css/2cols.css" rel="stylesheet" media="screen"/>
-    <link type="text/css" href="css/codelearn.css" rel="stylesheet" media="screen"/>
-    <link type="text/css" href="css/contest.css" rel="stylesheet" media="screen"/>
-    <link type="text/css" href="css/share.css" rel="stylesheet" media="screen"/>
-    <link type="text/css" href="css/footer.css" rel="stylesheet" media="screen"/>
-    <link type="text/css" href="css/trainning.css" rel="stylesheet" media="screen"/>
-    <link type="text/css" href="css/col.css" rel="stylesheet" media="screen"/>
-    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <link type="text/css" href="css/4cols.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/3cols.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/style.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/base.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/2cols.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/act.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/codelearn.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/contest.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/share.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/footer.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/skill.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/trainning.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/header.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/col.css" rel="stylesheet" media="screen" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+    <!--load all styles -->
     <!-- link boostrap https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    
+
     <title>Codelearn</title>
+
 </head>
+
 <body>
-<div class="all">
-    <!-- phần menu head -->
-    <div class="header">
-        <header class="navs-heading">
-            <nav class="navbar sticky-top navbar-expand-sm" style="position: fixed; background-color: white;">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <img src="images/codelearn-logo.png" height="40px" s alt="#" class="logo_codelearn"> 
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Học tập</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Luyện tập</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Thi đấu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Thử thách</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Đánh giá</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Thảo luận</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Trò chơi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Chia sẻ</a>
-                    </li>
-                    
-                  </ul>
-            </nav>
-        </header>
-    </div>
+    <!-- header chia bằng flex thành 3 phần logo, list, block dropdown noti và account -->
+
+    <!-- Header -->
+
+    <!-- <script>
+    function dropmenu() {
+        var drop = document.querySelector('.dropdown-sub');
+        drop.classList.toggle("block");
+    }
+
+    function dropnotify() {
+        document.querySelector('.sub-notify').classList.toggle("block");
+    }
+
+    function dropuser() {
+        document.querySelector('.sub-user').classList.toggle("block");
+    }
+</script> -->
     <!-- Kết thúc header -->
-
-    <!-- Phần content -->
-    <!-- Phần content bao gồm 5 block chia ngang hết -->
-    <!-- Thông tin ->Khóa học ->Cuộc thi ->Luyện tập & chia  sẻ ->Kĩ năng & Hoạt động -->
-    <div class="content">
-        <!-- Phần thông tin được bọc bởi thẻ section-->
-        <section class="wrap-info">
-
-            <div class="container">
-                <h2 class="welcome">Xin chào <span>Windstar981</span>. Chào mừng bạn đến với CodeLearn. Hãy <button class="button_kham_pha" type="button">Khám phá</button> nhé!</h2>
-                <!-- Chia làm 2 cột một cột  -->
-                <div class="section group ">
-                    <!-- Cột thông tin chi tiết chia ngang 2 phần -->
-					<div class="col span_1_of_2_info1 bd">
-                        <div class="flex-containers">
-                            <div class="height_one">1</div>
-                            <div class="height_one">2</div>
+    <div class="all">
+        <!-- phần menu head -->
+        <!-- <div class="header">
+        
+    </div> -->
+        <div class="zone-content" style="background-color: white;">
+            <header>
+                <div class="top-menu">
+                    <div class="wrap-top-menu">
+                        <div class="wrap-site-logo">
+                            <a href="#">
+                                <img src="images/codelearn-logo.png" alt="Codelearn" class="logo-img">
+                            </a>
+                        </div>
+                        <div class="wrap-top-menu-right">
+                            <nav class="site-menu">
+                                <ul class="menu-list">
+                                    <li class="menu-list-item"><a href="" class="list-item-link">Học tập</a></li>
+                                    <li class="menu-list-item"><a href="" class="list-item-link">Luyện tập</a></li>
+                                    <li class="menu-list-item"><a href="" class="list-item-link">Thi đấu</a></li>
+                                    <li class="menu-list-item"><a href="" class="list-item-link">Thử thách</a></li>
+                                    <li class="menu-list-item"><a href="" class="list-item-link">Đánh giá</a></li>
+                                    <li class="menu-list-item"><a href="" class="list-item-link">Thảo luận</a></li>
+                                    <li class="menu-list-item"><a href="" class="list-item-link">Xếp hạng</a></li>
+                                    <li class="menu-list-item"><a href="" class="list-item-link">Trò chơi</a></li>
+                                    <li class="menu-list-item"><a href="" class="list-item-link">Chia sẻ</a></li>
+                                </ul>
+                                <div class="wrap-flag-logo" onclick="dropmenu()">
+                                    <img src="images/vn.png" alt="#" class="flag-logo">
+                                    <div class="dropdown-sub">
+                                        <ul class="dropdown-sub-list">
+                                            <li class="dropdown-sub-list-item">
+                                                <img src="images/en.png" alt="" class="flag-logo">
+                                                Tiếng Anh
+                                            </li>
+                                            <li class="dropdown-sub-list-item">
+                                                <img src="images/vn.png" alt="" class="flag-logo">
+                                                Tiếng việt
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <ul class="site-user-menu">
+                                <li class="site-user-menu-item" onclick="dropnotify()">
+                                    <a href="#" class="site-menu-bell">
+                                        <i class="far fa-bell bell-icon"></i>
+                                    </a>
+                                    <div class="sub-notify">
+                                        <p>Không có thông báo!</p>
+                                        <hr>
+                                        <div class="view-all-notify">
+                                            <a href="#">Xem toàn bộ</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="site-user-menu-item" onclick="dropuser()">
+                                    <a href="#" class="site-menu-avatar">
+                                        <img src="images/user-default.svg" alt="User_name" class="menu-avatar">
+                                    </a>
+                                    <div class="sub-user">
+                                        <ul class="user-option">
+                                            <li class="user-option-item"><a href="">Thông tin của tôi</a> </li>
+                                            <li class="sperate"></li>
+                                            <li class="user-option-item"><a href="">Hồ sơ của tôi</a> </li>
+                                            <li class="sperate"></li>
+                                            <li class="user-option-item"><a href="">Lớp của tôi</a> </li>
+                                            <li class="sperate"></li>
+                                            <li class="user-option-item"><a href="">Thoát</a> </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col span_1_of_2_info2">
-                        <div class="container-content">
-                            <!-- div này lại chia thành 2 div theo chiều ngang 101.5 & 112.4 -->
-                            <div class="info2-1 section group  info-content-color">
-                                <!-- div này lại chia thành 3 cột -->
-                                <!-- khóa học -->
-                                <div class="col span_1_of_3-info">
-                                    
-                                    <h4 class="detail-progress-content-h4">Khóa học</h4>
-                                    <div class="detail-progress-flex">
-                                        <span class="detail-progress-font1">12/19</span>
-                                        <span class="detail-progress-font2">2 chứng nhận</span>
-                                    </div>
-                                    <div class="item-progress-bar">
-                                        <span class="current-progress" style="width: 63.1578947368421%;">
+                </div>
+            </header>
+        </div>
+        <!-- Kết thúc header -->
 
-                                        </span>
+        <!-- Phần content -->
+        <!-- Phần content bao gồm 5 block chia ngang hết -->
+        <!-- Thông tin ->Khóa học ->Cuộc thi ->Luyện tập & chia  sẻ ->Kĩ năng & Hoạt động -->
+        <div class="content">
+            <!-- Phần thông tin được bọc bởi thẻ section-->
+            <section class="wrap-info">
+
+                <div class="container">
+                    <h2 class="welcome">Xin chào <span>Windstar981</span>. Chào mừng bạn đến với CodeLearn. Hãy <button
+                            class="button_kham_pha" type="button">Khám phá</button> nhé!</h2>
+                    <!-- Chia làm 2 cột một cột  -->
+                    <div class="section group ">
+                        <!-- Cột thông tin chi tiết chia ngang 2 phần -->
+                        <div class="col span_1_of_2_info1 bd">
+                            <div class="flex-containers">
+                                <div class="height_one">1</div>
+                                <div class="height_one">2</div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_2_info2">
+                            <div class="container-content">
+                                <!-- div này lại chia thành 2 div theo chiều ngang 101.5 & 112.4 -->
+                                <div class="info2-1 section group  info-content-color">
+                                    <!-- div này lại chia thành 3 cột -->
+                                    <!-- khóa học -->
+                                    <div class="col span_1_of_3-info">
+
+                                        <h4 class="detail-progress-content-h4">Khóa học</h4>
+                                        <div class="detail-progress-flex">
+                                            <span class="detail-progress-font1">12/19</span>
+                                            <span class="detail-progress-font2">2 chứng nhận</span>
+                                        </div>
+                                        <div class="item-progress-bar">
+                                            <span class="current-progress" style="width: 63.1578947368421%;">
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Luyện tập -->
+                                    <div class="col span_1_of_3-info">
+
+                                        <h4 class="detail-progress-content-h4">Luyện tập</h4>
+                                        <div class="detail-progress-flex">
+                                            <span class="detail-progress-font1">300/1000</span>
+                                        </div>
+                                        <div class="item-progress-bar">
+                                            <span class="current-progress" style="width: 63.1578947368421%;">
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Thứ hạng tốt nhất -->
+                                    <div class="col span_1_of_3-info">
+                                        <h4 class="detail-progress-content-h4">Thứ hạng tốt nhất</h4>
+                                        <div class="detail-progress-flex">
+                                            <span class="detail-progress-font1">5/10</span>
+                                            <span class="detail-progress-font2">Cuộc thi</span>
+                                        </div>
+                                        <div class="item-progress-bar">
+                                            <span class="current-progress" style="width: 63.1578947368421%;">
+
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                                 <!-- Luyện tập -->
-                                <div class="col span_1_of_3-info">
-                                   
-                                    <h4 class="detail-progress-content-h4">Luyện tập</h4>
-                                    <div class="detail-progress-flex">
-                                        <span class="detail-progress-font1">300/1000</span>
-                                    </div>
-                                    <div class="item-progress-bar">
-                                        <span class="current-progress" style="width: 63.1578947368421%;">
 
-                                        </span>
-                                    </div>
+                                <div class="info2-2 detail-progress-thanh-tich">
+                                    <h4 class="detail-progress-content-h4"><a href="#">Thành tích của bạn </a></h4>
                                 </div>
-                                <!-- Thứ hạng tốt nhất -->
-                                <div class="col span_1_of_3-info">
-                                    <h4 class="detail-progress-content-h4">Thứ hạng tốt nhất</h4>
-                                    <div class="detail-progress-flex">
-                                        <span class="detail-progress-font1">5/10</span>
-                                        <span class="detail-progress-font2">Cuộc thi</span>
-                                    </div>
-                                    <div class="item-progress-bar">
-                                        <span class="current-progress" style="width: 63.1578947368421%;">
-
-                                        </span>
-                                    </div>
-                                </div>    
                             </div>
-    
-                            <div class="info2-2 detail-progress-thanh-tich">
-                                <h4 class="detail-progress-content-h4"><a href="#">Thành tích của bạn ></a></h4>
-                            </div>
-                        </div>   
+                        </div>
                     </div>
-				</div>
 
-            </div>
+                </div>
 
-        </section>
-            
-        <!-- Kết thúc phần thông tin -->
+            </section>
 
-        <!-- Phần khóa học được bọc bởi thẻ section-->
-        <section class="wrap-khoa-hoc">
-            <div class="container">
-                <h3 class="heading-kh">
-                    Khóa học
-                </h3>
-                <!-- Khóa học gợi ý - Đang học - Đã hoàn thành -->
-                <div class="wrap-3">
+            <!-- Kết thúc phần thông tin -->
+
+            <!-- Phần khóa học được bọc bởi thẻ section-->
+            <section class="wrap-khoa-hoc">
+                <div class="container">
+                    <h3 class="heading-kh">
+                        Khóa học
+                    </h3>
+                    <!-- Khóa học gợi ý - Đang học - Đã hoàn thành -->
+                    <!-- <div class="wrap-3">
                     <ul class="menu-3">
                         <li><a href="#">Khóa học gợi ý</a></li>
                         <li><a href="#">Đang học</a></li>
                         <li><a href="#">Đã hoàn thành</a></li>
                         <li class="fix-xtt"><a href="#">Xem tất cả</a></li>
                     </ul>
-                </div>
-                <!-- tạo 4 cột cho các khóa học -->
-                <!-- trong mục xóa -->
-                <div class="section group">
-                    <!-- Khóa học 1 -->
-					<div class="col span_1_of_4 hover-item">
-                       
-                        <!-- Chia làm 2 phần img và content-->
-                        <!-- div img -->
-                        <div class="div-kh-img">
-                            <img src="images/Cforbeginer.png" width="265.6px" height="180px" alt="C">
-                        </div>
-                        <!-- div content -->
-                        <div class="div-kh-content-flex">
-                            
-                           <div class="item-flex-kh ">
-                                <h3 class="detail-kh-h3">C cho người mới bắt đầu</h3>
-                           </div>
+                </div> -->
+                    <!-- tạo 4 cột cho các khóa học -->
+                    <!-- trong mục xóa -->
+                    <div class="section group">
+                        <!-- Khóa học 1 -->
+                        <!-- Chỗ xóa khóa học -->
 
-                           <div class="item-flex-kh">
-                                <p class="detail-kh-p">Khóa học lập trình C cho người mới bắt đầu. Khóa học này sẽ cung cấp những kiến thức cơ bản và là nền tảng để bạn đi xa hơn trên con đường lập trình.</p>
-                            </div>
-                           
-                            <div class="item-flex-kh">
-                                <div class="detail-content-flex">
-                                    <span class="detial-span-desktop"><i class="fas fa-desktop" style="margin-right: 5px;"></i>  84</span>
-                                    <span class="detial-span-time" ><i class="far fa-clock" style="margin-right: 5px;"></i>20:00:00</span>
-                                    <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
-                                    <button class="detail-button-hoc-ngay">Học ngay</button>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-                    <!-- khóa học 2 -->
-					<div class="col span_1_of_4 hover-item">
-                        <!-- Chia làm 2 phần img và content-->
-                        <!-- div img -->
-                        <div class="div-kh-img">
-                            <img src="images/SQLwws.png"  width="265.6px" height="180px" alt="">
-                        </div>
-                        <!-- div content -->
-                        <div class="div-kh-content-flex">
-                            
-                            <div class="item-flex-kh ">
-                                <h3 class="detail-kh-h3">Thực hành với SQL</h3>
-                            </div>
- 
-                            <div class="item-flex-kh">
-                                <p class="detail-kh-p">Khóa học này sẽ giúp bạn biết về một số chức năng chính cần thiết để sắp xếp, lọc và phân loại thông tin trong cơ sở dữ liệu quan hệ, mở rộng bộ công cụ SQL của bạn và giúp bạn có khả năng giải quyết các vấn đề phức tạp hơn thông qua bộ công cụ này.
-                                    Yêu cầu: Bạn cần hoàn thành khóa Làm quen với SQL để có kiến thức cơ bản trước khi tham gia khóa học này.</p>
-                            </div>
-                            
-                            <div class="item-flex-kh">
-                                <div class="detail-content-flex">
-                                    <span class="detial-span-desktop"><i class="fas fa-desktop" style="margin-right: 5px;"></i>  98 </span>
-                                    <span class="detial-span-time" ><i class="far fa-clock" style="margin-right: 5px;"></i>22:00:00</span>
-                                    <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
-                                    <button class="detail-button-hoc-ngay">Học ngay</button>
-                                </div>
-                             </div>
-                        </div>
-					</div>
-                        <!-- Khóa học 3 -->
-					<div class="col span_1_of_4 hover-item">
-					    <!-- Chia làm 2 phần img và content-->
-                        <!-- div img -->
-                        <div class="div-kh-img">
-                            <img src="images/pythonp.jpg"  width="265.6px" height="180px" alt="">
-                        </div>
-                        <!-- div content -->
-                        <div class="div-kh-content-flex">
-                            
-                            <div class="item-flex-kh ">
-                                 <h3 class="detail-kh-h3">Python cơ bản</h3>
-                            </div>
- 
-                            <div class="item-flex-kh">
-                                <p class="detail-kh-p">Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học xong bạn có thể tự tin để tới với các chủ đề nâng cao hơn của Python.</p>
-                            </div>
-                            
-                             <div class="item-flex-kh">
-                                 <div class="detail-content-flex">
-                                     <span class="detial-span-desktop"><i class="fas fa-desktop" style="margin-right: 5px;"></i>  90</span>
-                                     <span class="detial-span-time" ><i class="far fa-clock" style="margin-right: 5px;"></i>24:00:00</span>
-                                     <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
-                                     <button class="detail-button-hoc-ngay">Học ngay</button>
-                                 </div>
-                             </div>
-                         </div>
-					</div>
-                        <!-- Khóa học 4 -->
-					<div class="col span_1_of_4 hover-item">
-					    <!-- Chia làm 2 phần img và content-->
-                        <!-- div img -->
-                        <div class="div-kh-img">
-                            <img src="images/Csharp.jpg"  width="265.6px" height="180px" alt="">
-                        </div>
-                        <!-- div content -->
-                        <div class="div-kh-content-flex">
-                            
-                            <div class="item-flex-kh ">
-                                 <h3 class="detail-kh-h3">C# cơ bản</h3>
-                            </div>
- 
-                            <div class="item-flex-kh">
-                                <p class="detail-kh-p">Khóa học lập trình C# kèm thực hành, khóa học sẽ giúp bạn làm quen với lập trình cũng như tạo nền tảng tư duy và kỹ năng cơ bản khi giải các bài tập.</p>
-                            </div>
-                            
-                             <div class="item-flex-kh">
-                                 <div class="detail-content-flex">
-                                     <span class="detial-span-desktop"><i class="fas fa-desktop" style="margin-right: 5px;"></i>  96</span>
-                                     <span class="detial-span-time" ><i class="far fa-clock" style="margin-right: 5px;"></i>26:00:00</span>
-                                     <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
-                                     <button class="detail-button-hoc-ngay">Học ngay</button>
-                                 </div>
-                             </div>
-                         </div>
-					</div>
-				</div>
-                <!-- kết thúc 4 cột -->                
-                 
-                 
-            </div>
-        </section>
-        <!-- Kết thúc phần khóa học -->
+                        <!-- Kết thúc chỗ xóa khóa học -->
+                        <!-- kết thúc 4 cột -->
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                    aria-selected="true">Khóa học gợi ý</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                    type="button" role="tab" aria-controls="profile" aria-selected="false">Đang
+                                    học</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                    type="button" role="tab" aria-controls="contact" aria-selected="false">Đã hoàn
+                                    thành</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Khóa học của khóa học gợi ý  -->
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <!-- Khóa học 1 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/Cforbeginer.png" width="265.6px" height="180px"
+                                                    alt="C">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
 
-        <!-- Phần cuộc thi -->
-        <section class="wrap-cuoc-thi">
-            <div class="container">
-                <!-- Chứa cuộc thi lập trình và xem tất cả -->
-                <div class="container-contest">
-                    <h3>Cuộc thi lập trình</h3>
-                    <a href="#">Xem tất cả</a>
-                </div>
-                <!-- div chứa nội dung 2 cuộc thi chia bằng grid -->
-                <div class="section group">
-					<div class="col span_1_of_2 hover-item">
-                        <!-- Chia làm 2 phần img và content -->
-                        <!-- div img -->
-                        <div class="div-ct-img">
-                            <img src="images/test1.png" alt="">
-                        </div>
-                        <!-- div content -->
-                        <div class="div-ct-content div-ct-content-flex">
-                            <div class="item-contest-flex">
-                                <h3>SASUKE CODEWAR #65</h3>
-                            </div>
-                            <div class="item-contest-flex content-header-contest">                              
-                                The weekly coding contest for people who love programming on CodeLearn 
-                            </div>
-                            
-                            <div class="item-contest-flex detail-contest-flex">
-                                <div class="detail-contest-flex-content">
-                                    <p>
-                                        Xếp hạng của bạn: <span>10/1000</span> thí sinh
-                                    </p>
-                                    <p class="text-join">
-                                        Bạn đang tham gia nhưng thứ hạng chưa tốt. Hãy cố gắng nhé!
-                                    </p>
-                                </div>
-                                <div class="detail-contest-flex-button">
-                                    <button>Code ngay</button>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="col span_1_of_2 hover-item">
-                        <!-- Chia làm 2 phần img và content -->
-                        <!-- div img -->
-                        <div class="div-ct-img">
-                            <img src="images/test2.png" alt="">
-                        </div>
-                        <!-- div content -->
-                        <div class="div-ct-content div-ct-content-flex">
-                            <div class="item-contest-flex">
-                                <h3>
-                                    CODE CHALLENGE_BATCH 1
-                                </h3>
-                            </div>
-                            <div class="item-contest-flex content-header-contest">                                                                    
-                                Thử thách thi vui thưởng thật dành cho các bạn trẻ đam mê công nghệ, thích khám phá và làm chủ ngôn ngữ số.                               
-                            </div>
-                            <div class="item-contest-flex detail-contest-flex">
-                                <div class="detail-contest-flex-content">
-                                    <p>
-                                        Đã đăng kí <span>120</span> thí sinh
-                                    </p>
-                                    <p class="text-end-test">
-                                        Cuộc thi đã kết thúc ngày 8-3-2021
-                                    </p>
-                                </div>
-                                <div class="detail-contest-flex-button">
-                                    <button>Kết quả</button>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-				</div>
-            </div>
-        </section>
-        <!-- Kết thúc phần cuộc thi -->
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">C cho người mới bắt đầu</h3>
+                                                </div>
 
-        <!-- Phần luyện tập và chia sẻ -->
-        <section class="wrap-luyen-tap-chia-se">
-            <div class="container">
-                <!-- Chia thành 2 phần Luyện tập và chia sẻ -->
-                <div class="section group ">
-                    <!-- Luyện tập -->
-					<div class="col span_1_of_2-share-1 ">
-                        <div class="heading-train">
-                            <h3>Luyện tập hàng ngày</h3>
-                            <a href="#">Xem tất cả</a>
-                        </div>  
-                        <!-- Chia làm 2 phần số bài làm được và các bài đã làm -->
-                        <!-- div số bài làm được -->
-                        <div class="hover-item cl">
-                            <div class="div-so-bai-lam-duoc-flex">
-                                <div class="item-train item-simple">
-                                    <span>300/500</span> <br>
-                                    Đơn giản
-                                </div>
-                                <div class="item-train item-medium">
-                                    <span>45/1200</span> <br>
-                                    Trung bình
-                                </div>
-                            </div>
-                            <!-- div các bài đã làm chia làm 3 cột-->
-                            <div class="section group">
-                                <div class="col span_1_of_3">
-                                1 of 3
-                                </div>
-                                <div class="col span_1_of_3">
-                                1 of 3
-                                </div>
-                                <div class="col span_1_of_3">
-                                1 of 3
-                                </div>
-                            </div>
-                        </div>
-					</div>
-                    <!-- Kết thúc luyện tập -->
-                    <!-- Chia sẻ -->
-                    <!-- Các css chia sẻ bậc 3 được lưu ở file share.css -->
-					<div class="col span_1_of_2-share-2">
-                        <div class="header-share">
-                            <h3 class="header-share-h3">Chia sẻ</h3>
-                            <a href="#" class="header-share-a">Xem tất cả</a>
-                        </div>
-                        <!-- Chia ngang 3 block -->
-                        <div class="hover-item">
-                            <!-- Bài 1 -->
-                            <div class="div-chia-se-bai1">
-                                <a href="#" class="container-share-flex">
-                                    <div class="item-share-img">
-                                        <img src="images/bai1.jpg" width="121.65px" height="108px" alt="">
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p ">Khóa học lập trình C cho người mới bắt đầu.
+                                                        Khóa học này sẽ cung cấp những kiến thức cơ bản và là nền tảng
+                                                        để bạn đi xa hơn trên con đường lập trình.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i><span
+                                                                id="number-change">84</span></span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i><span
+                                                                class="count-down">20:00:00</span></span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <!-- Kết thúc khóa học 1 -->
                                     </div>
-                                    <div class="item-share-content">
-                                        <h3>Flash Sort - Thuật Toán Sắp Xếp Thần Thánh</h3>
-                                        <!-- đánh giá -->
+                                    <div class="col-3">
+                                        <!-- Khóa học 2 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/SQLwws.png" width="265.6px" height="180px" alt="">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">Thực hành với SQL</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p">Khóa học này sẽ giúp bạn biết về một số chức
+                                                        năng chính cần thiết để sắp xếp, lọc và phân loại thông tin
+                                                        trong cơ sở dữ liệu quan hệ, mở rộng bộ công cụ SQL của bạn và
+                                                        giúp bạn có khả năng giải quyết các vấn đề phức tạp hơn thông
+                                                        qua bộ công cụ này.
+                                                        Yêu cầu: Bạn cần hoàn thành khóa Làm quen với SQL để có kiến
+                                                        thức cơ bản trước khi tham gia khóa học này.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i> 98 </span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>22:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Kết thúc khóa học 2 -->
+                                    </div>
+                                    <div class="col-3">
+                                        <!-- Khóa học 3 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/pythonp.jpg" width="265.6px" height="180px" alt="">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">Python cơ bản</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p">Khóa học lập trình Python cơ bản với các bài
+                                                        tập và lý thuyết dễ hiểu, học xong bạn có thể tự tin để tới với
+                                                        các chủ đề nâng cao hơn của Python.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i> 90</span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>24:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Kết thúc khóa học 3 -->
+                                    </div>
+                                    <div class="col-3">
+                                        <!-- Khóa học 4 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/Csharp.jpg" width="265.6px" height="180px" alt="">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">C# cơ bản</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p">Khóa học lập trình C# kèm thực hành, khóa học
+                                                        sẽ giúp bạn làm quen với lập trình cũng như tạo nền tảng tư duy
+                                                        và kỹ năng cơ bản khi giải các bài tập.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i> 96</span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>26:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Kết thúc khóa học 4 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <!-- Khóa học đang học 8 khóa học -->
+                                <div class="row">
+                                    <div class="col-3">
+                                        <!-- Khóa học 1 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/Cforbeginer.png" width="265.6px" height="180px"
+                                                    alt="C">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">C cho người mới bắt đầu</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p ">Khóa học lập trình C cho người mới bắt đầu.
+                                                        Khóa học này sẽ cung cấp những kiến thức cơ bản và là nền tảng
+                                                        để bạn đi xa hơn trên con đường lập trình.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i><span
+                                                                id="number-change">84</span></span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>20:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <!-- Kết thúc khóa học 1 -->
+                                    </div>
+                                    <div class="col-3">
+                                        <!-- Khóa học 2 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/SQLwws.png" width="265.6px" height="180px" alt="">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">Thực hành với SQL</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p">Khóa học này sẽ giúp bạn biết về một số chức
+                                                        năng chính cần thiết để sắp xếp, lọc và phân loại thông tin
+                                                        trong cơ sở dữ liệu quan hệ, mở rộng bộ công cụ SQL của bạn và
+                                                        giúp bạn có khả năng giải quyết các vấn đề phức tạp hơn thông
+                                                        qua bộ công cụ này.
+                                                        Yêu cầu: Bạn cần hoàn thành khóa Làm quen với SQL để có kiến
+                                                        thức cơ bản trước khi tham gia khóa học này.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i> 98 </span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>22:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Kết thúc khóa học 2 -->
+                                    </div>
+                                    <div class="col-3">
+                                        <!-- Khóa học 3 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/pythonp.jpg" width="265.6px" height="180px" alt="">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">Python cơ bản</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p">Khóa học lập trình Python cơ bản với các bài
+                                                        tập và lý thuyết dễ hiểu, học xong bạn có thể tự tin để tới với
+                                                        các chủ đề nâng cao hơn của Python.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i> 90</span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>24:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Kết thúc khóa học 3 -->
+                                    </div>
+                                    <div class="col-3">
+                                        <!-- Khóa học 4 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/Csharp.jpg" width="265.6px" height="180px" alt="">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">C# cơ bản</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p">Khóa học lập trình C# kèm thực hành, khóa học
+                                                        sẽ giúp bạn làm quen với lập trình cũng như tạo nền tảng tư duy
+                                                        và kỹ năng cơ bản khi giải các bài tập.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i> 96</span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>26:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Kết thúc khóa học 4 -->
+                                    </div>
+                                </div>
+                                <div id="more">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <!-- Khóa học 1 -->
+                                            <div class="hover-item">
+                                                <div class="div-kh-img">
+                                                    <img src="images/Cforbeginer.png" width="265.6px" height="180px"
+                                                        alt="C">
+                                                </div>
+                                                <!-- div content -->
+                                                <div class="div-kh-content-flex">
+
+                                                    <div class="item-flex-kh ">
+                                                        <h3 class="detail-kh-h3">C cho người mới bắt đầu</h3>
+                                                    </div>
+
+                                                    <div class="item-flex-kh">
+                                                        <p class="detail-kh-p ">Khóa học lập trình C cho người mới bắt
+                                                            đầu. Khóa học này sẽ cung cấp những kiến thức cơ bản và là
+                                                            nền tảng để bạn đi xa hơn trên con đường lập trình.</p>
+                                                    </div>
+
+                                                    <div class="item-flex-kh">
+                                                        <div class="detail-content-flex">
+                                                            <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                    style="margin-right: 5px;"></i><span
+                                                                    id="number-change">84</span></span>
+                                                            <span class="detial-span-time"><i class="far fa-clock"
+                                                                    style="margin-right: 5px;"></i>20:00:00</span>
+                                                            <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                            <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                            </div>
+                                            <!-- Kết thúc khóa học 1 -->
+                                        </div>
+                                        <div class="col-3">
+                                            <!-- Khóa học 2 -->
+                                            <div class="hover-item">
+                                                <div class="div-kh-img">
+                                                    <img src="images/SQLwws.png" width="265.6px" height="180px" alt="">
+                                                </div>
+                                                <!-- div content -->
+                                                <div class="div-kh-content-flex">
+
+                                                    <div class="item-flex-kh ">
+                                                        <h3 class="detail-kh-h3">Thực hành với SQL</h3>
+                                                    </div>
+
+                                                    <div class="item-flex-kh">
+                                                        <p class="detail-kh-p">Khóa học này sẽ giúp bạn biết về một số
+                                                            chức năng chính cần thiết để sắp xếp, lọc và phân loại thông
+                                                            tin trong cơ sở dữ liệu quan hệ, mở rộng bộ công cụ SQL của
+                                                            bạn và giúp bạn có khả năng giải quyết các vấn đề phức tạp
+                                                            hơn thông qua bộ công cụ này.
+                                                            Yêu cầu: Bạn cần hoàn thành khóa Làm quen với SQL để có kiến
+                                                            thức cơ bản trước khi tham gia khóa học này.</p>
+                                                    </div>
+
+                                                    <div class="item-flex-kh">
+                                                        <div class="detail-content-flex">
+                                                            <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                    style="margin-right: 5px;"></i> 98 </span>
+                                                            <span class="detial-span-time"><i class="far fa-clock"
+                                                                    style="margin-right: 5px;"></i>22:00:00</span>
+                                                            <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                            <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Kết thúc khóa học 2 -->
+                                        </div>
+                                        <div class="col-3">
+                                            <!-- Khóa học 3 -->
+                                            <div class="hover-item">
+                                                <div class="div-kh-img">
+                                                    <img src="images/pythonp.jpg" width="265.6px" height="180px" alt="">
+                                                </div>
+                                                <!-- div content -->
+                                                <div class="div-kh-content-flex">
+
+                                                    <div class="item-flex-kh ">
+                                                        <h3 class="detail-kh-h3">Python cơ bản</h3>
+                                                    </div>
+
+                                                    <div class="item-flex-kh">
+                                                        <p class="detail-kh-p">Khóa học lập trình Python cơ bản với các
+                                                            bài tập và lý thuyết dễ hiểu, học xong bạn có thể tự tin để
+                                                            tới với các chủ đề nâng cao hơn của Python.</p>
+                                                    </div>
+
+                                                    <div class="item-flex-kh">
+                                                        <div class="detail-content-flex">
+                                                            <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                    style="margin-right: 5px;"></i> 90</span>
+                                                            <span class="detial-span-time"><i class="far fa-clock"
+                                                                    style="margin-right: 5px;"></i>24:00:00</span>
+                                                            <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                            <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Kết thúc khóa học 3 -->
+                                        </div>
+                                        <div class="col-3">
+                                            <!-- Khóa học 4 -->
+                                            <div class="hover-item">
+                                                <div class="div-kh-img">
+                                                    <img src="images/Csharp.jpg" width="265.6px" height="180px" alt="">
+                                                </div>
+                                                <!-- div content -->
+                                                <div class="div-kh-content-flex">
+
+                                                    <div class="item-flex-kh ">
+                                                        <h3 class="detail-kh-h3">C# cơ bản</h3>
+                                                    </div>
+
+                                                    <div class="item-flex-kh">
+                                                        <p class="detail-kh-p">Khóa học lập trình C# kèm thực hành, khóa
+                                                            học sẽ giúp bạn làm quen với lập trình cũng như tạo nền tảng
+                                                            tư duy và kỹ năng cơ bản khi giải các bài tập.</p>
+                                                    </div>
+
+                                                    <div class="item-flex-kh">
+                                                        <div class="detail-content-flex">
+                                                            <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                    style="margin-right: 5px;"></i> 96</span>
+                                                            <span class="detial-span-time"><i class="far fa-clock"
+                                                                    style="margin-right: 5px;"></i>26:00:00</span>
+                                                            <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                            <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Kết thúc khóa học 4 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <button onclick="myFunction()" id="myBtn">Read more</button> -->
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <!-- Khóa học đã hoàn thành -->
+
+                                <div class="row">
+                                    <div class="col-3">
+                                        <!-- Khóa học 1 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/Cforbeginer.png" width="265.6px" height="180px"
+                                                    alt="C">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">C cho người mới bắt đầu</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p ">Khóa học lập trình C cho người mới bắt đầu.
+                                                        Khóa học này sẽ cung cấp những kiến thức cơ bản và là nền tảng
+                                                        để bạn đi xa hơn trên con đường lập trình.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i><span
+                                                                id="number-change">84</span></span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>20:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <!-- Kết thúc khóa học 1 -->
+                                    </div>
+                                    <div class="col-3">
+                                        <!-- Khóa học 2 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/SQLwws.png" width="265.6px" height="180px" alt="">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">Thực hành với SQL</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p">Khóa học này sẽ giúp bạn biết về một số chức
+                                                        năng chính cần thiết để sắp xếp, lọc và phân loại thông tin
+                                                        trong cơ sở dữ liệu quan hệ, mở rộng bộ công cụ SQL của bạn và
+                                                        giúp bạn có khả năng giải quyết các vấn đề phức tạp hơn thông
+                                                        qua bộ công cụ này.
+                                                        Yêu cầu: Bạn cần hoàn thành khóa Làm quen với SQL để có kiến
+                                                        thức cơ bản trước khi tham gia khóa học này.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i> 98 </span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>22:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Kết thúc khóa học 2 -->
+                                    </div>
+                                    <div class="col-3">
+                                        <!-- Khóa học 3 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/pythonp.jpg" width="265.6px" height="180px" alt="">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">Python cơ bản</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p">Khóa học lập trình Python cơ bản với các bài
+                                                        tập và lý thuyết dễ hiểu, học xong bạn có thể tự tin để tới với
+                                                        các chủ đề nâng cao hơn của Python.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i> 90</span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>24:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Kết thúc khóa học 3 -->
+                                    </div>
+                                    <div class="col-3">
+                                        <!-- Khóa học 4 -->
+                                        <div class="hover-item">
+                                            <div class="div-kh-img">
+                                                <img src="images/Csharp.jpg" width="265.6px" height="180px" alt="">
+                                            </div>
+                                            <!-- div content -->
+                                            <div class="div-kh-content-flex">
+
+                                                <div class="item-flex-kh ">
+                                                    <h3 class="detail-kh-h3">C# cơ bản</h3>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <p class="detail-kh-p">Khóa học lập trình C# kèm thực hành, khóa học
+                                                        sẽ giúp bạn làm quen với lập trình cũng như tạo nền tảng tư duy
+                                                        và kỹ năng cơ bản khi giải các bài tập.</p>
+                                                </div>
+
+                                                <div class="item-flex-kh">
+                                                    <div class="detail-content-flex">
+                                                        <span class="detial-span-desktop"><i class="fas fa-desktop"
+                                                                style="margin-right: 5px;"></i> 96</span>
+                                                        <span class="detial-span-time"><i class="far fa-clock"
+                                                                style="margin-right: 5px;"></i>26:00:00</span>
+                                                        <!-- <span class="detial-span-learn" ><p>Học ngay</p></span> -->
+                                                        <button class="detail-button-hoc-ngay">Học ngay</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Kết thúc khóa học 4 -->
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Kết thúc phần khóa học -->
+
+            <!-- Phần cuộc thi -->
+            <section class="wrap-cuoc-thi">
+                <div class="container">
+                    <!-- Chứa cuộc thi lập trình và xem tất cả -->
+                    <div class="container-contest">
+                        <h3>Cuộc thi lập trình</h3>
+                        <a href="#">Xem tất cả</a>
+                    </div>
+                    <!-- div chứa nội dung 2 cuộc thi chia bằng grid -->
+                    <div class="section group">
+                        <div class="col span_1_of_2 hover-item">
+                            <!-- Chia làm 2 phần img và content -->
+                            <!-- div img -->
+                            <div class="div-ct-img">
+                                <img src="images/test1.png" alt="">
+                            </div>
+                            <!-- div content -->
+                            <div class="div-ct-content div-ct-content-flex">
+                                <div class="item-contest-flex">
+                                    <h3>SASUKE CODEWAR #65</h3>
+                                </div>
+                                <div class="item-contest-flex content-header-contest">
+                                    The weekly coding contest for people who love programming on CodeLearn
+                                </div>
+
+                                <div class="item-contest-flex detail-contest-flex">
+                                    <div class="detail-contest-flex-content">
                                         <p>
-                                            Bài viết sẽ làm rõ về Flash Sort - một thuật toán cho tốc độ rất nhanh trong thực tế, tuy nhiên cách thức cài đặt lại tương đối phức tạp.
+                                            Xếp hạng của bạn: <span>10/1000</span> thí sinh
+                                        </p>
+                                        <p class="text-join">
+                                            Bạn đang tham gia nhưng thứ hạng chưa tốt. Hãy cố gắng nhé!
                                         </p>
                                     </div>
-                                </a>
-                            </div>
-                            <!-- Bài 2 -->
-                            <div class="div-chia-se-bai2">
-                                <a href="#" class="container-share-flex">
-                                    <div class="item-share-img">
-                                        <img src="images/bai2.jpg" width="121.65px" height="108px" alt="">
+                                    <div class="detail-contest-flex-button">
+                                        <button class="btn-a">
+                                            <span></span><span></span><span></span> <span></span>
+                                            Code ngay
+                                        </button>
                                     </div>
-                                    <div class="item-share-content">
-                                        <h3>
-                                            1001 Nguồn Học Cấu Trúc Dữ Liệu Và Giải Thuật Cực Hiệu Quả
-                                        </h3>
-                                        <!-- đánh giá -->
-                                        <p>
-                                            Mình bắt đầu gia nhập Amazon dưới vai trò Thực tập sinh Kỹ thuật Phát triển Phần mềm trong 6 tháng kể từ tháng 2 năm 2021. Hôm nay, mình sẽ chia sẻ tất cả các tài nguyên quan trọng mà mình đã theo học về Cấu trúc dữ liệu và Giải thuật trong thời gian qua.
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Bài 3 -->
-                            <div class="div-chia-se-bai3">
-                                <a href="#" class="container-share-flex">
-                                    <div class="item-share-img">
-                                        <img src="images/bai3.jpg" width="121.65px" height="108px" alt="">
-                                    </div>
-                                    <div class="item-share-content">
-                                        <h3>
-                                            21 Cuốn Sách Khoa Học Dữ Liệu Nên Đọc Năm 2021 (Phần 1)
-                                        </h3>
-                                        <!-- đánh giá -->
-                                        <p>
-                                            Dữ liệu và Trí tuệ nhân tạo tiếp tục thống trị trong báo cáo Báo cáo về việc làm nổi bật năm 2020 của LinkedIn - LinkedIn’s 2020 Emerging Jobs Report, cho thấy rằng Chuyên gia về trí tuệ nhân tạo và Nhà khoa học dữ liệu lần lượt là những công việc mới nổi bật hàng đầu
-                                        </p>
-                                    </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
-					</div>
-                    <!-- Kết thúc chia sẻ -->
-				</div>
-            </div>
-        </section>
-        <!-- Kết thúc phần luyện tập và chia sẻ -->
-
-        <!-- Phần kĩ năng và hoạt động -->
-        <section class="wrap-ki-nang-hoat-dong">
-            <div class="container">
-                <!-- chia thành 2 cột kĩ năng và hoạt động -->
-                <div class="section group">
-					<div class="col span_1_of_2-2 hover-item">
-                        Kĩ năng
-					</div>
-					<div class="col span_1_of_2-2-2 hover-item">
-                        Hoạt động
-					</div>
-				</div>
-            </div>
-        </section>
-        <!-- Kết thúc phần kĩ năng và hoạt động -->
-
-    </div>
-    <!-- Kết thúc content -->
-
-    <!-- Phần footer -->
-    <div class="footer">
-        <!-- Phần contact -->
-        <div class="footer-contact container">
-            <!-- chia contact thành 4 phần -->
-            <div style="padding-top:20px;">
-                <div class="section group">
-                    <div class="col span_1_of_4_contact1">
-                        <img src="images/codelearn-logo.png" width="185px" height="60.9px" alt="">
-                        <p class="footer-content">CodeLearn là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách nhanh chóng và chính xác. </p>
-                        <div class="flex-contact">
-                            <div class="item-flex-contact "><a href="#"><i class="fab fa-facebook-square facebook"></i></a></div>
-                            <div class="item-flex-contact "><a href="#"><i class="fab fa-youtube youtube"></i></a></div>
-                            <div class="item-flex-contact "><a href="#"><i class="fab fa-twitter-square twitter"></i></a></div>
-                            <div class="item-flex-contact "><a href="#"><i class="fab fa-instagram instagram"></i></a></div>
+                        <div class="col span_1_of_2 hover-item">
+                            <!-- Chia làm 2 phần img và content -->
+                            <!-- div img -->
+                            <div class="div-ct-img">
+                                <img src="images/test2.png" alt="">
+                            </div>
+                            <!-- div content -->
+                            <div class="div-ct-content div-ct-content-flex">
+                                <div class="item-contest-flex">
+                                    <h3>
+                                        CODE CHALLENGE_BATCH 1
+                                    </h3>
+                                </div>
+                                <div class="item-contest-flex content-header-contest">
+                                    Thử thách thi vui thưởng thật dành cho các bạn trẻ đam mê công nghệ, thích khám phá
+                                    và làm chủ ngôn ngữ số.
+                                </div>
+                                <div class="item-contest-flex detail-contest-flex">
+                                    <div class="detail-contest-flex-content">
+                                        <p>
+                                            Đã đăng kí <span>120</span> thí sinh
+                                        </p>
+                                        <p class="text-end-test">
+                                            Cuộc thi đã kết thúc ngày 8-3-2021
+                                        </p>
+                                    </div>
+                                    <div class="detail-contest-flex-button">
+                                        <button class="btn-a">
+                                            <span></span><span></span><span></span><span></span>
+                                            Kết quả
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col span_1_of_4_contact">
-                        <h4 style="padding-bottom: 15px; font-size: 16px; color: blue; font-weight: 600;">LIÊN KẾT</h4>
-                        <ul class="list-lien-ket">
-                            <li><a href="#">Học tập</a></li>
-                            <li><a href="#">Luyện tập</a></li>
-                            <li><a href="#">Cuộc thi</a></li>
-                            <li><a href="#">Trò chơi</a></li>
-                        </ul>
-                    </div>
-                    <div class="col span_1_of_4_contact">
-                        <h4 style="padding-bottom: 15px; font-size: 16px; color: blue; font-weight: 600;">THÔNG TIN</h4>
-                        <ul class="list-lien-ket">
-                            <li><a href="#">Chia sẻ</a></li>
-                            <li><a href="#">Về chúng tôi</a></li>
-                            <li><a href="#">Điều khoản sử dụng</a></li>
-                        </ul>
-                    </div>
-                    <div class="col span_1_of_4_contact">
-                        <h4 style="padding-bottom: 15px; font-size: 16px; color: blue; font-weight: 600;">TRỢ GIÚP</h4>
-                        <ul class="list-lien-ket">
-                            <li><a href="#">Hỗ trợ</a></li>
-                            <li><a href="#">Thảo luận</a></li>
-                            <li><a href="#">Liên hệ với chúng tôi</a></li>
-                        </ul>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- Kết thúc phần cuộc thi -->
+
+            <!-- Phần luyện tập và chia sẻ -->
+            <section class="mid-bottom-section home-section">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-lg-7">
+                            <h3 class="heading-block">
+                                Luyện tập hàng ngày
+                                <a href="/training" title="See all">Xem tất cả</a>
+                            </h3>
+                            <div class="wrap-training-section wrap-home-block">
+                                <ul class="list-training-summary">
+                                    <li class="easy-level">
+                                        <span class="summary-value">0/0</span>
+                                        Easy
+                                    </li>
+                                    <li class="normal-level">
+                                        <span class="summary-value">0/0</span>
+                                        Medium
+                                    </li>
+                                </ul>
+                                <div class="row list-task-training">
+                                    <article class="col-xs-12 col-sm-4 training-item">
+                                        <a href="/training/detail/18003" title="isPowerOfFour"
+                                            class="wrap-training-content">
+                                            <div class="task-item-detail">
+                                                <h3 class="task-title">
+                                                    isPowerOfFour
+                                                </h3>
+                                                <span class="badge badge-secondary easy">Easy</span>
+                                                <div class="wrap-list-tag">
+                                                    <ul class="list-tag">
+                                                        <li class="tag tag-default">Bit Manipulation</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="task-info-info">
+                                                <li title="4434/4883">
+                                                    <i class="fas fa-user-friends"></i>
+                                                    <span class="span-user-submit">4434/4883</span>
+                                                </li>
+                                                <li>
+                                                    <i class="cl-icon-comment-dots"></i>
+                                                    <span class="span-comment">278</span>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-heart"></i>
+                                                    <span class="task-point">120</span>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </article>
+                                    <article class="col-xs-12 col-sm-4 training-item">
+                                        <a href="/training/detail/23151" title="isSortedArray"
+                                            class="wrap-training-content">
+                                            <div class="task-item-detail">
+                                                <h3 class="task-title">
+                                                    isSortedArray
+                                                </h3>
+                                                <span class="badge badge-secondary easy">Easy</span>
+                                                <div class="wrap-list-tag">
+                                                    <ul class="list-tag">
+                                                        <li class="tag tag-default">Array</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="task-info-info">
+                                                <li title="3303/3343">
+                                                    <i class="fas fa-user-friends"></i>
+                                                    <span class="span-user-submit">3303/3343</span>
+                                                </li>
+                                                <li>
+                                                    <i class="cl-icon-comment-dots"></i>
+                                                    <span class="span-comment">106</span>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-heart"></i>
+                                                    <span class="task-point">100</span>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </article>
+                                    <article class="col-xs-12 col-sm-4 training-item">
+                                        <a href="/training/detail/4538" title="maxSubarray"
+                                            class="wrap-training-content">
+                                            <div class="task-item-detail">
+                                                <h3 class="task-title">
+                                                    maxSubarray
+                                                </h3>
+                                                <span class="badge badge-secondary medium">Medium</span>
+                                                <div class="wrap-list-tag">
+                                                    <ul class="list-tag">
+                                                        <li class="tag tag-default">Algorithm</li>
+                                                        <li class="tag tag-default">Sequence</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="task-info-info">
+                                                <li title="889/979">
+                                                    <i class="fas fa-user-friends"></i>
+                                                    <span class="span-user-submit">889/979</span>
+                                                </li>
+                                                <li>
+                                                    <i class="cl-icon-comment-dots"></i>
+                                                    <span class="span-comment">41</span>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-heart"></i>
+                                                    <span class="task-point">200</span>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-12 col-lg-5">
+                            <h3 class="heading-block">
+                                Chia sẻ
+                                <a href="#">Xem tất cả</a>
+                            </h3>
+                            <div class="wrap-home-block blog-block">
+                                <article class="blog-item list-style">
+                                    <a href="#" class="wrap-blog-item">
+                                        <div class="wrap-blog-thumb">
+                                            <img src="images/share1.jpg" alt="">
+                                            <div class="cl-badge hot">
+                                                <span>Nổi bật</span>
+                                            </div>
+                                        </div>
+                                        <div class="wrap-blog-item-content">
+                                            <h3 class="blog-title">
+                                                Thuật Toán Đưa Ra Chuỗi Nhị Phân Độ Dài N
+                                            </h3>
+                                            <div class="user-rating">
+                                                <span class="star-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <p class="short-desc">Chắc hẳn ai học về giải thuật cũng đã từng nghe qua và
+                                                làm về bài toán đưa ra chuỗi nhị phân độ dài N rồi, nếu bạn mới bắt đầu
+                                                học hoặc đã bỏ lỡ qua bài toán thú vị này thì cũng đừng lo, vì trong bài
+                                                viết này mình sẽ giới thiệu cho tất cả các bạn về bài toán này nhé.</p>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="blog-item list-style">
+                                    <a href="#" class="wrap-blog-item">
+                                        <div class="wrap-blog-thumb">
+                                            <img src="images/share2.jpg" alt="">
+                                            <div class="cl-badge top-trend">
+                                                <span>Xu hướng</span>
+                                            </div>
+                                        </div>
+                                        <div class="wrap-blog-item-content">
+                                            <h3 class="blog-title">
+                                                Cân bằng phương trình hóa học bằng C++
+                                            </h3>
+                                            <div class="user-rating">
+                                                <span class="star-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <p class="short-desc">Hóa học là một nỗi sợ và có thể nói là nỗi ám ảnh của
+                                                đa số học sinh, vậy nếu ta tạo ra một chương trình cho phép cân bằng
+                                                PTHH một cách chớp nhoáng thì sao nhỉ?.</p>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="blog-item list-style">
+                                    <a href="#" class="wrap-blog-item">
+                                        <div class="wrap-blog-thumb">
+                                            <img src="images/share3.jpg" alt="">
+                                            <div class="cl-badge new">
+                                                <span>Nổi bật</span>
+                                            </div>
+                                        </div>
+                                        <div class="wrap-blog-item-content">
+                                            <h3 class="blog-title">
+                                                21 Cuốn Sách Khoa Học Dữ Liệu Nên Đọc Năm 2021 (Phần 2)
+                                            </h3>
+                                            <div class="user-rating">
+                                                <span class="star-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <p class="short-desc">
+                                                Dữ liệu và Trí tuệ nhân tạo tiếp tục thống trị trong báo cáo Báo cáo về
+                                                việc làm nổi bật năm 2020 của LinkedIn - LinkedIn’s 2020 Emerging Jobs
+                                                Report, cho thấy rằng Chuyên gia về trí tuệ nhân tạo và Nhà khoa học dữ
+                                                liệu lần lượt là những công việc mới nổi bật hàng đầu.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Kết thúc phần luyện tập và chia sẻ -->
+
+            <!-- Phần kĩ năng và hoạt động -->
+            <section class="bottom-section home-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+
+                            <h3 class="heading-block">
+                                Kỹ năng của bạn
+                            </h3>
+                            <div class="wrap-home-block">
+                                <ul class="your-skills">
+                                    <li>
+                                        <img src="images/C.svg" alt="C">
+                                        <span>C</span>
+                                        <div class="star-number pull-right">
+                                            <span class="star-rating">
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/Csharp.svg" alt="C#">
+                                        <span>C#</span>
+                                        <div class="star-number pull-right">
+                                            <span class="star-rating">
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/Cplus.svg" alt="C++">
+                                        <span>C++</span>
+                                        <div class="star-number pull-right">
+                                            <span class="star-rating">
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/Go.svg" alt="Go">
+                                        <span>Go</span>
+                                        <div class="star-number pull-right">
+                                            <span class="star-rating">
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/Java.svg" alt="Java">
+                                        <span>Java</span>
+                                        <div class="star-number pull-right">
+                                            <span class="star-rating">
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/JS.svg" alt="JavaScript">
+                                        <span>JS</span>
+                                        <div class="star-number pull-right">
+                                            <span class="star-rating">
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/mysql.svg" alt="MySql">
+                                        <span>MySql</span>
+                                        <div class="star-number pull-right">
+                                            <span class="star-rating">
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/postgresql.svg" alt="Postgresql">
+                                        <span>Postgre</span>
+                                        <div class="star-number pull-right">
+                                            <span class="star-rating">
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/Python.svg" alt="Python2">
+                                        <span>Python</span>
+                                        <div class="star-number pull-right">
+                                            <span class="star-rating">
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="images/ruby.svg" alt="Ruby">
+                                        <span>Ruby</span>
+                                        <div class="star-number pull-right">
+                                            <span class="star-rating">
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                                <i class="fas fa-star color-star"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h3 class="heading-block">
+                                Hoạt động của bạn
+                            </h3>
+                            <div class="wrap-home-block home-ui-block flex forum-activity" id="user-activity">
+                                <div class="activity-chart-grid">
+                                    <table>
+                                        <tbody>
+                                            <tr class="grid-row">
+                                                <td class="grid-item">
+                                                    <div class="grid-col-header" data-level="1">Mon</div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-col-header" data-level="1">Tue</div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-col-header" data-level="1">Wed</div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-col-header" data-level="1">Thu</div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-col-header" data-level="1">Fri</div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-col-header" data-level="1">Sat</div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-col-header" data-level="1">Sun</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="grid-row">
+                                                <td class="grid-item">
+                                                    <div class="grid-cell" data-level="2">8/2</div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="3">9/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">10/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="2">11/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">12/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">13/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">14/2
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="grid-row">
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">15/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">16/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">17/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">18/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">19/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">20/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">21/2
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="grid-row">
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">22/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">23/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">24/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">25/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">26/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">27/2
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">28/2
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="grid-row">
+                                                <td class="grid-item">
+                                                    <div class="grid-cell" data-level="4">1/3</div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">2/3
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="2">3/3
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">4/3
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">5/3
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">6/3
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label" data-level="1">7/3
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="grid-row">
+                                                <td class="grid-item">
+                                                    <div class="grid-cell" data-level="2">8/3</div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label grid-padding" data-level="1">1/1
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label grid-padding" data-level="1">1/1
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label grid-padding" data-level="1">1/1
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label grid-padding" data-level="1">1/1
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label grid-padding" data-level="1">1/1
+                                                    </div>
+                                                </td>
+                                                <td class="grid-item">
+                                                    <div class="grid-cell hidden-label grid-padding" data-level="1">1/1
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="activity-legend">
+                                    <div class="legend-left">
+                                        <span class="legend-label">Activity</span>
+                                        <div class="legend-activity-bar normal" data-level="1"></div>
+                                        <div class="legend-activity-bar normal" data-level="2"></div>
+                                        <div class="legend-activity-bar normal" data-level="3">
+                                        </div>
+                                        <div class="legend-activity-bar normal" data-level="4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Kết thúc phần kĩ năng và hoạt động -->
+
         </div>
-        <!-- Kết thúc phần contact -->
+        <!-- Kết thúc content -->
 
-        <!-- Phần bản quyền -->
-        <div class="footer-ban-quyen">
-            <p>Copy NMH</p>
+        <!-- Phần footer -->
+        <div class="footer">
+            <!-- Phần contact -->
+            <div class="footer-contact container">
+                <!-- chia contact thành 4 phần -->
+                <div style="padding-top:20px;">
+                    <div class="section group">
+                        <div class="col span_1_of_4_contact1">
+                            <img src="images/codelearn-logo.png" width="185px" height="60.9px" alt="">
+                            <p class="footer-content">CodeLearn là nền tảng tương tác trực tuyến hỗ trợ người dùng học
+                                tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách nhanh chóng và chính xác.
+                            </p>
+                            <div class="flex-contact">
+                                <div class="item-flex-contact "><a href="#"><i
+                                            class="fab fa-facebook-square facebook"></i></a></div>
+                                <div class="item-flex-contact "><a href="#"><i class="fab fa-youtube youtube"></i></a>
+                                </div>
+                                <div class="item-flex-contact "><a href="#"><i
+                                            class="fab fa-twitter-square twitter"></i></a></div>
+                                <div class="item-flex-contact "><a href="#"><i
+                                            class="fab fa-instagram instagram"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4_contact">
+                            <h4 style="padding-bottom: 15px; font-size: 16px; color: blue; font-weight: 600;">LIÊN KẾT
+                            </h4>
+                            <ul class="list-lien-ket">
+                                <li><a href="#">Học tập</a></li>
+                                <li><a href="#">Luyện tập</a></li>
+                                <li><a href="#">Cuộc thi</a></li>
+                                <li><a href="#">Trò chơi</a></li>
+                            </ul>
+                        </div>
+                        <div class="col span_1_of_4_contact">
+                            <h4 style="padding-bottom: 15px; font-size: 16px; color: blue; font-weight: 600;">THÔNG TIN
+                            </h4>
+                            <ul class="list-lien-ket">
+                                <li><a href="#">Chia sẻ</a></li>
+                                <li><a href="#">Về chúng tôi</a></li>
+                                <li><a href="#">Điều khoản sử dụng</a></li>
+                            </ul>
+                        </div>
+                        <div class="col span_1_of_4_contact">
+                            <h4 style="padding-bottom: 15px; font-size: 16px; color: blue; font-weight: 600;">TRỢ GIÚP
+                            </h4>
+                            <ul class="list-lien-ket">
+                                <li><a href="#">Hỗ trợ</a></li>
+                                <li><a href="#">Thảo luận</a></li>
+                                <li><a href="#">Liên hệ với chúng tôi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kết thúc phần contact -->
+
+            <!-- Phần bản quyền -->
+            <div class="footer-ban-quyen">
+                <p>Copy NMH</p>
+
+
+            </div>
+            <!-- Kết thúc phần bản quyền -->
+
         </div>
-        <!-- Kết thúc phần bản quyền -->
-
+        <!-- Kết thúc footer -->
     </div>
-    <!-- Kết thúc footer -->
-
-</div>
 </body>
+
 </html>

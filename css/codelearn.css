@@ -4,12 +4,14 @@
     margin: auto;
     clear: both;
     font-family: 'Muli',sans-serif;
+    z-index: 2;
 }
 .header
 {
     width: 100%;
     height: 69.95px;
     background-color: rgb(255, 255, 255);
+    /* position: fixed; */
 }
 .content
 {
@@ -24,20 +26,7 @@
     
     
 }
-.navs-heading
-{
-    padding-left: 15px;
-    padding-right: 15px;
-    position: fixed;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-}
 
-.logo_codelarn
-{
-    
-    padding: 30px;
-}
 
 .wrap-info
 {
@@ -155,6 +144,35 @@
 {
     list-style: none;
     float: left;
+    
+}
+
+.menu-3 li a{
+    position: relative;
+}
+
+.menu-3 li a::after
+{
+    position: absolute;
+    bottom: 0;
+    content: '';
+    left: 0;
+    width: 0px;
+    
+    color: blue;
+    z-index: 10;
+    border-bottom: 3px solid blue;
+}
+.menu-3 li:hover a::after{
+    animation: get-long 0.3s forwards ;
+}
+@keyframes get-long {
+    form{
+        width: 0px;
+    }
+    to{
+        width: 60px;
+    }
 }
 .fix-xtt
 {
@@ -179,8 +197,9 @@
 .hover-item {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: 0.3s;
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 3px;
+    z-index: 1;
     
 }
 .hover-item:hover {
@@ -188,11 +207,19 @@ box-shadow: 0 4px 6px rgba(0,0,0,0.12), 0 4px 5px rgba(0,0,0,0.24);
 transform: translate(0, -10px); 
 
 }
+.col-3 .hover-item
+{
+    background-color: white;
+}
 .div-kh-img
 {
 width:100%;
 height: 180px;
 background-color: red;
+}
+.div-kh-img img
+{
+    width: 100%;
 }
 .div-kh-content-flex
 {
@@ -308,6 +335,7 @@ width: 100%;
 {
     padding-left: 10px;
     margin-bottom: 0;
+    margin-top: 15px;
     text-align: right;
 }
 .item-progress-bar
@@ -395,7 +423,17 @@ width: 100%;
     position: relative;
     padding-top: 15px;
     min-height: 55px;
-    border-top: 0.5px solid silver;
+    /* border-top: 0.5px solid silver; */
+}
+.detail-content-flex::before
+{
+    border-top: 1px solid #d4d5dd;
+    content: '';
+    position: absolute;
+    width: calc(100% + 30px);
+    left: -15px;
+    top: 0;
+    display: block;
 }
 .detial-span-desktop
 {
@@ -449,3 +487,72 @@ width: 100%;
     color: white;
 }
 
+#more
+{
+    display: none;
+}
+.task-info-info li i
+{
+    font-size: 20px;
+}
+.color-button
+{
+    background-color: red;
+}
+.color-button-2
+{
+    background-color: pink;
+}
+/* button */
+.btn-a {
+border-radius: 5px;
+border:1px solid;
+background-color: white;
+color: white;
+height: 40px;
+width: 93px;
+text-align: center;
+font-weight: 700;
+cursor: pointer;
+border: none;
+border-left: 2px solid #e8505b;
+border-right: 2px solid #e8505b;
+outline: none;
+color: #e8505b;
+font-size: 15px;
+position: relative;
+}
+.btn-a span {
+display: inline-block;
+background-color: #e8505b   ;
+position: absolute;
+transition: all 0.5s ease-in-out;
+height: 2px;
+}
+.btn-a span:nth-child(1) {
+width: 70%;
+top: 0;
+left: 0;
+}
+.btn-a span:nth-child(2) {
+width: 20%;
+top: 0;
+right: 0;
+}
+.btn-a span:nth-child(3) {
+width: 20%;
+bottom: 0;
+left: 0;
+}
+.btn-a span:nth-child(4) {
+width: 70%;
+bottom: 0;
+right: 0;
+}
+.btn-a:hover span:nth-child(1), .btn-a:hover span:nth-child(4) {
+width: 20%;
+}
+.btn-a:hover span:nth-child(2), .btn-a:hover span:nth-child(3) {
+width: 70%;
+}
+    

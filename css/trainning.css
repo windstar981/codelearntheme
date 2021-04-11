@@ -6,6 +6,10 @@
 {
     width: 100%;
 }
+.heading-train a
+{
+    padding: 3px;
+}
 .heading-train h3
 {
     float:left;
@@ -58,4 +62,96 @@
 {
     font-size: 24px;
     color: rgb(250, 160, 94);
+}
+.container-train-demo
+{
+    padding: 20px;
+    height: 340px;
+}
+.train-box-shadow
+{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px 0 #dedede;
+}
+.detail-train-element
+{
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.detail-train-element h3
+{
+    margin: 0 0 35px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.detail-train-element h3:hover
+{
+    color: rgb(102, 102, 241);
+}
+.level-train
+{
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    display: block; 
+    border:1px solid;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background-color: #77c148;
+    border-radius: 30px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding:5px;
+}
+.tag-train
+{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(53, 51, 51);
+    display: block; 
+    /* border:0.5px solid; */
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    background-color: #f5f6f7;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 2px;
+}
+.container-flex-people-join
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    margin-top: 52px;
+    background-color:#f5f6f7;
+}
+.item-container-flex-people-join
+{
+    font-size: 12px;
+    font-weight: 400px;
+}
+.item-people
+{
+    font-size: 15px;
+    font-weight: 400px;
+    text-align: center;
+    padding-top: 5px;
+    color: #464545;
+    padding-left: 10px;
+}
+.item-heart
+{
+    font-size: 15px;
+    font-weight: 400px;
+    text-align: center;
+    padding-top: 5px;
+    color: #464545;
+    padding-right: 10px;
+    
 }

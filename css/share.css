@@ -16,6 +16,11 @@
     font-weight: 600;
     text-decoration: none;
     float: right;
+    padding-top: 3px;
+}
+.container-blog
+{
+    height: 460px;
 }
 .header-share-a:hover
 {
@@ -61,10 +66,11 @@
     line-height: 1.46;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-top: 15px;
+    margin-top: 0px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    float:left;
 }
 .div-chia-se-bai2
 {
@@ -73,4 +79,30 @@
 .div-chia-se-bai3
 {
     border-top: 0.75px solid silver;
+}
+.star-blog
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+    color: #f9bf08;
+    font-size: 15px;
+}
+.s-badge
+{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+.s-badge.hot::before
+{
+    border: 10px solid #cd3e46;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.s-badge.hot span {
+    background: #e8505b;
 }

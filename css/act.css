@@ -1,0 +1,51 @@
+.grid-row
+{
+    
+}
+.grid-item {
+    padding: 5px !important;
+    font-style: normal !important;
+}
+.grid-col-header
+{
+    font-size: 14px;
+    color: rgb(59, 60, 84);
+    text-align: center;
+    line-height: 100%;
+}
+.grid-cell {
+    border-radius: 3px;
+    width: 40px;
+    max-width: 100%;
+    font-size: 12px;
+    text-align: right;
+    color: #fff;
+    height: 22px;
+    padding-top: 5px !important;
+    padding-right: 2px !important;
+    background-color: rgb(132, 132, 233);
+}
+.activity-chart-grid {
+    padding: 8px;
+}
+.activity-chart-grid::after
+{
+    border: 1px solid black;
+}
+.activity-legend {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid black;
+    margin-top: 15px;
+}
+.legend-activity-bar {
+    height: 16px;
+    width: 21px;
+    border-radius: 3px;
+    margin: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: blueviolet;
+}

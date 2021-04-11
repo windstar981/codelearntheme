@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/shtml; charset=utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./asset/style.css">
+        <link rel="stylesheet" href="./asset/base.css">
+        <script src="https://kit.fontawesome.com/54f5e9521f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link type="text/css" href="css/login.css" rel="stylesheet" media="screen"/>
+    <link type="text/css" href="css/codelearn.css" rel="stylesheet" media="screen"/>
+    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- <script>
+        function check_user(users)
+        {
+            if(!((users[0]>='a' && users[0]<='z') || (users[0]>='A' && users[0]<='Z')))
+            {
+                return false;
+                //alert(users[0]);
+            }
+            //alert("true");
+            return true;
+        }
+        function check_mail(mails)
+        {
+            if(((mails[0]>='a' && mails[0]<='z') || (mails[0]>='A' && mails[0]<='Z')))
+            {
+                return false;
+            }
+            var count_char = 0;
+            var count_number = 0;
+            var count_dots = 0;
+            for(var i=1 ; i<mails.lenght();i++)
+            {
+                if((mails[0]>='a' && mails[0]<='z') || (mails[0]>='A' && mails[0]<='Z'))
+                {
+                    count_char +=1;
+                }
+                if(mails[i]=='.')
+                {
+                    count_dots += 1;
+                }
+                if(mails[i]==[0,9])
+                {
+                    count_number += 1;
+                }
+            }
+            var string_mail = mails.split('@');
+            alert(string_mail);
+            var template_mail = ["yahoo.com","gmail.com","outlook.office.com"];
+            var check = false;
+            for(var i=0 ; i<template_mail.length();i++)
+            {
+                if(string_mail[1]==template_mail[i])
+                {
+                    check = true;
+                }
+            }
+            if(check==true && count_char>0 && count_number>0 && count_dots>0)
+            {
+                return true;
+            }
+            return false;
+        }
+        function check_pass(pass)
+        {
+            if(pass.lenght()<8)
+            {
+                return false;
+            }
+            return true;
+        }
+        function check_Info()
+        {
+            var user_name = $("#username").val();
+            var mail = $("#mail").val();
+            var pass = $("#password").val();
+            alert(pass);
+            if(check_user(user_name)==true)
+                alert("oke use");
+            if(check_mail(mail)==true)
+            {
+                alert("Oke mail");
+            }
+            else
+            {
+                alert("mail error");
+            }
+            if(check_pass(pass)==true)
+            {
+                alert("oke password");
+            }
+            else
+            {
+                alert("pass error");
+            }
+            // document.write(check_Info(user_name));
+        }
+
+    </script> -->
+    <style>
+        *a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- thiếu phần header menu -->
+    <header>
+        <div class="top-menu">
+            <div class="wrap-top-menu">
+                <div class="wrap-site-logo">
+                    <a href="#">
+                        <img src="./asset/img/codelearn-logo.png" alt="Codelearn" class="logo-img">
+                    </a>
+                </div>
+                <div class="wrap-top-menu-right">
+                    <nav class="site-menu">
+                        <ul class="menu-list">
+                            <li class="menu-list-item"><a href="" class="list-item-link">Học tập</a></li>
+                            <li class="menu-list-item"><a href="" class="list-item-link">Luyện tập</a></li>
+                            <li class="menu-list-item"><a href="" class="list-item-link">Thi đấu</a></li>
+                            <li class="menu-list-item"><a href="" class="list-item-link">Thử thách</a></li>
+                            <li class="menu-list-item"><a href="" class="list-item-link">Đánh giá</a></li>
+                            <li class="menu-list-item"><a href="" class="list-item-link">Thảo luận</a></li>
+                            <li class="menu-list-item"><a href="" class="list-item-link">Xếp hạng</a></li>
+                            <li class="menu-list-item"><a href="" class="list-item-link">Trò chơi</a></li>
+                            <li class="menu-list-item"><a href="" class="list-item-link">Chia sẻ</a></li>
+                        </ul>
+                        <div class="wrap-flag-logo" onclick="dropmenu()">
+                            <img src="./asset/img/vn.png" alt="#" class="flag-logo">
+                            <div class="dropdown-sub">
+                                <ul class="dropdown-sub-list">
+                                    <li class="dropdown-sub-list-item">
+                                        <img src="./asset/img/en.png" alt="" class="flag-logo">
+                                        Tiếng Anh
+                                    </li>
+                                    <li class="dropdown-sub-list-item">
+                                        <img src="./asset/img/vn.png" alt="" class="flag-logo">
+                                        Tiếng việt
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="wrap-btn">
+                        <button class="login-btn btn" onclick="loginClick()"> Đăng nhập</button>
+                        <button class="register-btn btn">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal">
+        <div class="modal__overlay" onclick="esc()"></div>
+
+        <div class="modal__body">
+            <!-- Login form -->
+            <div class="login__form">
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập bằng tài khoản</h3>
+                        </div>
+
+                        <div class="sign-options">
+                            <ul class="sign-option-list">
+                                <li class="signin-option-item">
+                                    <button class="option-item btn-micro">
+                                        <i class="fab fa-windows"></i>
+                                        <span>Microsoft</span>
+                                    </button>
+                                </li>
+                                <li class="signin-option-item">
+                                    <button class="option-item btn-face">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <span>Facebook</span>
+                                    </button>
+                                </li>
+                                <li class="signin-option-item">
+                                    <button class="option-item btn-google">
+                                        <i class="fab fa-google"></i>
+                                        <span>Google</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="label-or">Hoặc</p>
+
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="email" class="auth-form__input" placeholder="Tên đăng nhập" required>
+                                <input type="password" class="auth-form__input" placeholder="Vui lòng nhập mật khẩu" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="button" class="form-control btn btn-login" value="Đăng nhập">
+                        </div>
+
+                        <div class="forgot-password">
+                            <a href="" class="forgot-link">Quên mật khẩu</a>
+                        </div>
+                        
+                        <hr>
+                        <div class="term-of-use">
+                            <span>Trang này được bảo vệ bởi reCAPTCHA và áp dụng <a href="">Điều khoản sử dụng.</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container-all">
+    <div class="container-img">
+        <!-- <div class="container-nav">
+            <ul class="nav-list">
+                <li>Học tập</li>
+                <li>Luyện tập</li>
+                <li>Thi đấu</li>
+                <li>Thử thách</li>
+                <li>Đánh giá</li>
+                <li>Thảo luận</li>
+                <li>Trò chơi</li>
+                <li>Chia sẻ</li>
+            </ul>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+        </div> -->
+        <img src="images/head-left-bg.png" class="img-left" alt="#">
+        <img src="images/head-right-bg.png" class="img-right" alt=""> 
+        <div class="container-form">
+            <div class="container-wrap">
+                <h4>Bắt đầu ngay</h4>
+                <form action="" class="form-login">
+                    
+                    <input type="text" id="username" name="username" placeholder="Tên đăng nhập" class="form-fix">
+                    <input type="text" id="mail" name="mail" placeholder="Email" class="form-fix">
+                    <input type="password" id="pass" name="pass" placeholder="Mật khẩu" class="form-fix">
+                    <div class="check-box-form">
+                        <input type="checkbox" id="provision" name="provision" value="">
+                        <label for="provision">Đồng ý với <a href="#">Điều khoản</a> của Codelearn</label>
+                    </div>
+                </form>
+                <div>
+                    <button class="bt-register" onclick="check_Info()">Đăng ký </button>
+                </div>
+                <div class="use-acc">
+                    hoặc sử dụng tài khoản khác
+                </div>
+                <div class="container-contact-flex">
+                    <button class="bt-wd">
+                        <i class="fab fa-windows"></i>
+                    </button>
+                    <button class="bt-fb">
+                        <i class="fab fa-facebook-square"></i>
+                    </button>
+                    <button class="bt-gg">
+                        <i class="fab fa-google"></i>
+                    </button>
+                </div>
+            </div>
+        </div> 
+            
+    </div>
+    <!-- div lộ trình trở thành lập trình viên -->
+     <section class="code-step">
+        <div class="container">
+            <!-- <div class="code-step"> -->
+            <h2 class="content-code-step">
+                Lộ trình trở thành
+                <br>
+                lập trình viên
+            </h2>
+            <div class="row">
+                <div class="col-sm scale-img">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="code-step-img">
+                            <span class="label-step">1</span>
+                            <img src="images/hoc-lap-trinh.png" class="scale-imgs" width="206px" height="213px" alt="">
+                        </div>
+                        <h3 class="code-step-title">
+                            Học lập trình
+                        </h3>
+                        <p class="code-step-content">
+                            Học lập trình cơ bản đến nâng cao thông qua các khóa học.
+                        </p>
+                    </a>
+                </div>
+                <div class="col-sm scale-img">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="code-step-img">
+                            <span class="label-step">2</span>
+                            <img src="images/luyen-lap-trinh.png" width="206px" height="213px" alt="">
+                        </div>
+                        <h3 class="code-step-title">
+                            Luyện lập trình
+                        </h3>
+                        <p class="code-step-content">
+                            Luyện lập trình hằng ngày với hàng nghìn bài tập lớn nhỏ.
+                        </p>
+                    </a>
+                </div>
+                <div class="col-sm scale-img">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="code-step-img">
+                            <span class="label-step">3</span>
+                            <img src="images/thi-lap-trinh.png" width="206px" height="213px" alt="">
+                        </div>
+                        <h3 class="code-step-title">
+                            Thi lập trình
+                        </h3>
+                        <p class="code-step-content">
+                            Tham gia các cuộc thi và cải thiện kỹ năng lập trình liên tục.
+                        </p>
+                    </a>
+                </div>
+                <div class="col-sm scale-img">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="code-step-img">
+                            <span class="label-step">4</span>
+                            <img src="images/chia-se-lap-trinh.png" width="206px" height="213px" alt="">
+                        </div>
+                        <h3 class="code-step-title">
+                            Tìm hiểu lập trình
+                        </h3>
+                        <p class="code-step-content">
+                            Tìm hiểu kiến thức lập trình thông qua chia sẻ từ các chuyên gia.
+                        </p>
+                    </a>
+                </div>
+            </div>
+                
+            <!-- </div> -->
+        </div> 
+     </section>
+</div>
+<script>
+    function dropmenu() {
+        var drop = document.querySelector('.dropdown-sub');
+        drop.classList.toggle("block");
+    }
+
+    function loginClick() {
+        document.querySelector('.modal').style.display = 'flex';
+        document.querySelector('.register__form').style.display = 'none';
+        document.querySelector('.login__form').style.display = 'block'
+    }
+
+    function registerClick() {
+        document.querySelector('.modal').style.display = 'flex';
+        document.querySelector('.register__form').style.display = 'block';
+        document.querySelector('.login__form').style.display = 'none'
+    }
+
+    function esc() {
+        document.querySelector('.modal').style.display = 'none';
+    }
+
+    window.onscroll = function() {stick()};
+
+    var menuSticky = document.querySelector('.top-menu');
+    var loginStick = document.querySelector('.login-btn')
+    var sticky = menuSticky.offsetTop;
+    function stick(){
+        if(window.pageYOffset > sticky){
+            menuSticky.classList.add("stick");
+            loginStick.classList.add("btn-stick");
+        }else {
+            menuSticky.classList.remove("stick");
+            loginStick.classList.remove("btn-stick");
+        }
+    }
+</script>
+</body>
+</html>

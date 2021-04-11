@@ -1,0 +1,63 @@
+.xoay
+{
+    border-radius: 5px;
+    position: absolute;
+    /* bottom: 0;
+    background: #fff; */
+    width: 255px;
+    height: 100%;
+    margin-top: -440px;
+    /* z-index: 2;
+    box-shadow: 0 5px 15px 0 rgba(133,142,176,.5); */
+    /* height: 100%;
+    padding: 25px 30px; */
+    /* transform: translateY(15px);
+    opacity: 2; */
+    /* transition: 300ms ease-out;
+    display: none; */
+    visibility: hidden;
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+    transition: transform .6s linear;
+}
+.front
+{
+    transform: perspective(600px) rotateY(0deg);
+    transition: transform .6s linear;
+}
+.xoay img
+{
+    height: 100%;
+    width: 100%;
+}
+.course-item:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.course-item:hover > .xoay
+{
+    transform: perspective(600px) rotateY(0deg);
+    visibility: visible;
+}
+.xoay-h3
+{
+    font-size: 16px;
+    font-weight: 500; 
+}
+.xoay-img
+{
+    width: 20px;
+    height: 20px;
+}
+.xoay-user-name
+{
+    font-size: 11px;
+}
+.xoay-star > i
+{
+    font-size: 7px;
+}
+.xoay-p > p
+{
+    font-size: 13px;
+}

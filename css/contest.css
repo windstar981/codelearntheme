@@ -58,7 +58,7 @@
     margin-bottom: 0px;
     padding-top: 40px;
 }
-.detail-contest-flex-button button
+/* .detail-contest-flex-button button
 {
    
     border-radius: 5px;
@@ -69,10 +69,10 @@
     width: 93px;
     text-align: center;
     font-weight: 700;
-}
+} */
 .detail-contest-flex-button button:hover
 {
-    background-color: #3b3c54;
+    background-color: #ffffff;
 }
 .text-rank
 {

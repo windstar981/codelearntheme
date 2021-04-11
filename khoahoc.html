@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Học tập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/xoay.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/page-kh.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js-kh.js"></script>
+    <script src="https://kit.fontawesome.com/54f5e9521f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+    $( document ).ready(function() {
+    console.log( "ready!" );
+    $('.wrap-course-item').mouseover(function(e) {
+        e.preventDefault();
+        //get with of popover div
+        let wd_pop = $(this).children('.popover-course').width();
+        var wd_width = $(window).width();
+        let offsetCourse = $(this).offset();
+        let right_cor = wd_width - offsetCourse.left;
+        if (right_cor < 700) {
+          $(this).children('.popover-course').css('right', 'calc(100% + 10px)');
+          $(this).children('.popover-course').css('left', 'unset');
+          $(this).children('.popover-course').addClass('arrow-right');
+        } else {
+          $(this).children('.popover-course').css('left', 'calc(100% + 10px)');
+          $(this).children('.popover-course').css('right', 'unset');
+          $(this).children('.popover-course').addClass('arrow-left');
+        } 
+      });
+    });
+   
+        
+    
+    
+      
+</script>
+<body>
+    <div class="zone-content">
+        <header>
+            <div class="top-menu">
+                <div class="wrap-top-menu">
+                    <div class="wrap-site-logo">
+                        <a href="#">
+                            <img src="images/codelearn-logo.png" alt="Codelearn" class="logo-img">
+                        </a>
+                    </div>
+                    <div class="wrap-top-menu-right">
+                        <nav class="site-menu">
+                            <ul class="menu-list">
+                                <li class="menu-list-item"><a href="#" class="list-item-link">Học tập</a></li>
+                                <li class="menu-list-item"><a href="#" class="list-item-link">Luyện tập</a></li>
+                                <li class="menu-list-item"><a href="#" class="list-item-link">Thi đấu</a></li>
+                                <li class="menu-list-item"><a href="#" class="list-item-link">Thử thách</a></li>
+                                <li class="menu-list-item"><a href="#" class="list-item-link">Đánh giá</a></li>
+                                <li class="menu-list-item"><a href="#" class="list-item-link">Thảo luận</a></li>
+                                <li class="menu-list-item"><a href="#" class="list-item-link">Xếp hạng</a></li>
+                                <li class="menu-list-item"><a href="#" class="list-item-link">Trò chơi</a></li>
+                                <li class="menu-list-item"><a href="#" class="list-item-link">Chia sẻ</a></li>
+                            </ul>
+                            <!-- add id select1 -->
+                            <div class="wrap-flag-logo" onclick="toggleMenu('.dropdown-sub')">
+                                <img src="images/vn.png" alt="#" class="flag-logo">
+                                <div class="dropdown-sub" style="display: none;">
+                                    <ul class="dropdown-sub-list">
+                                        <li class="dropdown-sub-list-item">
+                                            <img src="images/en.png" alt="" class="flag-logo">
+                                            Tiếng Anh
+                                        </li>
+                                        <li class="dropdown-sub-list-item">
+                                            <img src="images/vn.png" alt="" class="flag-logo">
+                                            Tiếng việt
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <ul class="site-user-menu">
+                            <li class="site-user-menu-item" onclick="toggleMenu('.sub-notify')">
+                                <a href="#" class="site-menu-bell">
+                                    <i class="far fa-bell bell-icon"></i>
+                                </a>
+                                <div class="sub-notify">
+                                    <p>Không có thông báo!</p>
+                                    <hr>
+                                    <div class="view-all-notify">
+                                        <a href="#">Xem toàn bộ</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="site-user-menu-item" id="select2" onclick="toggleMenu('.sub-user')">
+                                <a href="#" class="site-menu-avatar">
+                                    <img src="images/user-default.svg" alt="User_name" class="menu-avatar">
+                                </a>
+                                <div class="sub-user">
+                                    <ul class="user-option">
+                                        <li class="user-option-item"><a href="">Thông tin của tôi</a> </li>
+                                        <li class="sperate"></li>
+                                        <li class="user-option-item"><a href="">Hồ sơ của tôi</a> </li>
+                                        <li class="sperate"></li>
+                                        <li class="user-option-item"><a href="">Lớp của tôi</a> </li>
+                                        <li class="sperate"></li>
+                                        <li class="user-option-item"><a href="">Thoát</a> </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div style="background-color:#f1f1f1;">
+        <!--phần tìm kiếm  -->
+        <div class="wrap-content">
+            <div class="head-course">
+                <div class="container">
+                    <h2>
+                        Tự học lập trình trực tuyến. Hãy bắt đầu với khoá học đầu tiên của bạn!
+                    </h2>
+                    <div id="search" class="block-top-head">
+                        <div class="input-group">
+                            <form id="form-search" action="">
+                                <input type="text" id="search-course" class="form-control" name="name"
+                                    placeholder="Nhập nội dung tìm kiếm">
+                                <span class="input-group-addon btn">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kết thúc phần tìm kiếm -->
+
+        </div>
+        <!-- Kiến thức cơ sở -->
+        <div class="container">
+            <div class="list-courses">
+                <h2 class="title-block">Kiến thức cơ sở</h2>
+                <div class="row">
+                    <!-- Khóa 1 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                            <div class="view-content">
+                                <div class="view-content-header">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <span class="star-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="course-type online">Online</span>
+                                </div>
+                                <h3 class="course-title">
+                                    <a href="#">
+                                        Truyền thông và Mạng máy tính
+                                    </a>
+                                </h3>
+                                <a href="#" class="course-author">windstar981</a>
+                                <p class="course-description">
+                                    Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                    và truyền thông dữ liệu.
+                                </p>
+                                <div class="view-content-footer">
+                                    <div class="course-footer-left">
+                                        <span class="free-text">Miễn phí</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Kết thúc khóa 1 -->
+                    <!-- Khóa 2 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/phan-mem.png" alt="">
+                                </a>
+                            </div>
+                            <div class="view-content">
+                                <div class="view-content-header">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <span class="star-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="course-type online">Online</span>
+                                </div>
+                                <h3 class="course-title">
+                                    <a href="#">
+                                        Phần mềm máy tính
+                                    </a>
+                                </h3>
+                                <a href="#" class="course-author">windstar981</a>
+                                <p class="course-description">
+                                    Phần mềm luôn là công cụ cần thiết trong mọi lĩnh vực, khóa học này sẽ giúp bạn hiểu được các khái niệm về phần mềm và các phần mềm phổ biến hiện nay.
+                                </p>
+                                <div class="view-content-footer">
+                                    <div class="course-footer-left">
+                                        <div class="progress-circle progress-6">
+                                            <span>6</span>
+                                        </div>
+                                    </div>
+                                    <div class="course-footer-right">
+                                        <a href="#" class="btn-continue-study">Học tiếp
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="popover-course ">
+                                <a href="#">
+                                    <h3 class="popover-course__title">
+                                        Truyền thông và Mạng máy tính
+                                    </h3>
+                                </a>
+                                <div class="popover-course__sum">
+                                    <div class="author">
+                                        <img src="images/user-default.svg" alt="">
+                                        <a href="#" class="user-name">
+                                            Windstar
+                                        </a>
+                                    </div>
+                                    <span class="rate-wrap">
+                                        <span class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span style="width:90.0%"></span></span>
+                                        <span class="avg-rate">4.5</span>
+                                        <span class="total-rate">(96)</span>
+                                    </span>
+                                </div>
+                                <ul class="popover-course__detail-infor">
+                                    <li>
+                                        <p><i class="fab fa-dribbble"></i> Online </p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-user-friends"></i> 12858 students</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="far fa-star"></i> Great reviewsfrom students</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="far fa-clock"></i> Time to complete: <strong>18 hours</strong></p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-award"></i> Certificate of Course Completion</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                   
+                    <!-- Kết thúc khóa 2 -->
+                    <!-- Khóa 3 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/phan-cung.png" alt="">
+                                </a>
+                            </div>
+                            <div class="view-content">
+                                <div class="view-content-header">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <span class="star-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="course-type online">Online</span>
+                                </div>
+                                <h3 class="course-title">
+                                    <a href="#">
+                                        Phần cứng máy tính
+                                    </a>
+                                </h3>
+                                <a href="#" class="course-author">windstar981</a>
+                                <p class="course-description">
+                                    Khóa học này tập trung vào việc cung cấp các kiến thức chung về các bộ phận của máy tính để bạn có thể áp dụng vào việc lựa chọn và sử dụng máy tính.
+                                </p>
+                                <div class="view-content-footer">
+                                    <div class="course-footer-left">
+                                        <span class="free-text">Miễn phí</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popover-course">
+                                <a href="#">
+                                    <h3 class="popover-course__title">
+                                        Truyền thông và Mạng máy tính
+                                    </h3>
+                                </a>
+                                <div class="popover-course__sum">
+                                    <div class="author">
+                                        <img src="images/user-default.svg" alt="">
+                                        <a href="#" class="user-name">
+                                            Windstar
+                                        </a>
+                                    </div>
+                                    <span class="rate-wrap">
+                                        <span class="star-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        <span style="width:90.0%"></span></span>
+                                        <span class="avg-rate">4.5</span>
+                                        <span class="total-rate">(96)</span>
+                                    </span>
+                                </div>
+                                <ul class="popover-course__detail-infor">
+                                    <li>
+                                        <p><i class="fab fa-dribbble"></i> Online </p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-user-friends"></i> 12858 students</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="far fa-star"></i> Great reviewsfrom students</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="far fa-clock"></i> Time to complete: <strong>18 hours</strong></p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-award"></i> Certificate of Course Completion</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Kết thúc khóa 3 -->
+                </div>
+            </div>
+        </div>
+        <!-- Kết thúc kiến thức cơ sở -->
+        <!-- Lập trình cơ sở -->
+        <div class="container">
+            <div class="list-courses">
+                <h2 class="title-block">Kiến thức cơ sở</h2>
+                <div class="row">
+                    <!-- Khóa 1 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/kh-c.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="view-content">
+                                <div class="view-content-header">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <span class="star-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="course-type online">Online</span>
+                                </div>
+                                <h3 class="course-title">
+                                    <a href="#">
+                                        C cho người mới bắt đầu
+                                    </a>
+                                </h3>
+                                <a href="#" class="course-author">windstar981</a>
+                                <p class="course-description">
+                                    Khóa học lập trình C cho người mới bắt đầu. Khóa học này sẽ cung cấp những kiến thức cơ bản và là nền tảng để bạn đi xa hơn trên con đường lập trình.
+                                </p>
+                                <div class="view-content-footer">
+                                    <div class="course-footer-left">
+                                        <span class="free-text">Miễn phí</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Kết thúc khóa 1 -->
+                    <!-- Khóa 2 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/kh-cpp.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Khóa học C++ cho người mới bắt đầu
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học lập trình C++ cơ bản cho người mới bắt đầu. Khóa học này sẽ cung cấp những kiến thức cơ bản, dễ hiểu nhất về ngôn ngữ lập trình C++.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 2 -->
+                    <!-- Khóa 3 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/kh-sql.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Làm quen với SQL
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học này sẽ giúp các lập trình viên nắm được nguyên tắc, cú pháp và cách thức hoạt động của SQL (Structured Query Language).
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 3 -->
+                    <!-- Khóa 4 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/kh-js.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    JavaScrip cơ bản
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Giúp học viên nắm vững các nguyên tắc và cú pháp cơ bản trong Javascript - ngôn ngữ lập trình phổ biến nhất trên thế giới.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 4 -->
+                    <!-- Khóa học 5 -->
+                    <!-- Khóa 3 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/kh-python.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Python cơ bản
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học xong bạn có thể tự tin để tới với các chủ đề nâng cao hơn của Python.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 3 -->
+                    <!-- Kết thúc khóa học 5 -->
+                </div>
+            </div>
+        </div>
+        <!-- Kết thúc lập trình cơ sở -->
+        <!-- Lập trình nâng cao -->
+        <div class="container">
+            <div class="list-courses">
+                <h2 class="title-block">Kiến thức cơ sở</h2>
+                <div class="row">
+                    <!-- Khóa 1 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Truyền thông và Mạng máy tính
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                và truyền thông dữ liệu.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 1 -->
+                    <!-- Khóa 2 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Truyền thông và Mạng máy tính
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                và truyền thông dữ liệu.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 2 -->
+                    <!-- Khóa 3 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Truyền thông và Mạng máy tính
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                và truyền thông dữ liệu.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 3 -->
+                    <!-- Khóa 4 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Truyền thông và Mạng máy tính
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                và truyền thông dữ liệu.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 4 -->
+                    <!-- Khóa học 5 -->
+                    <!-- Khóa 3 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Truyền thông và Mạng máy tính
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                và truyền thông dữ liệu.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 3 -->
+                    <!-- Kết thúc khóa học 5 -->
+                </div>
+            </div>
+        </div>
+        <!-- Kết thúc lập trình nâng cao -->
+        <!-- Giải quyết vấn đề -->
+        <div class="container">
+            <div class="list-courses">
+                <h2 class="title-block">Kiến thức cơ sở</h2>
+                <div class="row">
+                    <!-- Khóa 1 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Truyền thông và Mạng máy tính
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                và truyền thông dữ liệu.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 1 -->
+                    <!-- Khóa 2 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Truyền thông và Mạng máy tính
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                và truyền thông dữ liệu.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 2 -->
+                    <!-- Khóa 3 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Truyền thông và Mạng máy tính
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                và truyền thông dữ liệu.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 3 -->
+                    <!-- Khóa 4 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="view-content">
+                            <div class="view-content-header">
+                                <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                <span class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="course-type online">Online</span>
+                            </div>
+                            <h3 class="course-title">
+                                <a href="#">
+                                    Truyền thông và Mạng máy tính
+                                </a>
+                            </h3>
+                            <a href="#" class="course-author">windstar981</a>
+                            <p class="course-description">
+                                Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                và truyền thông dữ liệu.
+                            </p>
+                            <div class="view-content-footer">
+                                <div class="course-footer-left">
+                                    <span class="free-text">Miễn phí</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kết thúc khóa 4 -->
+                    <!-- Khóa học 5 -->
+                    <div class="course-item col-12 col-md-4 col-lg-3">
+                        <div class="wrap-course-item front">
+                            <div class="course-thumb">
+                                <a href="#">
+                                    <img src="images/truyen-thong.png" alt="">
+                                </a>
+                            </div>
+                            <div class="view-content">
+                                <div class="view-content-header">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <span class="star-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="course-type online">Online</span>
+                                </div>
+                                <h3 class="course-title">
+                                    <a href="#">
+                                        Truyền thông và Mạng máy tính
+                                    </a>
+                                </h3>
+                                <a href="#" class="course-author">windstar981</a>
+                                <p class="course-description">
+                                    Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy tính
+                                    và truyền thông dữ liệu.
+                                </p>
+                                <div class="view-content-footer" >
+                                    <div class="course-footer-left">
+                                        <span class="free-text">Miễn phí</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="xoay">
+                            <div class="popover-course" style="display: block; top:-24px;">
+                                <a href="#">
+                                    <h3 class="popover-course__title xoay-h3">
+                                        Truyền thông và Mạng máy tính
+                                    </h3>
+                                </a>
+                                <div class="popover-course__sum">
+                                    <div class="author">
+                                        <img src="images/user-default.svg" class="xoay-img" alt="">
+                                        <a href="#" class="user-name xoay-user-name">
+                                            Windstar
+                                        </a>
+                                    </div>
+                                    <span class="rate-wrap">
+                                        <span class="star-rating xoay-star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        <span style="width:90.0%"></span></span>
+                                        <span class="avg-rate" style="font-size: 13px;">4.5</span>
+                                        <span class="total-rate" style="font-size: 13px;">(96)</span>
+                                    </span>
+                                </div>
+                                <ul class="popover-course__detail-infor xoay-p">
+                                    <li>
+                                        <p><i class="fab fa-dribbble"></i> Online </p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-user-friends"></i> 12858 students</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="far fa-star"></i> Great reviewsfrom students</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="far fa-clock"></i> Time to complete: <strong>18 hours</strong></p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-award"></i> Certificate of Course Completion</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Kết thúc khóa học 5 -->
+                </div>
+            </div>
+        </div>
+        <!-- Kết thúc giải quyết vấn đề -->
+        <!-- Kỹ năng nâng cao -->
+
+        <!-- Kết thúc kỹ năng nâng cao -->
+    </div>
+</body>
+
+</html>
