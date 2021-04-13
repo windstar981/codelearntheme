@@ -1,0 +1,9 @@
+$(document).ready(function()
+{
+    alert("run");
+    $('.pop-exit').click(function()
+    {
+        $('.pop').css("display","none");
+        alert("xyz");
+    });
+});

@@ -4,11 +4,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/shtml; charset=utf-8" />
     <title>Login</title>
+    
     <link rel="stylesheet" href="./asset/style.css">
         <link rel="stylesheet" href="./asset/base.css">
         <script src="https://kit.fontawesome.com/54f5e9521f.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    
+    <script src="js/validate.js"></script>
+        <script src="https://kit.fontawesome.com/54f5e9521f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="js/jslogin.js"></script>
     <link type="text/css" href="css/login.css" rel="stylesheet" media="screen"/>
     <link type="text/css" href="css/codelearn.css" rel="stylesheet" media="screen"/>
     <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet"> <!--load all styles -->
@@ -16,7 +20,57 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+    <script>
+        
+        $(document).ready(function()
+        {        
+            $('.scale-img1').mouseover(function()
+            {
+                // $('.scale-imgs').css("transform", "scale(1.2)");
+                // $('.code-step-img').css("transform", "scale(1.2)");
+                $('#code-step-scale1').css("transform", "scale(1.2)")
+                 
+            }); 
+            $('.scale-img1').mouseout(function()
+            {
+                $('#code-step-scale1').css("transform", "scale(1)")  
+            });
+            $('.scale-img2').mouseover(function()
+            {
+                // $('.scale-imgs').css("transform", "scale(1.2)");
+                // $('.code-step-img').css("transform", "scale(1.2)");
+                $('#code-step-scale2').css("transform", "scale(1.2)")
+                 
+            }); 
+            $('.scale-img2').mouseout(function()
+            {
+                $('#code-step-scale2').css("transform", "scale(1)")  
+            });
+            $('.scale-img3').mouseover(function()
+            {
+                // $('.scale-imgs').css("transform", "scale(1.2)");
+                // $('.code-step-img').css("transform", "scale(1.2)");
+                $('#code-step-scale3').css("transform", "scale(1.2)")
+                 
+            }); 
+            $('.scale-img3').mouseout(function()
+            {
+                $('#code-step-scale3').css("transform", "scale(1)")  
+            });
+            $('.scale-img4').mouseover(function()
+            {
+                // $('.scale-imgs').css("transform", "scale(1.2)");
+                // $('.code-step-img').css("transform", "scale(1.2)");
+                $('#code-step-scale4').css("transform", "scale(1.2)")
+                 
+            }); 
+            $('.scale-img4').mouseout(function()
+            {
+                $('#code-step-scale4').css("transform", "scale(1)")  
+            });
+            
+        });
+    </script>
     <!-- <script>
         function check_user(users)
         {
@@ -112,52 +166,7 @@
     </style>
 </head>
 <body>
-    <!-- thiếu phần header menu -->
-    <header>
-        <div class="top-menu">
-            <div class="wrap-top-menu">
-                <div class="wrap-site-logo">
-                    <a href="#">
-                        <img src="./asset/img/codelearn-logo.png" alt="Codelearn" class="logo-img">
-                    </a>
-                </div>
-                <div class="wrap-top-menu-right">
-                    <nav class="site-menu">
-                        <ul class="menu-list">
-                            <li class="menu-list-item"><a href="" class="list-item-link">Học tập</a></li>
-                            <li class="menu-list-item"><a href="" class="list-item-link">Luyện tập</a></li>
-                            <li class="menu-list-item"><a href="" class="list-item-link">Thi đấu</a></li>
-                            <li class="menu-list-item"><a href="" class="list-item-link">Thử thách</a></li>
-                            <li class="menu-list-item"><a href="" class="list-item-link">Đánh giá</a></li>
-                            <li class="menu-list-item"><a href="" class="list-item-link">Thảo luận</a></li>
-                            <li class="menu-list-item"><a href="" class="list-item-link">Xếp hạng</a></li>
-                            <li class="menu-list-item"><a href="" class="list-item-link">Trò chơi</a></li>
-                            <li class="menu-list-item"><a href="" class="list-item-link">Chia sẻ</a></li>
-                        </ul>
-                        <div class="wrap-flag-logo" onclick="dropmenu()">
-                            <img src="./asset/img/vn.png" alt="#" class="flag-logo">
-                            <div class="dropdown-sub">
-                                <ul class="dropdown-sub-list">
-                                    <li class="dropdown-sub-list-item">
-                                        <img src="./asset/img/en.png" alt="" class="flag-logo">
-                                        Tiếng Anh
-                                    </li>
-                                    <li class="dropdown-sub-list-item">
-                                        <img src="./asset/img/vn.png" alt="" class="flag-logo">
-                                        Tiếng việt
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    <div class="wrap-btn">
-                        <button class="login-btn btn" onclick="loginClick()"> Đăng nhập</button>
-                        <button class="register-btn btn">Đăng ký</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- thiếu phần header menu -->  
     <div class="modal">
         <div class="modal__overlay" onclick="esc()"></div>
 
@@ -250,7 +259,7 @@
         <div class="container-form">
             <div class="container-wrap">
                 <h4>Bắt đầu ngay</h4>
-                <form action="" class="form-login">
+                <form action=""  id="commentForm" class="form-login">
                     
                     <input type="text" id="username" name="username" placeholder="Tên đăng nhập" class="form-fix">
                     <input type="text" id="mail" name="mail" placeholder="Email" class="form-fix">
@@ -291,9 +300,9 @@
                 lập trình viên
             </h2>
             <div class="row">
-                <div class="col-sm scale-img">
+                <div class="col-sm scale-img1">
                     <a href="#" style="text-decoration: none;">
-                        <div class="code-step-img">
+                        <div  id="code-step-scale1" class="code-step-img">
                             <span class="label-step">1</span>
                             <img src="images/hoc-lap-trinh.png" class="scale-imgs" width="206px" height="213px" alt="">
                         </div>
@@ -305,9 +314,9 @@
                         </p>
                     </a>
                 </div>
-                <div class="col-sm scale-img">
+                <div class="col-sm scale-img2">
                     <a href="#" style="text-decoration: none;">
-                        <div class="code-step-img">
+                        <div id="code-step-scale2" class="code-step-img">
                             <span class="label-step">2</span>
                             <img src="images/luyen-lap-trinh.png" width="206px" height="213px" alt="">
                         </div>
@@ -319,9 +328,9 @@
                         </p>
                     </a>
                 </div>
-                <div class="col-sm scale-img">
+                <div class="col-sm scale-img3">
                     <a href="#" style="text-decoration: none;">
-                        <div class="code-step-img">
+                        <div id="code-step-scale3" class="code-step-img">
                             <span class="label-step">3</span>
                             <img src="images/thi-lap-trinh.png" width="206px" height="213px" alt="">
                         </div>
@@ -333,9 +342,9 @@
                         </p>
                     </a>
                 </div>
-                <div class="col-sm scale-img">
+                <div class="col-sm scale-img4">
                     <a href="#" style="text-decoration: none;">
-                        <div class="code-step-img">
+                        <div id="code-step-scale4" class="code-step-img">
                             <span class="label-step">4</span>
                             <img src="images/chia-se-lap-trinh.png" width="206px" height="213px" alt="">
                         </div>

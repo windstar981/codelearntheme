@@ -235,9 +235,13 @@ button:focus
 {
     transition: all 0.5s;
 }
-.scale-img:hover
+/* .scale-img:hover
 {
     transform: scale(1.25);
+} */
+.scale-imgs
+{
+    transform: scale(1);
 }
 .code-step
 {
@@ -261,6 +265,11 @@ button:focus
     border-radius: 50%;
     z-index: 1;
 }
+    /* .code-step a:hover .code-step-img
+    {
+        transform: scale(1.1);
+    } */
+
 .code-step-img
 {
     display: inline-block;
@@ -269,11 +278,12 @@ button:focus
     max-width: calc(100% - 60px);
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0 0 20px 0 rgba(29,31,89,0.1);
+    box-shadow: 0 0 20px 0 rgba(29,31,89,.1);
     text-align: center;
     width: 100%;
     transition: all 300ms;
 }
+
 .code-step-title
 {
     color: #1e266d;
