@@ -1,403 +1,196 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/shtml; charset=utf-8" />
     <title>Login</title>
-    
-    <link rel="stylesheet" href="./asset/style.css">
-        <link rel="stylesheet" href="./asset/base.css">
-        <script src="https://kit.fontawesome.com/54f5e9521f.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+
     <script src="js/validate.js"></script>
-        <script src="https://kit.fontawesome.com/54f5e9521f.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="js/jslogin.js"></script>
-    <link type="text/css" href="css/login.css" rel="stylesheet" media="screen"/>
-    <link type="text/css" href="css/codelearn.css" rel="stylesheet" media="screen"/>
-    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet"> <!--load all styles -->
-    <script src="js/jquery-3.6.0.js"></script>
+    <link type="text/css" href="css/login.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="css/codelearn.css" rel="stylesheet" media="screen" />
+    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <script src="js/jsnote.js"></script>
+    <script src="js/validate.js"></script>
+    <!-- <script src="js/jquery-3.6.0.js"></script> -->
+
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script>
-        
-        $(document).ready(function()
-        {        
-            $('.scale-img1').mouseover(function()
-            {
+
+        $(document).ready(function () {
+            $('.scale-img1').mouseover(function () {
                 // $('.scale-imgs').css("transform", "scale(1.2)");
                 // $('.code-step-img').css("transform", "scale(1.2)");
                 $('#code-step-scale1').css("transform", "scale(1.2)")
-                 
-            }); 
-            $('.scale-img1').mouseout(function()
-            {
-                $('#code-step-scale1').css("transform", "scale(1)")  
+
             });
-            $('.scale-img2').mouseover(function()
-            {
+            $('.scale-img1').mouseout(function () {
+                $('#code-step-scale1').css("transform", "scale(1)")
+            });
+            $('.scale-img2').mouseover(function () {
                 // $('.scale-imgs').css("transform", "scale(1.2)");
                 // $('.code-step-img').css("transform", "scale(1.2)");
                 $('#code-step-scale2').css("transform", "scale(1.2)")
-                 
-            }); 
-            $('.scale-img2').mouseout(function()
-            {
-                $('#code-step-scale2').css("transform", "scale(1)")  
+
             });
-            $('.scale-img3').mouseover(function()
-            {
+            $('.scale-img2').mouseout(function () {
+                $('#code-step-scale2').css("transform", "scale(1)")
+            });
+            $('.scale-img3').mouseover(function () {
                 // $('.scale-imgs').css("transform", "scale(1.2)");
                 // $('.code-step-img').css("transform", "scale(1.2)");
                 $('#code-step-scale3').css("transform", "scale(1.2)")
-                 
-            }); 
-            $('.scale-img3').mouseout(function()
-            {
-                $('#code-step-scale3').css("transform", "scale(1)")  
+
             });
-            $('.scale-img4').mouseover(function()
-            {
+            $('.scale-img3').mouseout(function () {
+                $('#code-step-scale3').css("transform", "scale(1)")
+            });
+            $('.scale-img4').mouseover(function () {
                 // $('.scale-imgs').css("transform", "scale(1.2)");
                 // $('.code-step-img').css("transform", "scale(1.2)");
                 $('#code-step-scale4').css("transform", "scale(1.2)")
-                 
-            }); 
-            $('.scale-img4').mouseout(function()
-            {
-                $('#code-step-scale4').css("transform", "scale(1)")  
+
             });
-            
+            $('.scale-img4').mouseout(function () {
+                $('#code-step-scale4').css("transform", "scale(1)")
+            });
+
         });
     </script>
-    <!-- <script>
-        function check_user(users)
-        {
-            if(!((users[0]>='a' && users[0]<='z') || (users[0]>='A' && users[0]<='Z')))
-            {
-                return false;
-                //alert(users[0]);
-            }
-            //alert("true");
-            return true;
-        }
-        function check_mail(mails)
-        {
-            if(((mails[0]>='a' && mails[0]<='z') || (mails[0]>='A' && mails[0]<='Z')))
-            {
-                return false;
-            }
-            var count_char = 0;
-            var count_number = 0;
-            var count_dots = 0;
-            for(var i=1 ; i<mails.lenght();i++)
-            {
-                if((mails[0]>='a' && mails[0]<='z') || (mails[0]>='A' && mails[0]<='Z'))
-                {
-                    count_char +=1;
-                }
-                if(mails[i]=='.')
-                {
-                    count_dots += 1;
-                }
-                if(mails[i]==[0,9])
-                {
-                    count_number += 1;
-                }
-            }
-            var string_mail = mails.split('@');
-            alert(string_mail);
-            var template_mail = ["yahoo.com","gmail.com","outlook.office.com"];
-            var check = false;
-            for(var i=0 ; i<template_mail.length();i++)
-            {
-                if(string_mail[1]==template_mail[i])
-                {
-                    check = true;
-                }
-            }
-            if(check==true && count_char>0 && count_number>0 && count_dots>0)
-            {
-                return true;
-            }
-            return false;
-        }
-        function check_pass(pass)
-        {
-            if(pass.lenght()<8)
-            {
-                return false;
-            }
-            return true;
-        }
-        function check_Info()
-        {
-            var user_name = $("#username").val();
-            var mail = $("#mail").val();
-            var pass = $("#password").val();
-            alert(pass);
-            if(check_user(user_name)==true)
-                alert("oke use");
-            if(check_mail(mail)==true)
-            {
-                alert("Oke mail");
-            }
-            else
-            {
-                alert("mail error");
-            }
-            if(check_pass(pass)==true)
-            {
-                alert("oke password");
-            }
-            else
-            {
-                alert("pass error");
-            }
-            // document.write(check_Info(user_name));
-        }
 
-    </script> -->
     <style>
-        *a{
+        *a {
             text-decoration: none;
         }
     </style>
 </head>
+
 <body>
-    <!-- thiếu phần header menu -->  
-    <div class="modal">
-        <div class="modal__overlay" onclick="esc()"></div>
+    <!-- thiếu phần header menu -->
 
-        <div class="modal__body">
-            <!-- Login form -->
-            <div class="login__form">
-                <div class="auth-form">
-                    <div class="auth-form__container">
-                        <div class="auth-form__header">
-                            <h3 class="auth-form__heading">Đăng nhập bằng tài khoản</h3>
-                        </div>
+    <div class="container-all">
+        <div class="container-img">
 
-                        <div class="sign-options">
-                            <ul class="sign-option-list">
-                                <li class="signin-option-item">
-                                    <button class="option-item btn-micro">
-                                        <i class="fab fa-windows"></i>
-                                        <span>Microsoft</span>
-                                    </button>
-                                </li>
-                                <li class="signin-option-item">
-                                    <button class="option-item btn-face">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <span>Facebook</span>
-                                    </button>
-                                </li>
-                                <li class="signin-option-item">
-                                    <button class="option-item btn-google">
-                                        <i class="fab fa-google"></i>
-                                        <span>Google</span>
-                                    </button>
-                                </li>
-                            </ul>
+            <img src="images/head-left-bg.png" class="img-left" alt="#">
+            <img src="images/head-right-bg.png" class="img-right" alt="">
+            <div class="container-form">
+                <div class="container-wrap">
+                    <h4>Bắt đầu ngay</h4>
+                    <form action="" id="commentForm" class="form-login">
+                        <input type="text" id="cname" name="name" placeholder="Tên đăng nhập" minlength="2"
+                            class="form-fix" required>
+                        <input type="email" id="cemail" name="email" placeholder="Email" class="form-fix" required>
+                        <input type="password" id="password" name="password" placeholder="Mật khẩu" class="form-fix"
+                            minlength="8" required>
+                        <div class="check-box-form">
+                            <input type="checkbox" id="provision" name="provision" value="">
+                            <label for="provision">Đồng ý với <a href="#">Điều khoản</a> của Codelearn</label>
                         </div>
-
-                        <p class="label-or">Hoặc</p>
-
-                        <div class="auth-form__form">
-                            <div class="auth-form__group">
-                                <input type="email" class="auth-form__input" placeholder="Tên đăng nhập" required>
-                                <input type="password" class="auth-form__input" placeholder="Vui lòng nhập mật khẩu" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="button" class="form-control btn btn-login" value="Đăng nhập">
-                        </div>
-
-                        <div class="forgot-password">
-                            <a href="" class="forgot-link">Quên mật khẩu</a>
-                        </div>
-                        
-                        <hr>
-                        <div class="term-of-use">
-                            <span>Trang này được bảo vệ bởi reCAPTCHA và áp dụng <a href="">Điều khoản sử dụng.</a></span>
-                        </div>
+                    </form>                        
+                    <div>
+                        <button class="bt-register" onclick="check_Info()">Đăng ký </button>
+                    </div>
+                    <div class="use-acc">
+                        hoặc sử dụng tài khoản khác
+                    </div>
+                    <div class="container-contact-flex">
+                        <button class="bt-wd">
+                            <i class="fab fa-windows"></i>
+                        </button>
+                        <button class="bt-fb">
+                            <i class="fab fa-facebook-square"></i>
+                        </button>
+                        <button class="bt-gg">
+                            <i class="fab fa-google"></i>
+                        </button>
                     </div>
                 </div>
             </div>
+
         </div>
-    </div>
-
-<div class="container-all">
-    <div class="container-img">
-        <!-- <div class="container-nav">
-            <ul class="nav-list">
-                <li>Học tập</li>
-                <li>Luyện tập</li>
-                <li>Thi đấu</li>
-                <li>Thử thách</li>
-                <li>Đánh giá</li>
-                <li>Thảo luận</li>
-                <li>Trò chơi</li>
-                <li>Chia sẻ</li>
-            </ul>
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-              
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </div>
-        </div> -->
-        <img src="images/head-left-bg.png" class="img-left" alt="#">
-        <img src="images/head-right-bg.png" class="img-right" alt=""> 
-        <div class="container-form">
-            <div class="container-wrap">
-                <h4>Bắt đầu ngay</h4>
-                <form action=""  id="commentForm" class="form-login">
-                    
-                    <input type="text" id="username" name="username" placeholder="Tên đăng nhập" class="form-fix">
-                    <input type="text" id="mail" name="mail" placeholder="Email" class="form-fix">
-                    <input type="password" id="pass" name="pass" placeholder="Mật khẩu" class="form-fix">
-                    <div class="check-box-form">
-                        <input type="checkbox" id="provision" name="provision" value="">
-                        <label for="provision">Đồng ý với <a href="#">Điều khoản</a> của Codelearn</label>
+        <!-- div lộ trình trở thành lập trình viên -->
+        <div style="clear: both;"></div>
+        <section class="code-step">
+            <div class="container">
+                <!-- <div class="code-step"> -->
+                <h2 class="content-code-step">
+                    Lộ trình trở thành
+                    <br>
+                    lập trình viên
+                </h2>
+                <div class="row">
+                    <div class="col-sm scale-img1">
+                        <a href="#" style="text-decoration: none;">
+                            <div id="code-step-scale1" class="code-step-img">
+                                <span class="label-step">1</span>
+                                <img src="images/hoc-lap-trinh.png" class="scale-imgs" width="206px" height="213px"
+                                    alt="">
+                            </div>
+                            <h3 class="code-step-title">
+                                Học lập trình
+                            </h3>
+                            <p class="code-step-content">
+                                Học lập trình cơ bản đến nâng cao thông qua các khóa học.
+                            </p>
+                        </a>
                     </div>
-                </form>
-                <div>
-                    <button class="bt-register" onclick="check_Info()">Đăng ký </button>
+                    <div class="col-sm scale-img2">
+                        <a href="#" style="text-decoration: none;">
+                            <div id="code-step-scale2" class="code-step-img">
+                                <span class="label-step">2</span>
+                                <img src="images/luyen-lap-trinh.png" width="206px" height="213px" alt="">
+                            </div>
+                            <h3 class="code-step-title">
+                                Luyện lập trình
+                            </h3>
+                            <p class="code-step-content">
+                                Luyện lập trình hằng ngày với hàng nghìn bài tập lớn nhỏ.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-sm scale-img3">
+                        <a href="#" style="text-decoration: none;">
+                            <div id="code-step-scale3" class="code-step-img">
+                                <span class="label-step">3</span>
+                                <img src="images/thi-lap-trinh.png" width="206px" height="213px" alt="">
+                            </div>
+                            <h3 class="code-step-title">
+                                Thi lập trình
+                            </h3>
+                            <p class="code-step-content">
+                                Tham gia các cuộc thi và cải thiện kỹ năng lập trình liên tục.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-sm scale-img4">
+                        <a href="#" style="text-decoration: none;">
+                            <div id="code-step-scale4" class="code-step-img">
+                                <span class="label-step">4</span>
+                                <img src="images/chia-se-lap-trinh.png" width="206px" height="213px" alt="">
+                            </div>
+                            <h3 class="code-step-title">
+                                Tìm hiểu lập trình
+                            </h3>
+                            <p class="code-step-content">
+                                Tìm hiểu kiến thức lập trình thông qua chia sẻ từ các chuyên gia.
+                            </p>
+                        </a>
+                    </div>
                 </div>
-                <div class="use-acc">
-                    hoặc sử dụng tài khoản khác
-                </div>
-                <div class="container-contact-flex">
-                    <button class="bt-wd">
-                        <i class="fab fa-windows"></i>
-                    </button>
-                    <button class="bt-fb">
-                        <i class="fab fa-facebook-square"></i>
-                    </button>
-                    <button class="bt-gg">
-                        <i class="fab fa-google"></i>
-                    </button>
-                </div>
+
+                <!-- </div> -->
             </div>
-        </div> 
-            
+        </section>
     </div>
-    <!-- div lộ trình trở thành lập trình viên -->
-     <section class="code-step">
-        <div class="container">
-            <!-- <div class="code-step"> -->
-            <h2 class="content-code-step">
-                Lộ trình trở thành
-                <br>
-                lập trình viên
-            </h2>
-            <div class="row">
-                <div class="col-sm scale-img1">
-                    <a href="#" style="text-decoration: none;">
-                        <div  id="code-step-scale1" class="code-step-img">
-                            <span class="label-step">1</span>
-                            <img src="images/hoc-lap-trinh.png" class="scale-imgs" width="206px" height="213px" alt="">
-                        </div>
-                        <h3 class="code-step-title">
-                            Học lập trình
-                        </h3>
-                        <p class="code-step-content">
-                            Học lập trình cơ bản đến nâng cao thông qua các khóa học.
-                        </p>
-                    </a>
-                </div>
-                <div class="col-sm scale-img2">
-                    <a href="#" style="text-decoration: none;">
-                        <div id="code-step-scale2" class="code-step-img">
-                            <span class="label-step">2</span>
-                            <img src="images/luyen-lap-trinh.png" width="206px" height="213px" alt="">
-                        </div>
-                        <h3 class="code-step-title">
-                            Luyện lập trình
-                        </h3>
-                        <p class="code-step-content">
-                            Luyện lập trình hằng ngày với hàng nghìn bài tập lớn nhỏ.
-                        </p>
-                    </a>
-                </div>
-                <div class="col-sm scale-img3">
-                    <a href="#" style="text-decoration: none;">
-                        <div id="code-step-scale3" class="code-step-img">
-                            <span class="label-step">3</span>
-                            <img src="images/thi-lap-trinh.png" width="206px" height="213px" alt="">
-                        </div>
-                        <h3 class="code-step-title">
-                            Thi lập trình
-                        </h3>
-                        <p class="code-step-content">
-                            Tham gia các cuộc thi và cải thiện kỹ năng lập trình liên tục.
-                        </p>
-                    </a>
-                </div>
-                <div class="col-sm scale-img4">
-                    <a href="#" style="text-decoration: none;">
-                        <div id="code-step-scale4" class="code-step-img">
-                            <span class="label-step">4</span>
-                            <img src="images/chia-se-lap-trinh.png" width="206px" height="213px" alt="">
-                        </div>
-                        <h3 class="code-step-title">
-                            Tìm hiểu lập trình
-                        </h3>
-                        <p class="code-step-content">
-                            Tìm hiểu kiến thức lập trình thông qua chia sẻ từ các chuyên gia.
-                        </p>
-                    </a>
-                </div>
-            </div>
-                
-            <!-- </div> -->
-        </div> 
-     </section>
-</div>
-<script>
-    function dropmenu() {
-        var drop = document.querySelector('.dropdown-sub');
-        drop.classList.toggle("block");
-    }
-
-    function loginClick() {
-        document.querySelector('.modal').style.display = 'flex';
-        document.querySelector('.register__form').style.display = 'none';
-        document.querySelector('.login__form').style.display = 'block'
-    }
-
-    function registerClick() {
-        document.querySelector('.modal').style.display = 'flex';
-        document.querySelector('.register__form').style.display = 'block';
-        document.querySelector('.login__form').style.display = 'none'
-    }
-
-    function esc() {
-        document.querySelector('.modal').style.display = 'none';
-    }
-
-    window.onscroll = function() {stick()};
-
-    var menuSticky = document.querySelector('.top-menu');
-    var loginStick = document.querySelector('.login-btn')
-    var sticky = menuSticky.offsetTop;
-    function stick(){
-        if(window.pageYOffset > sticky){
-            menuSticky.classList.add("stick");
-            loginStick.classList.add("btn-stick");
-        }else {
-            menuSticky.classList.remove("stick");
-            loginStick.classList.remove("btn-stick");
-        }
-    }
-</script>
 </body>
+
 </html>

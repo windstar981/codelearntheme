@@ -1,9 +1,10 @@
 $(document).ready(function () {
-    var fl = $('.detail-button-hoc-ngay');
     setInterval(function () {
-        fl.toggleClass('color-button-2');
+        $('.detail-button-hoc-ngay').toggleClass('color-button-2');
     }, 500);
-
+    setInterval(function () {
+        $('.color-btn-a').toggleClass('color-btn-a-swap');
+    }, 500);
     $('.detail-button-hoc-ngay').click(function () {
         var timer2 = "20:00:00";
         var flag = 1;
@@ -44,4 +45,51 @@ $(document).ready(function () {
             timer2 = hour + ':' +minutes + ':' + seconds;
         }, 1000);
     });
+    // file login
+    $("#commentForm").validate();
+
+		// validate signup form on keyup and submit
+		$(this).validate({
+			rules: {
+				firstname: "required",
+				lastname: "required",
+				username: {
+					required: true,
+					minlength: 5
+                    
+				},
+                
+				password: {
+					required: true,
+					minlength: 8
+				},
+				
+				email: {
+					required: true,
+					email: true
+				},
+				
+				agree: "required"
+			}
+			
+		});
+    // bắt sự kiệm click cho button đăng kí 
+    $('.bt-register').click(function()
+    {
+        var user_name = $('#cname').val();
+        var name_mail = $('#cemail').val(   );
+        var pass_word = $('#password').val();
+        // kiểm tra email có hợp lệ hay không
+        //i là phân biệt hoa thường
+        //m là có thể tìm nhiều dòng
+        //g là tìm tất cả
+        // var regex_mail = /(\.com|\.org)/i; 
+        var regex_pass = /^([a-zA-Z])/;
+        alert(regex_pass.test(pass_word))
+        if(regex_mail.test(name_mail))
+        {
+            alert(name_mail);
+        }
+    });
+
 });

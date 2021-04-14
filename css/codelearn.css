@@ -518,9 +518,17 @@ border: none;
 border-left: 2px solid #e8505b;
 border-right: 2px solid #e8505b;
 outline: none;
-color: #e8505b;
+
 font-size: 15px;
 position: relative;
+}
+.color-btn-a
+{
+    color: #e8505b;
+}
+.color-btn-a-swap
+{
+    color: rgb(59, 60, 84);
 }
 .btn-a span {
 display: inline-block;
