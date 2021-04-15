@@ -34,31 +34,13 @@
 </head>
 
 <body>
-    <!-- header chia bằng flex thành 3 phần logo, list, block dropdown noti và account -->
-
-    <!-- Header -->
-
-    <!-- <script>
-    function dropmenu() {
-        var drop = document.querySelector('.dropdown-sub');
-        drop.classList.toggle("block");
-    }
-
-    function dropnotify() {
-        document.querySelector('.sub-notify').classList.toggle("block");
-    }
-
-    function dropuser() {
-        document.querySelector('.sub-user').classList.toggle("block");
-    }
-</script> -->
-    <!-- Kết thúc header -->
+    
     <div class="all">
         <!-- phần menu head -->
         <!-- <div class="header">
         
     </div> -->
-        <div class="zone-content" style="background-color: white;">
+        
             <header>
                 <div class="top-menu">
                     <div class="wrap-top-menu">
@@ -80,7 +62,7 @@
                                     <li class="menu-list-item"><a href="" class="list-item-link">Trò chơi</a></li>
                                     <li class="menu-list-item"><a href="" class="list-item-link">Chia sẻ</a></li>
                                 </ul>
-                                <div class="wrap-flag-logo" onclick="dropmenu()">
+                                <div class="wrap-flag-logo">
                                     <img src="images/vn.png" alt="#" class="flag-logo">
                                     <div class="dropdown-sub">
                                         <ul class="dropdown-sub-list">
@@ -97,11 +79,11 @@
                                 </div>
                             </nav>
                             <ul class="site-user-menu">
-                                <li class="site-user-menu-item" onclick="dropnotify()">
+                                <li class="site-user-menu-item flag-noti">
                                     <a href="#" class="site-menu-bell">
                                         <i class="far fa-bell bell-icon"></i>
                                     </a>
-                                    <div class="sub-notify">
+                                    <div class="sub-notify flag-noti">
                                         <p>Không có thông báo!</p>
                                         <hr>
                                         <div class="view-all-notify">
@@ -109,11 +91,11 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="site-user-menu-item" onclick="dropuser()">
+                                <li class="site-user-menu-item flag-user">
                                     <a href="#" class="site-menu-avatar">
                                         <img src="images/user-default.svg" alt="User_name" class="menu-avatar">
                                     </a>
-                                    <div class="sub-user">
+                                    <div class="sub-user flag-user">
                                         <ul class="user-option">
                                             <li class="user-option-item"><a href="">Thông tin của tôi</a> </li>
                                             <li class="sperate"></li>
@@ -130,7 +112,6 @@
                     </div>
                 </div>
             </header>
-        </div>
         <!-- Kết thúc header -->
 
         <!-- Phần content -->
@@ -1566,6 +1547,7 @@
         </div>
         <!-- Kết thúc footer -->
     </div>
+   
 </body>
 
 </html>

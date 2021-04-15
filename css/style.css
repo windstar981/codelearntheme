@@ -129,7 +129,7 @@ nav {
 
 /* dropdown */
 .dropdown-sub{
-    /* display: none; */
+    display: none;
 }
 
 .my-dropdown-menu.active{
