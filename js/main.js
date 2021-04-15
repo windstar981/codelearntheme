@@ -184,14 +184,14 @@ $(document).ready(function () {
     {
         $('.carousel-item').removeClass("active");
         $('#slide-1').addClass("active");
-        $('#why-choose-us').css("background-color","#f4ebeb")
+        $('#why-choose-us').css("background-color","#f4ebeb");
 
     });
     $('.click-slide-2').click(function()
     {
         $('.carousel-item').removeClass("active");
         $('#slide-2').addClass("active");
-        $('#why-choose-us').css("background-color","#f0f8ec")
+        $('#why-choose-us').css("background-color","#f0f8ec");
     });
     $('.click-slide-3').click(function()
     {
@@ -216,30 +216,38 @@ $(document).ready(function () {
     { 
         $('.click-color').css("background-color","transparent");
         $(this).css("background-color","white");
-    })
-    // if($('.carousel-inner').childrent().hasClass("active"))
-    // {
-    //     if($('.active').childrent().hasClass("color-slide-1"))
-    //     {
-    //         $('#why-choose-us').css("background-color","red")
-    //     }
-    //     if($('.active').childrent().hasClass("color-slide-2"))
-    //     {
-    //         $('#why-choose-us').css("background-color","black")
-    //     }
-    //     if($('.active').childrent().hasClass("color-slide-3"))
-    //     {
-    //         $('#why-choose-us').css("background-color","#f4ebeb")
-    //     }
-    //     if($('.active').childrent().hasClass("color-slide-4"))
-    //     {
-    //         $('#why-choose-us').css("background-color","#f4ebeb")
-    //     }
-    //     if($('.active').childrent().hasClass("color-slide-5"))
-    //     {
-    //         $('#why-choose-us').css("background-color","#f4ebeb")
-    //     }
-    //     alert("oke");
-    // }
+    });
+    var myCarousel = document.getElementById('carouselExampleControls')
+    var dem = 1;
+    $('#why-choose-us').css("background-color","#f4ebeb");
+    $('.click-slide-1').css("background-color","white");
+    myCarousel.addEventListener('slide.bs.carousel', function () 
+    {
+        $('.click-color').css("background-color","transparent");
+        switch ($('.active').attr('id')) {
+            case "slide-1":
+                $('#why-choose-us').css("background-color","#f0f8ec");
+                $('.click-slide-2').css("background-color","white");
+                break;
+            case "slide-2":
+                $('#why-choose-us').css("background-color","#f8f4eb");
+                $('.click-slide-3').css("background-color","white");
+                break;
+            case "slide-3":
+                $('#why-choose-us').css("background-color","#ededf8");
+                $('.click-slide-4').css("background-color","white");
+                break;
+            case "slide-4":
+                $('#why-choose-us').css("background-color","#f8f4eb");
+                $('.click-slide-5').css("background-color","white");
+                break;
+            case "slide-5":
+                $('#why-choose-us').css("background-color","#f4ebeb");
+                $('.click-slide-1').css("background-color","white");
+                break;
+            default:
+                break;
+        }
+    });
     
 });
