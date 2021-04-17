@@ -1,54 +1,4 @@
-
 $(document).ready(function () {
-    var availableTags = [
-        "BASIC",
-        "C",
-        "Cơ bản",
-        "C++",
-        "Cấu trúc dữ liệu và giải thuật",
-        "Lập trình hướng đối tượng Java",
-        "Thuật toán nâng cao",
-        "Thuật toán cơ bản",
-        "Điện toán đám mây",
-        "Thư viện chuẩn C++",
-        "Phần mềm máy tính",
-        "Phần cứng máy tính",
-        "Truyền thông và mạng máy tính",
-        "Làm quen với SQL",
-        "Javascrip cơ bản",
-        "Python cơ bản"
-    ];
-    // $('input[name="name"]').autocomplete({
-    //     source: availableTags
-    // });
-    $('#search-course').autocomplete({
-            source: availableTags
-        });
-    
-
-
-    $('.modal__overlay').click(function () {
-        $('.modal').css("display", "none");
-    });
-    $('.login-btn').click(function () {
-        $('.modal').css("display", "flex");
-        $('.register__form').css("display", "none");
-        $('.login__form').css("display", "block");
-    })
-    window.onscroll = function () { stick() };
-
-    var menuSticky = document.querySelector('.top-menu');
-    var loginStick = document.querySelector('.login-btn')
-    var sticky = menuSticky.offsetTop;
-    function stick() {
-        if (window.pageYOffset > sticky) {
-            menuSticky.classList.add("stick");
-            loginStick.classList.add("btn-stick");
-        } else {
-            menuSticky.classList.remove("stick");
-            loginStick.classList.remove("btn-stick");
-        }
-    }
     $('.flag-logo').click(function () {
         $(".dropdown-sub").addClass("block");
     });
@@ -85,22 +35,22 @@ $(document).ready(function () {
     $('.detail-button-hoc-ngay').click(function () {
         var timer2 = "20:00:00";
         var flag = 1;
-        if (flag) {
-            var interval = setInterval(function () {
-                flag = 0;
-                var timer = timer2.split(':');
-                //by parsing integer, I avoid all extra string processing
-                var minutes = parseInt(timer[0], 10);
-                var seconds = parseInt(timer[1], 10);
-                --seconds;
-                minutes = (seconds < 0) ? --minutes : minutes;
-                if (minutes < 0) clearInterval(interval);
-                seconds = (seconds < 0) ? 59 : seconds;
-                seconds = (seconds < 10) ? '0' + seconds : seconds;
-                $('.countdown').html(minutes + ':' + seconds);
-                timer2 = minutes + ':' + seconds;
-            }, 1000);
-        }
+        // if (flag) {
+        //     var interval = setInterval(function () {
+        //         flag = 0;
+        //         var timer = timer2.split(':');
+        //         //by parsing integer, I avoid all extra string processing
+        //         var minutes = parseInt(timer[0], 10);
+        //         var seconds = parseInt(timer[1], 10);
+        //         --seconds;
+        //         minutes = (seconds < 0) ? --minutes : minutes;
+        //         if (minutes < 0) clearInterval(interval);
+        //         seconds = (seconds < 0) ? 59 : seconds;
+        //         seconds = (seconds < 10) ? '0' + seconds : seconds;
+        //         $('.countdown').html(minutes + ':' + seconds);
+        //         timer2 = minutes + ':' + seconds;
+        //     }, 1000);
+        // }
         var interval = setInterval(function () {
             flag = 0;
             var timer = timer2.split(':');
@@ -121,131 +71,4 @@ $(document).ready(function () {
             timer2 = hour + ':' + minutes + ':' + seconds;
         }, 1000);
     });
-
-    $("#commentForm").validate();
-
-    // validate signup form on keyup and submit
-    $(this).validate({
-        rules: {
-            firstname: "required",
-            lastname: "required",
-            username: {
-                required: true,
-                minlength: 5
-
-            },
-
-            password: {
-                required: true,
-                minlength: 8
-            },
-
-            email: {
-                required: true,
-                email: true
-            },
-
-
-        }
-
-    });
-    // bắt sự kiệm click cho button đăng kí 
-    $('.bt-register').click(function () {
-        var user_name = $('#cname').val();
-        var name_mail = $('#cemail').val();
-        var pass_word = $('#password').val();
-        // kiểm tra email có hợp lệ hay không
-        //i là phân biệt hoa thường
-        //m là có thể tìm nhiều dòng
-        //g là tìm tất 
-        var regex_name = /.{2,}/;
-        var regex_mail = /(\.com|\.org)/i;
-        // có các chữ thường hoa và số 
-        var regex_pass = /([a-zA-Z0-9]).{8,}/;
-
-        if (regex_mail.test(name_mail) && regex_pass.test(pass_word) && regex_name.test(user_name)) {
-            $('.pop-block').css("display", "flex");
-
-        }
-    });
-    var i = 0;
-    setInterval(function () {
-        $('.counter').html(i);
-        if (i < 10) +
-            i++;
-        else if (i < 1000)
-            i += 10;
-        else if (i < 60000)
-            i += 999;
-        if (i > 60000)
-            clearInterval();
-    }, 10);
-
-
-
-    // thêm class active cho slide
-    $('.click-slide-1').click(function () {
-        $('.carousel-item').removeClass("active");
-        $('#slide-1').addClass("active");
-        $('#why-choose-us').css("background-color", "#f4ebeb");
-
-    });
-    $('.click-slide-2').click(function () {
-        $('.carousel-item').removeClass("active");
-        $('#slide-2').addClass("active");
-        $('#why-choose-us').css("background-color", "#f0f8ec");
-    });
-    $('.click-slide-3').click(function () {
-        $('.carousel-item').removeClass("active");
-        $('#slide-3').addClass("active");
-        $('#why-choose-us').css("background-color", "#f8f4eb");
-    });
-    $('.click-slide-4').click(function () {
-        $('.carousel-item').removeClass("active");
-        $('#slide-4').addClass("active");
-        $('#why-choose-us').css("background-color", "#ededf8");
-    });
-    $('.click-slide-5').click(function () {
-        $('.carousel-item').removeClass("active");
-        $('#slide-5').addClass("active");
-        $('#why-choose-us').css("background-color", "#f1e5ed");
-    });
-
-    $('.click-color').click(function () {
-        $('.click-color').css("background-color", "transparent");
-        $(this).css("background-color", "white");
-    });
-    var myCarousel = document.getElementById('carouselExampleControls')
-    var dem = 1;
-    $('#why-choose-us').css("background-color", "#f4ebeb");
-    $('.click-slide-1').css("background-color", "white");
-    myCarousel.addEventListener('slide.bs.carousel', function () {
-        $('.click-color').css("background-color", "transparent");
-        switch ($('.active').attr('id')) {
-            case "slide-1":
-                $('#why-choose-us').css("background-color", "#f0f8ec");
-                $('.click-slide-2').css("background-color", "white");
-                break;
-            case "slide-2":
-                $('#why-choose-us').css("background-color", "#f8f4eb");
-                $('.click-slide-3').css("background-color", "white");
-                break;
-            case "slide-3":
-                $('#why-choose-us').css("background-color", "#ededf8");
-                $('.click-slide-4').css("background-color", "white");
-                break;
-            case "slide-4":
-                $('#why-choose-us').css("background-color", "#f8f4eb");
-                $('.click-slide-5').css("background-color", "white");
-                break;
-            case "slide-5":
-                $('#why-choose-us').css("background-color", "#f4ebeb");
-                $('.click-slide-1').css("background-color", "white");
-                break;
-            default:
-                break;
-        }
-    });
-
-
 });
