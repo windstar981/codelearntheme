@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // tạo một mảng gợi ý 
     var availableTags = [
         "BASIC",
         "C",
@@ -17,15 +18,13 @@ $(document).ready(function () {
         "Javascrip cơ bản",
         "Python cơ bản"
     ];
-    // $('input[name="name"]').autocomplete({
-    //     source: availableTags
-    // });
+    // sự kiện autocomplete
     $('#search-course').autocomplete({
         source: availableTags
     });
+    // Sự kiện mouseover khi vào div hiện pop miêu tả chi tiết khóa học
     $('.wrap-course-item').mouseover(function (e) {
         e.preventDefault();
-        //get with of popover div
         let wd_pop = $(this).children('.popover-course').width();
         var wd_width = $(window).width();
         let offsetCourse = $(this).offset();
@@ -40,7 +39,7 @@ $(document).ready(function () {
             $(this).children('.popover-course').addClass('arrow-left');
         }
     });
-
+    // khi load trang có pop xuất hiện, sự kiện này tắt pop
     $('.pop-exit').click(function () {
         $('.pop-block').css("display", "none");
     });

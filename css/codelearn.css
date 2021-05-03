@@ -1,4 +1,4 @@
-.all
+.m-wrapper
 {
     width: 100%;
     margin: auto;
@@ -16,7 +16,6 @@
 .content
 {
     width: 100%;
-    height: 2400px;
     background-color: #f7f9fa;
 }
 .footer
@@ -27,7 +26,10 @@
     
 }
 
-
+.bd
+{
+    background: url("../images/bg-user-info.png") top left no-repeat;
+}
 .wrap-info
 {
     height: 337px;
@@ -38,7 +40,6 @@
 {
     color: rgb(255, 255, 255);
     font-size: 18px;
-    padding-top: 30px;
     padding-bottom: 5px;
 }
 .welcome span
@@ -62,13 +63,37 @@
     height: 223.8px
 }
 .flex-containers  > div {
-    background-color: #f1f1f1;
     width: 100%;
     text-align: center;  
 }
 .cl
 {
     background-color: rgb(255, 255, 255);
+}
+.user-avt
+{
+    width: 85px;
+    height: 100px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.lv-avt
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 18px;
+    margin-top: 8px;
+}
+.img-user
+{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 3px 5px;
 }
 .container-content
 {
@@ -78,9 +103,11 @@
 {
     height: 111.9px;
 }
-.height_one
+.height_two
 {
     height: 111.9px;
+    display: block;
+    color: white;
 }
 .button_kham_pha:hover
 {
@@ -178,6 +205,18 @@
 {
     float: right im !important;
 }
+.detail-progress-thanh-tich > ul
+{
+    padding-left: 0;
+    padding-top: 10px;
+    
+
+}
+.detail-progress-thanh-tich > ul > li
+{
+    padding-right: 10px;
+    float: left;
+}
 .menu-3 li a {
     display: block;
     font-size: 18px;
@@ -215,7 +254,6 @@ transform: translate(0, -10px);
 {
 width:100%;
 height: 180px;
-background-color: red;
 }
 .div-kh-img img
 {
@@ -242,6 +280,39 @@ background-color: red;
     margin: 5px;
     color:black;
     height: 68px;
+}
+.wrap-user-header
+{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.content-user-info
+{
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.content-user-info > h3
+{
+    margin-bottom: 0px;
+}
+.user-xp
+{
+    padding-left: 20px;
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    /* display: inline-block; */
+    color: #f6ff00;
+}
+.user-next-levels > img
+{
+    width: 60px;
+    height: 35px;
+    float: right;
+    padding-right: 20px;
 }
 .h-title
 {
@@ -362,7 +433,7 @@ width: 100%;
 }
 .detail-progress-thanh-tich
 {
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .detail-progress-content-h4 a
 {
@@ -501,7 +572,10 @@ width: 100%;
 }
 .color-button-2
 {
-    background-color: pink;
+    background-color:rgb(247, 78, 78);
+    color: rgb(255, 248, 146);
+    font-size: 17px;
+    border: none;
 }
 /* button */
 .btn-a {
@@ -564,6 +638,22 @@ width: 20%;
 width: 70%;
 }
 /* footer */
+.info-progress
+{
+    width: 45%;
+}
+.progress-kh
+{
+    width: 63%;
+}
+.progress-lt
+{
+    width: 33.33%;
+}
+.progress-th
+{
+    width: 50%;
+}
 .main-footer
 {
     padding-top: 35px;
@@ -618,14 +708,18 @@ width: 70%;
 }
 .support-cl h4
 {
+    font-size: 18px;
     color: blue;
 }
 .support-cl a
 {
     color: rgb(59, 60, 84) !important;
     text-decoration: none;
+    font-size: 16px;
 }
 .support-cl a:hover
 {
     color: blue !important;
-}    
+}   
+ /*main  */
+ 

@@ -6,12 +6,11 @@ $(document).ready(function () {
     // form đăng nhập
     $('.login-btn').click(function () {
         $('.modal').css("display", "flex");
-        $('.register__form').css("display", "none");
-        $('.login__form').css("display", "block");
+        // $('.register__form').css("display", "none");
+        // $('.login__form').css("display", "block");
     })
     // stickey menu
     window.onscroll = function () { stick() };
-
     var menuSticky = document.querySelector('.top-menu');
     var loginStick = document.querySelector('.login-btn')
     var sticky = menuSticky.offsetTop;
@@ -25,10 +24,11 @@ $(document).ready(function () {
         }
     }
     // show các div menu
+    // dropdown language
     $('.flag-logo').click(function () {
         $(".dropdown-sub").addClass("block");
     });
-
+    // ẩn dropdown khi click ra ngoài dropdown
     $(document).click(function (event) {
         if (!$(event.target).closest(".dropdown-sub,.flag-logo").length) {
             $("body").find(".dropdown-sub").removeClass("block");
@@ -52,10 +52,11 @@ $(document).ready(function () {
             $("body").find(".sub-user").removeClass("block");
         }
     });
-    // img lộ trình học tập
+    // Sự kiện mouseouver khi di chuột vào div thì image phóng to lên 1.2
     $('.scale-img1').mouseover(function () {               
         $('#code-step-scale1').css("transform", "scale(1.2)")
     });
+    // Sự kiện mouseout khi chuột ra khỏi div thì image thu nhỏ lại
     $('.scale-img1').mouseout(function () {
         $('#code-step-scale1').css("transform", "scale(1)")
     });
@@ -78,17 +79,13 @@ $(document).ready(function () {
     $('.scale-img4').mouseout(function () {
         $('#code-step-scale4').css("transform", "scale(1)")
     });
-    // validate kiểm tra user name, email, password
+    // validate kiểm tra user name, email, password có hợp lệ hay không
     $("#commentForm").validate();
-
-    // validate signup form on keyup and submit
     $(this).validate({
         rules: {
-            firstname: "required",
-            lastname: "required",
             username: {
                 required: true,
-                minlength: 5
+                minlength: 2
 
             },
 
@@ -100,9 +97,7 @@ $(document).ready(function () {
             email: {
                 required: true,
                 email: true
-            },
-
-
+            }
         }
 
     });
@@ -115,6 +110,7 @@ $(document).ready(function () {
         //i là phân biệt hoa thường
         //m là có thể tìm nhiều dòng
         //g là tìm tất 
+        // jquery nâng cao
         var regex_name = /.{2,}/;
         var regex_mail = /(\.com|\.org)/i;
         // có các chữ thường hoa và số 
@@ -125,21 +121,39 @@ $(document).ready(function () {
 
         }
     });
-    // count number
+    // Sự kiện setInterval cho các class counter, mục đích khi load page để tạo hiệu ứng đếm
     var i = 0;
     setInterval(function () {
-        $('.counter').html(i);
-        if (i < 10) +
+        $('.counter-dk').html(i);
+        if (i < 10) 
             i++;
         else if (i < 1000)
             i += 10;
         else if (i < 60000)
-            i += 999;
+            i += 1000;
         if (i > 60000)
             clearInterval();
-    }, 10);
-
-
+    }, 20);
+    var j =0;
+    setInterval(function () {
+        $('.counter-cc').html(j);
+        if (j < 10) 
+            j++;
+        else if (j < 1000)
+            j += 10;
+        else if (j < 100000)
+            j += 1000;
+        if (j > 100000)
+            clearInterval();
+    }, 15);
+    var k = 0;
+    setInterval(function () {
+        $('.counter-qg').html(k);
+        if(k<5)
+            k++;
+        else
+            clearInterval();
+    }, 500);
     // chuyển slide
     // thêm class active cho slide
     $('.click-slide-1').click(function () {

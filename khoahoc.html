@@ -2,8 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/shtml; charset=utf-8" />  
+    <meta http-equiv="Content-Type" content="text/shtml; charset=utf-8" />
     <title>Học tập</title>
+    <link rel="icon" href="images/codelearn-icon.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
@@ -15,91 +16,92 @@
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/js0-kh.js"></script>
     <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="js/jquery-khoa-hoc.js"></script>
     <script src="js/ui.js"></script>
 </head>
+
 <body>
-    <div class="zone-content">
-        <!-- Phần header -->
-        <header>
-            <div class="top-menu">
-                <div class="wrap-top-menu">
-                    <div class="wrap-site-logo">
-                        <a href="#">
-                            <img src="images/codelearn-logo.png" alt="Codelearn" class="logo-img">
-                        </a>
-                    </div>
-                    <div class="wrap-top-menu-right">
-                        <nav class="site-menu">
-                            <ul class="menu-list">
-                                <li class="menu-list-item"><a href="#" class="list-item-link">Học tập</a></li>
-                                <li class="menu-list-item"><a href="#" class="list-item-link">Luyện tập</a></li>
-                                <li class="menu-list-item"><a href="#" class="list-item-link">Thi đấu</a></li>
-                                <li class="menu-list-item"><a href="#" class="list-item-link">Thử thách</a></li>
-                                <li class="menu-list-item"><a href="#" class="list-item-link">Đánh giá</a></li>
-                                <li class="menu-list-item"><a href="#" class="list-item-link">Thảo luận</a></li>
-                                <li class="menu-list-item"><a href="#" class="list-item-link">Xếp hạng</a></li>
-                                <li class="menu-list-item"><a href="#" class="list-item-link">Trò chơi</a></li>
-                                <li class="menu-list-item"><a href="#" class="list-item-link">Chia sẻ</a></li>
-                            </ul>
-                            <!-- add id select1 -->
-                            <div class="wrap-flag-logo">
-                                <img src="images/vn.png" alt="#" class="flag-logo">
-                                <div class="dropdown-sub" style="display: none;">
-                                    <ul class="dropdown-sub-list">
-                                        <li class="dropdown-sub-list-item">
-                                            <img src="images/en.png" alt="" class="flag-logo">
-                                            Tiếng Anh
-                                        </li>
-                                        <li class="dropdown-sub-list-item">
-                                            <img src="images/vn.png" alt="" class="flag-logo">
-                                            Tiếng việt
-                                        </li>
-                                    </ul>
+<div class="zone-content">
+    <!-- Phần header -->
+    <header>
+        <div class="top-menu">
+            <div class="wrap-top-menu">
+                <div class="wrap-site-logo">
+                    <a href="codelearn.html">
+                        <img src="images/codelearn-logo.png" alt="Codelearn" class="logo-img">
+                    </a>
+                </div>
+                <div class="wrap-top-menu-right">
+                    <nav class="site-menu">
+                        <ul class="menu-list">
+                            <li class="menu-list-item"><a href="#" class="list-item-link">Học tập</a></li>
+                            <li class="menu-list-item"><a href="#" class="list-item-link">Luyện tập</a></li>
+                            <li class="menu-list-item"><a href="#" class="list-item-link">Thi đấu</a></li>
+                            <li class="menu-list-item"><a href="#" class="list-item-link">Thử thách</a></li>
+                            <li class="menu-list-item"><a href="#" class="list-item-link">Đánh giá</a></li>
+                            <li class="menu-list-item"><a href="#" class="list-item-link">Thảo luận</a></li>
+                            <li class="menu-list-item"><a href="#" class="list-item-link">Xếp hạng</a></li>
+                            <li class="menu-list-item"><a href="#" class="list-item-link">Trò chơi</a></li>
+                            <li class="menu-list-item"><a href="#" class="list-item-link">Chia sẻ</a></li>
+                        </ul>
+                        <!-- add id select1 -->
+                        <div class="wrap-flag-logo">
+                            <img src="images/vn.png" alt="#" class="flag-logo">
+                            <!-- drodown language -->
+                            <div class="dropdown-sub" style="display: none;">
+                                <ul class="dropdown-sub-list">
+                                    <li class="dropdown-sub-list-item">
+                                        <img src="images/en.png" alt="" class="flag-logo">
+                                        Tiếng Anh
+                                    </li>
+                                    <li class="dropdown-sub-list-item">
+                                        <img src="images/vn.png" alt="" class="flag-logo">
+                                        Tiếng việt
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Kết thúc dropdown language -->
+                        </div>
+                    </nav>
+                    <ul class="site-user-menu">
+                        <li class="site-user-menu-item flag-noti">
+                            <a href="#" class="site-menu-bell">
+                                <i class="far fa-bell bell-icon"></i>
+                            </a>
+                            <div class="sub-notify flag-noti">
+                                <p>Không có thông báo!</p>
+                                <hr>
+                                <div class="view-all-notify">
+                                    <a href="#">Xem toàn bộ</a>
                                 </div>
                             </div>
-                        </nav>
-                        <ul class="site-user-menu">
-                            <li class="site-user-menu-item" >
-                                <a href="#" class="site-menu-bell">
-                                    <i class="far fa-bell bell-icon"></i>
-                                </a>
-                                <div class="sub-notify">
-                                    <p>Không có thông báo!</p>
-                                    <hr>
-                                    <div class="view-all-notify">
-                                        <a href="#">Xem toàn bộ</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="site-user-menu-item" id="select2">
-                                <a href="#" class="site-menu-avatar">
-                                    <img src="images/user-default.svg" alt="User_name" class="menu-avatar">
-                                </a>
-                                <div class="sub-user">
-                                    <ul class="user-option">
-                                        <li class="user-option-item"><a href="">Thông tin của tôi</a> </li>
-                                        <li class="sperate"></li>
-                                        <li class="user-option-item"><a href="">Hồ sơ của tôi</a> </li>
-                                        <li class="sperate"></li>
-                                        <li class="user-option-item"><a href="">Lớp của tôi</a> </li>
-                                        <li class="sperate"></li>
-                                        <li class="user-option-item"><a href="">Thoát</a> </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                        </li>
+                        <li class="site-user-menu-item flag-user">
+                            <a href="#" class="site-menu-avatar">
+                                <img src="images/user-default.svg" alt="User_name" class="menu-avatar">
+                            </a>
+                            <div class="sub-user flag-user">
+                                <ul class="user-option">
+                                    <li class="user-option-item"><a href="">Thông tin của tôi</a> </li>
+                                    <li class="sperate"></li>
+                                    <li class="user-option-item"><a href="">Hồ sơ của tôi</a> </li>
+                                    <li class="sperate"></li>
+                                    <li class="user-option-item"><a href="">Lớp của tôi</a> </li>
+                                    <li class="sperate"></li>
+                                    <li class="user-option-item"><a href="">Thoát</a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </header>
-        <!-- Kêt thúc phần header -->
-    </div>
-    <!-- Modal -->
-    <div style="background-color:#f1f1f1;">
+        </div>
+    </header>
+    <!-- Kêt thúc phần header -->
+    <!-- Phần chứa content -->
+    <div class="content-main">
         <!--phần tìm kiếm  -->
         <div class="wrap-content">
             <div class="head-course">
@@ -110,10 +112,7 @@
                     <div id="search" class="block-top-head">
                         <div class="input-group">
                             <form id="form-search" action="">
-                                
-                                <input  id="search-course" class="form-control" name="name"
-                                    placeholder="Nhập nội dung tìm kiếm">
-                                    
+                                <input id="search-course" class="form-control" name="name" placeholder="Nhập nội dung tìm kiếm">
                                 <span class="input-group-addon btn">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -123,7 +122,6 @@
                 </div>
             </div>
             <!-- Kết thúc phần tìm kiếm -->
-
         </div>
         <!-- Kiến thức cơ sở -->
         <div class="container">
@@ -137,7 +135,6 @@
                                 <a href="#">
                                     <img src="images/truyen-thong.png" alt="">
                                 </a>
-
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
@@ -151,14 +148,15 @@
                                     </span>
                                     <span class="course-type online">Online</span>
                                 </div>
-                                <h3 class="course-title" data-splitting>
+                                <h3 class="course-title">
                                     <a href="#">
                                         Truyền thông và Mạng máy tính
                                     </a>
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng máy
+                                    Khóa học cung cấp cho lập trình viên những kiến thức cơ bản và dễ hiểu về mạng
+                                    máy
                                     tính
                                     và truyền thông dữ liệu.
                                 </p>
@@ -188,7 +186,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
-                                            <span></span></span>
+                                        </span>
                                         <span class="avg-rate">5</span>
                                         <span class="total-rate">(96)</span>
                                     </span>
@@ -204,7 +202,8 @@
                                         <p><i class="far fa-star"></i> Đánh giá tuyệt tời từ học viên</p>
                                     </li>
                                     <li>
-                                        <p><i class="far fa-clock"></i> Thời gian hoàn thành: <strong>18 giờ</strong>
+                                        <p><i class="far fa-clock"></i> Thời gian hoàn thành: <strong>18
+                                                giờ</strong>
                                         </p>
                                     </li>
                                     <li>
@@ -228,7 +227,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -238,14 +238,15 @@
                                     </span>
                                     <span class="course-type online">Online</span>
                                 </div>
-                                <h3 class="course-title" data-splitting>
+                                <h3 class="course-title">
                                     <a href="#">
                                         Phần mềm máy tính
                                     </a>
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Phần mềm luôn là công cụ cần thiết trong mọi lĩnh vực, khóa học này sẽ giúp bạn hiểu
+                                    Phần mềm luôn là công cụ cần thiết trong mọi lĩnh vực, khóa học này sẽ giúp bạn
+                                    hiểu
                                     được các khái niệm về phần mềm và các phần mềm phổ biến hiện nay.
                                 </p>
                                 <div class="view-content-footer">
@@ -281,7 +282,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
-                                            </span>
+                                        </span>
                                         <span class="avg-rate">5</span>
                                         <span class="total-rate">(124)</span>
                                     </span>
@@ -297,8 +298,7 @@
                                         <p><i class="far fa-star"></i> Đánh giá tuyệt tời từ học viên</p>
                                     </li>
                                     <li>
-                                        <p><i class="far fa-clock"></i> Tổng thời gian hoàn thành: <strong>19
-                                                giờ</strong></p>
+                                        <p><i class="far fa-clock"></i> Tổng thời gian hoàn thành: <strong>19 giờ</strong></p>
                                     </li>
                                     <li>
                                         <p><i class="fas fa-award"></i> Giấy chứng nhận sau khi hoàn thành</p>
@@ -306,8 +306,6 @@
                                 </ul>
                             </div>
                         </div>
-
-
                     </div>
 
                     <!-- Kết thúc khóa 2 -->
@@ -338,7 +336,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Khóa học này tập trung vào việc cung cấp các kiến thức chung về các bộ phận của máy
+                                    Khóa học này tập trung vào việc cung cấp các kiến thức chung về các bộ phận của
+                                    máy
                                     tính để bạn có thể áp dụng vào việc lựa chọn và sử dụng máy tính.
                                 </p>
                                 <div class="view-content-footer">
@@ -383,8 +382,7 @@
                                         <p><i class="far fa-star"></i> Đánh giá tuyệt tời từ học viên</p>
                                     </li>
                                     <li>
-                                        <p><i class="far fa-clock"></i> Tổng thời gian hoàn thành: <strong>19
-                                                giờ</strong></p>
+                                        <p><i class="far fa-clock"></i> Tổng thời gian hoàn thành: <strong>19 giờ</strong></p>
                                     </li>
                                     <li>
                                         <p><i class="fas fa-award"></i> Giấy chứng nhận sau khi hoàn thành</p>
@@ -411,7 +409,6 @@
                                 <a href="#">
                                     <img src="images/kh-c.jpg" alt="">
                                 </a>
-
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
@@ -432,7 +429,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Khóa học lập trình C cho người mới bắt đầu. Khóa học này sẽ cung cấp những kiến thức
+                                    Khóa học lập trình C cho người mới bắt đầu. Khóa học này sẽ cung cấp những kiến
+                                    thức
                                     cơ bản và là nền tảng để bạn đi xa hơn trên con đường lập trình.
                                 </p>
                                 <div class="view-content-footer">
@@ -477,8 +475,7 @@
                                         <p><i class="far fa-star"></i> Đánh giá tuyệt tời từ học viên</p>
                                     </li>
                                     <li>
-                                        <p><i class="far fa-clock"></i> Tổng thời gian hoàn thành: <strong>20
-                                                giờ</strong></p>
+                                        <p><i class="far fa-clock"></i> Tổng thời gian hoàn thành: <strong>20 giờ</strong></p>
                                     </li>
                                     <li>
                                         <p><i class="fas fa-award"></i> Giấy chứng nhận sau khi hoàn thành</p>
@@ -499,7 +496,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -516,7 +514,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Khóa học lập trình C++ cơ bản cho người mới bắt đầu. Khóa học này sẽ cung cấp những
+                                    Khóa học lập trình C++ cơ bản cho người mới bắt đầu. Khóa học này sẽ cung cấp
+                                    những
                                     kiến
                                     thức cơ bản, dễ hiểu nhất về ngôn ngữ lập trình C++.
                                 </p>
@@ -536,7 +535,7 @@
                                     <div class="author">
                                         <img src="images/user-default.svg" alt="">
                                         <a href="#" class="user-name">
-                                            Windstar
+                                            Windstar981
                                         </a>
                                     </div>
                                     <span class="rate-wrap">
@@ -584,7 +583,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -601,7 +601,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Khóa học này sẽ giúp các lập trình viên nắm được nguyên tắc, cú pháp và cách thức
+                                    Khóa học này sẽ giúp các lập trình viên nắm được nguyên tắc, cú pháp và cách
+                                    thức
                                     hoạt
                                     động của SQL (Structured Query Language).
                                 </p>
@@ -669,7 +670,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -686,7 +688,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Giúp học viên nắm vững các nguyên tắc và cú pháp cơ bản trong Javascript - ngôn ngữ
+                                    Giúp học viên nắm vững các nguyên tắc và cú pháp cơ bản trong Javascript - ngôn
+                                    ngữ
                                     lập
                                     trình phổ biến nhất trên thế giới.
                                 </p>
@@ -716,7 +719,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
-                                            <span style="width:90.0%"></span></span>
+                                        </span>
                                         <span class="avg-rate">5</span>
                                         <span class="total-rate">(129)</span>
                                     </span>
@@ -745,7 +748,6 @@
                     </div>
                     <!-- Kết thúc khóa 4 -->
                     <!-- Khóa học 5 -->
-                    <!-- Khóa 3 -->
                     <div class="course-item col-12 col-md-4 col-lg-3">
                         <div class="wrap-course-item">
                             <div class="course-thumb">
@@ -755,7 +757,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -772,7 +775,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học xong bạn
+                                    Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ hiểu, học xong
+                                    bạn
                                     có
                                     thể tự tin để tới với các chủ đề nâng cao hơn của Python.
                                 </p>
@@ -802,7 +806,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
-                                            <span style="width:90.0%"></span></span>
+                                        </span>
                                         <span class="avg-rate">5</span>
                                         <span class="total-rate">(126)</span>
                                     </span>
@@ -829,7 +833,6 @@
                         </div>
 
                     </div>
-                    <!-- Kết thúc khóa 3 -->
                     <!-- Kết thúc khóa học 5 -->
                 </div>
             </div>
@@ -850,7 +853,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -867,11 +871,15 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Lập trình hướng đối tượng (Object-Oriented-Programming) là phương pháp lập trình dựa
-                                    trên đối tượng để tìm ra bản chất của vấn đề. Khóa học C++ OOP giúp các lập trình
+                                    Lập trình hướng đối tượng (Object-Oriented-Programming) là phương pháp lập trình
+                                    dựa
+                                    trên đối tượng để tìm ra bản chất của vấn đề. Khóa học C++ OOP giúp các lập
+                                    trình
                                     viên
-                                    học được kỹ thuật lập trình mà tất cả logic, yêu cầu thực tế đều được xây dựng xoay
-                                    quanh các đối tượng. Hiểu được cách thức hoạt động của C++ OOP sẽ làm đơn giản hóa
+                                    học được kỹ thuật lập trình mà tất cả logic, yêu cầu thực tế đều được xây dựng
+                                    xoay
+                                    quanh các đối tượng. Hiểu được cách thức hoạt động của C++ OOP sẽ làm đơn giản
+                                    hóa
                                     việc
                                     bảo trì và dễ dàng mở rộng trong việc thiết kế phần mềm.
                                 </p>
@@ -901,7 +909,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
-                                            <span style="width:90.0%"></span></span>
+                                    </span>
                                         <span class="avg-rate">5</span>
                                         <span class="total-rate">(184)</span>
                                     </span>
@@ -939,7 +947,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -956,11 +965,14 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Khóa học này sẽ giúp bạn biết về một số chức năng chính cần thiết để sắp xếp, lọc và
-                                    phân loại thông tin trong cơ sở dữ liệu quan hệ, mở rộng bộ công cụ SQL của bạn và
+                                    Khóa học này sẽ giúp bạn biết về một số chức năng chính cần thiết để sắp xếp,
+                                    lọc và
+                                    phân loại thông tin trong cơ sở dữ liệu quan hệ, mở rộng bộ công cụ SQL của bạn
+                                    và
                                     giúp
                                     bạn có khả năng giải quyết các vấn đề phức tạp hơn thông qua bộ công cụ này.
-                                    Yêu cầu: Bạn cần hoàn thành khóa Làm quen với SQL để có kiến thức cơ bản trước khi
+                                    Yêu cầu: Bạn cần hoàn thành khóa Làm quen với SQL để có kiến thức cơ bản trước
+                                    khi
                                     tham
                                     gia khóa học này.
                                 </p>
@@ -1028,7 +1040,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -1045,7 +1058,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Khóa học này sẽ giúp các bạn hiểu thuật toán cũng như hiểu rõ bản chất của các cấu
+                                    Khóa học này sẽ giúp các bạn hiểu thuật toán cũng như hiểu rõ bản chất của các
+                                    cấu
                                     trúc
                                     dữ liệu - điều kiện để trở thành lập trình viên giỏi.
                                 </p>
@@ -1113,7 +1127,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -1130,11 +1145,15 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Lập trình hướng đối tượng (Object-Oriented-Programming) là phương pháp lập trình dựa
-                                    trên đối tượng để tìm ra bản chất của vấn đề. Khóa học Java OOP giúp các lập trình
+                                    Lập trình hướng đối tượng (Object-Oriented-Programming) là phương pháp lập trình
+                                    dựa
+                                    trên đối tượng để tìm ra bản chất của vấn đề. Khóa học Java OOP giúp các lập
+                                    trình
                                     viên
-                                    học được kỹ thuật lập trình mà tất cả logic, yêu cầu thực tế đều được xây dựng xoay
-                                    quanh các đối tượng. Hiểu được cách thức hoạt động của Java OOP sẽ làm đơn giản hóa
+                                    học được kỹ thuật lập trình mà tất cả logic, yêu cầu thực tế đều được xây dựng
+                                    xoay
+                                    quanh các đối tượng. Hiểu được cách thức hoạt động của Java OOP sẽ làm đơn giản
+                                    hóa
                                     việc
                                     bảo trì và dễ dàng mở rộng trong việc thiết kế phần mềm.
                                 </p>
@@ -1193,7 +1212,6 @@
                     </div>
                     <!-- Kết thúc khóa 4 -->
                     <!-- Khóa học 5 -->
-
                     <div class="course-item col-12 col-md-4 col-lg-3">
                         <div class="wrap-course-item">
                             <div class="course-thumb">
@@ -1203,7 +1221,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -1220,7 +1239,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Khóa học lập trình C++ nâng cao sẽ giúp bạn hiểu sâu hơn về C++ với một số khái niệm
+                                    Khóa học lập trình C++ nâng cao sẽ giúp bạn hiểu sâu hơn về C++ với một số khái
+                                    niệm
                                     như
                                     con trỏ, mảng, cấp phát bộ nhớ động, struct, ...
                                 </p>
@@ -1298,7 +1318,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -1315,7 +1336,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Giúp lập trình viên cải thiện khả năng lập trình với những thuật toán mạnh mẽ để giải quyết các bài toán lập trình phức tạp.
+                                    Giúp lập trình viên cải thiện khả năng lập trình với những thuật toán mạnh mẽ để
+                                    giải quyết các bài toán lập trình phức tạp.
                                 </p>
                                 <div class="view-content-footer">
                                     <div class="course-footer-left">
@@ -1346,7 +1368,7 @@
                                             <i class="fas fa-star xoay-star"></i>
                                             <i class="fas fa-star xoay-star"></i>
                                             <i class="fas fa-star xoay-star"></i>
-                                            </span>
+                                        </span>
                                         <span class="avg-rate" style="font-size: 13px;">5</span>
                                         <span class="total-rate" style="font-size: 13px;">(296)</span>
                                     </span>
@@ -1373,6 +1395,8 @@
                         </div>
 
                     </div>
+                    <!-- Kết thúc khóa 1 -->
+                    <!-- Khóa 2 -->
                     <div class="course-item col-12 col-md-4 col-lg-3">
                         <div class="wrap-course-item front">
                             <div class="course-thumb">
@@ -1382,7 +1406,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -1399,7 +1424,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Với khóa học thuật toán cơ bản, bạn sẽ học được cách tư duy và giải quyết các bài toán lập trình cơ bản mà một lập trình viên cần có.
+                                    Với khóa học thuật toán cơ bản, bạn sẽ học được cách tư duy và giải quyết các
+                                    bài toán lập trình cơ bản mà một lập trình viên cần có.
                                 </p>
                                 <div class="view-content-footer">
                                     <div class="course-footer-left">
@@ -1457,6 +1483,8 @@
                         </div>
 
                     </div>
+                    <!-- Kết thúc khóa 2 -->
+                    <!-- Khóa 3 -->
                     <div class="course-item col-12 col-md-4 col-lg-3">
                         <div class="wrap-course-item front">
                             <div class="course-thumb">
@@ -1466,7 +1494,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -1483,7 +1512,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Thư viện chuẩn luôn là thứ không thể thiếu đối với một ngôn ngữ lập trình, khóa học này sẽ giúp bạn thành thạo các thư viện hay được sử dụng trong C++.
+                                    Thư viện chuẩn luôn là thứ không thể thiếu đối với một ngôn ngữ lập trình, khóa
+                                    học này sẽ giúp bạn thành thạo các thư viện hay được sử dụng trong C++.
                                 </p>
                                 <div class="view-content-footer">
                                     <div class="course-footer-left">
@@ -1541,6 +1571,8 @@
                         </div>
 
                     </div>
+                    <!-- Kết thúc khóa 3 -->
+                    <!-- Khóa 4 -->
                     <div class="course-item col-12 col-md-4 col-lg-3">
                         <div class="wrap-course-item front">
                             <div class="course-thumb">
@@ -1550,7 +1582,8 @@
                             </div>
                             <div class="view-content">
                                 <div class="view-content-header">
-                                    <img class="view-content-header__img-top" src="images/bottom-content.png" alt="">
+                                    <img class="view-content-header__img-top" src="images/bottom-content.png"
+                                        alt="">
                                     <span class="star-rating">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -1567,7 +1600,8 @@
                                 </h3>
                                 <a href="#" class="course-author">windstar981</a>
                                 <p class="course-description">
-                                    Khóa học sẽ cung cấp cái nhìn cơ bản và tổng quan về lĩnh vực điện toán đám mây và các công nghệ điện toán đám mây nổi bật.
+                                    Khóa học sẽ cung cấp cái nhìn cơ bản và tổng quan về lĩnh vực điện toán đám mây
+                                    và các công nghệ điện toán đám mây nổi bật.
                                 </p>
                                 <div class="view-content-footer">
                                     <div class="course-footer-left">
@@ -1598,7 +1632,7 @@
                                             <i class="fas fa-star xoay-star"></i>
                                             <i class="fas fa-star xoay-star"></i>
                                             <i class="fas fa-star xoay-star"></i>
-                                            <span style="width:90.0%"></span></span>
+                                        </span>
                                         <span class="avg-rate" style="font-size: 13px;">5</span>
                                         <span class="total-rate" style="font-size: 13px;">(226)</span>
                                     </span>
@@ -1625,30 +1659,31 @@
                         </div>
 
                     </div>
-                    
+                    <!-- Kết thúc khóa 4 -->
                 </div>
             </div>
         </div>
         <!-- Kết thúc giải quyết vấn đề -->
-        <!-- Kỹ năng nâng cao -->
-
-        <!-- Kết thúc kỹ năng nâng cao -->
     </div>
+    <!-- pop chào mừng bạn đến với codelearn -->
     <div class="pop-block">
         <h3>Chào mừng bạn đến với CodeLearn!</h3>
         <h4>Nền tảng dạy lập trình cho mọi đối tượng.</h4>
         <p class="pop-exit">OK!</p>
     </div>
+    <!-- Kết thúc pop -->
+    <!-- Phần footer -->
     <footer>
-       <div class="main-footer">
-           <div class="container">
-               <div class="row">
-                   <div class="col-xs-12 col-md-6">
+        <div class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
                         <div class="logo-codelearn">
                             <img src="images/codelearn-logo.png" alt="">
                         </div>
                         <div class="content-footer">
-                            CodeLearn là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách nhanh chóng và chính xác. 
+                            CodeLearn là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu
+                            và đánh giá kỹ năng lập trình một cách nhanh chóng và chính xác.
                         </div>
                         <div class="contact-codelearn">
                             <a href="#" class="fb">
@@ -1672,9 +1707,9 @@
                                 </span>
                             </a>
                         </div>
-                   </div>
+                    </div>
 
-                   <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="col-xs-12 col-sm-4 col-md-2">
                         <div class="support-cl">
                             <h4>Liên kết</h4>
                             <p>
@@ -1690,9 +1725,9 @@
                                 <a href="#">Trò chơi</a>
                             </p>
                         </div>
-                   </div>
+                    </div>
 
-                   <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="col-xs-12 col-sm-4 col-md-2">
                         <div class="support-cl">
                             <h4>Thông tin</h4>
                             <p>
@@ -1708,7 +1743,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-4 col-md-2">
-                        <div class="support-cl"> 
+                        <div class="support-cl">
                             <h4>Trợ giúp</h4>
                             <p>
                                 <a href="#">Hỗ trợ</a>
@@ -1723,9 +1758,12 @@
                     </div>
 
                 </div>
-           </div>
-       </div> 
+            </div>
+        </div>
     </footer>
+    <!-- Kết thúc footer -->
+</div>
+    <!-- copyright -->
     <div class="copyright">
         <p>NMH</p>
     </div>

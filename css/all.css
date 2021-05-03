@@ -1,3 +1,36 @@
+:root {
+    --accent-color: #2c31cf;
+    --accent-bg-hover: #1e266d;
+    --main-color: #3b3c54;
+    --heading-color: #35416e;
+    --button-hv-bg: #4d96ff;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --tour-bg: rgba(0,0,0,.85);
+    --tour-color: #fff;
+    --tour-btn-bg: #2c31cf;
+    --tour-btn-color: #fff;
+    --tour-btn-hv-color: #3d6cae;
+}
 .hidden-title {
  display:none;
 }
@@ -25,7 +58,7 @@
  font-weight: 700;
 }
 .heading-block a {
- color:var(--main-color);
+ color:#43445b;
  float:right;
  transition:all 300ms;
  font-weight:600;
@@ -298,13 +331,13 @@
  display:inline-block;
 }
 .user-progress-bar {
- width:100%;
+ width:87%;
  background:rgba(77,150,255,.2);
  height:10px;
  position:relative;
  overflow:hidden;
  border-radius:7px;
- margin:5px 0 10px;
+ margin:5px 0 10px 20px;
 }
 .user-progress-bar .current-progress {
  display:block;
@@ -324,9 +357,6 @@
 }
 .level-progress span:nth-child(2) {
  text-align:center;
-}
-.level-progress span:last-child {
- text-align:right;
 }
 .wrap-detail-user-progress {
  color:var(--white);
@@ -1504,7 +1534,7 @@ border-left-color:transparent;
 .your-skills li {
  list-style:none;
  width:100%;
- margin-bottom:20px;
+ margin-bottom:30px;
 }
 .your-skills li>span {
  flex-grow:1;
@@ -1628,6 +1658,7 @@ border-left-color:transparent;
   display:flex;
   align-items:center;
   margin-right:10%;
+  margin-bottom: 30px;
  }
  .your-skills li:nth-child(2n) {
   margin-right:0;

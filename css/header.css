@@ -36,14 +36,6 @@
 {
     padding: 15px;
 }
-.header-logo
-{
-    
-}
-.header-logo a image
-{
-    
-}
 .header-list
 {
     /* display: flex;
@@ -86,17 +78,7 @@
     /* padding: 25px 0; */
     line-height: 1.33;
 }
-/* .menu-main-menu a::after
-{
-    transition: all .3s ease;
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-bottom: 2px solid blue;
-    width: 100%;
-} */
+
 .header-menu
 {
     display: flex;

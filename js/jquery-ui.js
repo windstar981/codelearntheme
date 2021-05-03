@@ -8538,7 +8538,7 @@ $.widget( "ui.autocomplete", {
 
 	_renderMenu: function( ul, items ) {
 		var that = this;
-		$.each( items, function( index, item ) {
+		$.each(  items, function( index, item ) {
 			that._renderItemData( ul, item );
 		} );
 	},
